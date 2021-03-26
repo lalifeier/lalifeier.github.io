@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>介绍 | awesome-notes</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/zrender@4.3.0/dist/zrender.js"></script>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.116.1/build/three.js"></script>
+    <link rel="icon" href="/logo.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="笔记">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.796597b9.css" as="style"><link rel="preload" href="/assets/js/app.6837fd68.js" as="script"><link rel="preload" href="/assets/js/2.ba37855e.js" as="script"><link rel="preload" href="/assets/js/11.47c17e33.js" as="script"><link rel="preload" href="/assets/js/5.65b8a4d7.js" as="script"><link rel="prefetch" href="/assets/js/10.bf21da98.js"><link rel="prefetch" href="/assets/js/12.52366a61.js"><link rel="prefetch" href="/assets/js/13.f3d2ea36.js"><link rel="prefetch" href="/assets/js/14.26ad3fbd.js"><link rel="prefetch" href="/assets/js/15.330cca97.js"><link rel="prefetch" href="/assets/js/16.0db907f7.js"><link rel="prefetch" href="/assets/js/17.f4312399.js"><link rel="prefetch" href="/assets/js/18.0078fa2e.js"><link rel="prefetch" href="/assets/js/19.0567fee3.js"><link rel="prefetch" href="/assets/js/20.4fc2b2d0.js"><link rel="prefetch" href="/assets/js/21.5c974e0c.js"><link rel="prefetch" href="/assets/js/22.278aa096.js"><link rel="prefetch" href="/assets/js/23.4d43f959.js"><link rel="prefetch" href="/assets/js/24.011de924.js"><link rel="prefetch" href="/assets/js/25.11cd2df3.js"><link rel="prefetch" href="/assets/js/26.6a2760d5.js"><link rel="prefetch" href="/assets/js/27.04bd79eb.js"><link rel="prefetch" href="/assets/js/28.ad8162cf.js"><link rel="prefetch" href="/assets/js/29.3297f0a3.js"><link rel="prefetch" href="/assets/js/3.2c6cfde3.js"><link rel="prefetch" href="/assets/js/30.e0b71ea8.js"><link rel="prefetch" href="/assets/js/31.3f54ff18.js"><link rel="prefetch" href="/assets/js/32.952dcf3b.js"><link rel="prefetch" href="/assets/js/33.0bda2b2a.js"><link rel="prefetch" href="/assets/js/34.b243bae4.js"><link rel="prefetch" href="/assets/js/35.90ef5354.js"><link rel="prefetch" href="/assets/js/36.c4af5d28.js"><link rel="prefetch" href="/assets/js/37.16931636.js"><link rel="prefetch" href="/assets/js/38.02bc5086.js"><link rel="prefetch" href="/assets/js/39.720f73c8.js"><link rel="prefetch" href="/assets/js/4.869e2716.js"><link rel="prefetch" href="/assets/js/40.393a2a14.js"><link rel="prefetch" href="/assets/js/41.aec51b9a.js"><link rel="prefetch" href="/assets/js/42.5c15d0e0.js"><link rel="prefetch" href="/assets/js/43.835cc25d.js"><link rel="prefetch" href="/assets/js/44.e4b5e541.js"><link rel="prefetch" href="/assets/js/45.dba35b69.js"><link rel="prefetch" href="/assets/js/46.1110c8f6.js"><link rel="prefetch" href="/assets/js/47.68311e50.js"><link rel="prefetch" href="/assets/js/6.b6b55724.js"><link rel="prefetch" href="/assets/js/7.ae224605.js"><link rel="prefetch" href="/assets/js/8.448f622f.js"><link rel="prefetch" href="/assets/js/9.3a3dcbf5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.796597b9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">awesome-notes</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/basis/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/fontend/basis/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/fontend/basis/TypeScript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/note/" class="nav-link">
+  笔记
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/frame/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/fontend/frame/React/" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/data-visualization/" class="nav-link">
+  数据可视化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/basis/Go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/PHP/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Node/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Node
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Python/" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/database/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/backend/database/Redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/backend/database/MongoDB/" class="nav-link">
+  MongoDB
+</a></li></ul></li><li class="dropdown-item"><h4>
+          中间件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/middleware/RabbitMQ/" class="nav-link">
+  RabbitMQ
+</a></li><li class="dropdown-subitem"><a href="/backend/middleware/HAProxy/" class="nav-link">
+  HAProxy 
+</a></li><li class="dropdown-subitem"><a href="/backend/middleware/Nginx/" class="nav-link">
+  Nginx
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tool/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Jenkins/" class="nav-link">
+  Jenkins
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Regular_Expression/" class="nav-link">
+  正则表达式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/system/CentOS/" class="nav-link">
+  CentOS
+</a></li><li class="dropdown-item"><!----> <a href="/system/Ubuntu/" class="nav-link">
+  Ubuntu
+</a></li></ul></div></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  库
+</a></div><div class="nav-item"><a href="/note/" class="nav-link">
+  零星笔记
+</a></div> <a href="https://github.com/lalifeier/awesome-notes" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/basis/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/fontend/basis/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/fontend/basis/TypeScript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/note/" class="nav-link">
+  笔记
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/frame/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/fontend/frame/React/" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/data-visualization/" class="nav-link">
+  数据可视化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/basis/Go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/PHP/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Node/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Node
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Python/" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/database/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/backend/database/Redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/backend/database/MongoDB/" class="nav-link">
+  MongoDB
+</a></li></ul></li><li class="dropdown-item"><h4>
+          中间件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/middleware/RabbitMQ/" class="nav-link">
+  RabbitMQ
+</a></li><li class="dropdown-subitem"><a href="/backend/middleware/HAProxy/" class="nav-link">
+  HAProxy 
+</a></li><li class="dropdown-subitem"><a href="/backend/middleware/Nginx/" class="nav-link">
+  Nginx
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tool/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Jenkins/" class="nav-link">
+  Jenkins
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Regular_Expression/" class="nav-link">
+  正则表达式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/system/CentOS/" class="nav-link">
+  CentOS
+</a></li><li class="dropdown-item"><!----> <a href="/system/Ubuntu/" class="nav-link">
+  Ubuntu
+</a></li></ul></div></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  库
+</a></div><div class="nav-item"><a href="/note/" class="nav-link">
+  零星笔记
+</a></div> <a href="https://github.com/lalifeier/awesome-notes" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>介绍</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/backend/basis/Node/#环境安装" class="sidebar-link">环境安装</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/basis/Node/#n" class="sidebar-link">n</a></li><li class="sidebar-sub-header"><a href="/backend/basis/Node/#nvm" class="sidebar-link">nvm</a></li><li class="sidebar-sub-header"><a href="/backend/basis/Node/#配置-npm-镜像" class="sidebar-link">配置 npm 镜像</a></li><li class="sidebar-sub-header"><a href="/backend/basis/Node/#npm-镜像管理工具" class="sidebar-link">NPM 镜像管理工具</a></li><li class="sidebar-sub-header"><a href="/backend/basis/Node/#yarn" class="sidebar-link">yarn</a></li><li class="sidebar-sub-header"><a href="/backend/basis/Node/#配置-yarn-镜像" class="sidebar-link">配置 yarn 镜像</a></li><li class="sidebar-sub-header"><a href="/backend/basis/Node/#yarn-镜像管理工具" class="sidebar-link">YARN 镜像管理工具</a></li></ul></li><li><a href="/backend/basis/Node/#调试" class="sidebar-link">调试</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/basis/Node/#vscode" class="sidebar-link">vscode</a></li></ul></li><li><a href="/backend/basis/Node/#全局对象" class="sidebar-link">全局对象</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/backend/basis/Node/#模块" class="sidebar-link">模块</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/basis/Node/#crypto" class="sidebar-link">crypto</a></li><li class="sidebar-sub-header"><a href="/backend/basis/Node/#dns" class="sidebar-link">dns</a></li><li class="sidebar-sub-header"><a href="/backend/basis/Node/#fs" class="sidebar-link">fs</a></li><li class="sidebar-sub-header"><a href="/backend/basis/Node/#http" class="sidebar-link">http</a></li><li class="sidebar-sub-header"><a href="/backend/basis/Node/#os" class="sidebar-link">os</a></li><li class="sidebar-sub-header"><a href="/backend/basis/Node/#path" class="sidebar-link">path</a></li><li class="sidebar-sub-header"><a href="/backend/basis/Node/#readline" class="sidebar-link">readline</a></li><li class="sidebar-sub-header"><a href="/backend/basis/Node/#url" class="sidebar-link">url</a></li><li class="sidebar-sub-header"><a href="/backend/basis/Node/#vm" class="sidebar-link">vm</a></li></ul></li><li><a href="/backend/basis/Node/#mongoose" class="sidebar-link">Mongoose</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/backend/basis/Node/#koa" class="sidebar-link">Koa</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/basis/Node/#常用中间件" class="sidebar-link">常用中间件</a></li><li class="sidebar-sub-header"><a href="/backend/basis/Node/#热加载" class="sidebar-link">热加载</a></li></ul></li><li><a href="/backend/basis/Node/#pm2" class="sidebar-link">pm2</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/basis/Node/#配置文件" class="sidebar-link">配置文件</a></li><li class="sidebar-sub-header"><a href="/backend/basis/Node/#负载均衡" class="sidebar-link">负载均衡</a></li><li class="sidebar-sub-header"><a href="/backend/basis/Node/#日志管理" class="sidebar-link">日志管理</a></li><li class="sidebar-sub-header"><a href="/backend/basis/Node/#开机自动启动" class="sidebar-link">开机自动启动</a></li><li class="sidebar-sub-header"><a href="/backend/basis/Node/#pm2-web" class="sidebar-link">pm2-web</a></li><li class="sidebar-sub-header"><a href="/backend/basis/Node/#nestjs" class="sidebar-link">Nestjs</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="介绍"><a href="#介绍" class="header-anchor">#</a> 介绍</h1> <h4 id="node"><a href="#node" class="header-anchor">#</a> Node</h4> <h2 id="环境安装"><a href="#环境安装" class="header-anchor">#</a> 环境安装</h2> <h3 id="n"><a href="#n" class="header-anchor">#</a> n</h3> <p>参考: <a href="https://github.com/tj/n" target="_blank" rel="noopener noreferrer">https://github.com/tj/n<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">npm</span> <span class="token function">install</span> -g n
+n lts
+n <span class="token function">rm</span> lts
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="nvm"><a href="#nvm" class="header-anchor">#</a> nvm</h3> <p>参考: <a href="https://github.com/nvm-sh/nvm" target="_blank" rel="noopener noreferrer">https://github.com/nvm-sh/nvm<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li>安装 nvm</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">curl</span> -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh <span class="token operator">|</span> <span class="token function">bash</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>卸载 nvm</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">rm</span> -rf <span class="token string">&quot;<span class="token variable">$NVM_DIR</span>&quot;</span>
+<span class="token comment">#删除~/.bashrc中以下内容</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">NVM_DIR</span><span class="token operator">=</span><span class="token string">&quot;<span class="token environment constant">$HOME</span>/.nvm&quot;</span>
+<span class="token punctuation">[</span> -s <span class="token string">&quot;<span class="token variable">$NVM_DIR</span>/nvm.sh&quot;</span> <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">\</span>. <span class="token string">&quot;<span class="token variable">$NVM_DIR</span>/nvm.sh&quot;</span> <span class="token comment"># This loads nvm</span>
+<span class="token punctuation">[</span><span class="token punctuation">[</span> -r <span class="token variable">$NVM_DIR</span>/bash_completion <span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">\</span>. <span class="token variable">$NVM_DIR</span>/bash_completion
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>配置环境变量</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">vim</span> ~/.zshrc
+<span class="token comment"># 配置国内镜像</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">NVM_NODEJS_ORG_MIRROR</span><span class="token operator">=</span>http://npm.taobao.org/mirrors/node
+
+<span class="token builtin class-name">source</span> ~/.zshrc
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>查看 Node 版本</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#查看已经安装的Node版本</span>
+nvm <span class="token function">ls</span>
+<span class="token comment">#查看长期支持的版本</span>
+nvm ls-remote --lts
+<span class="token comment">#显示远程所有可以安装的nodejs版本</span>
+nvm ls-remote
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li>安装最新稳定版 node</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>nvm <span class="token function">install</span> stable
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>切换 Node 版本</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>nvm use stable
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>修改 Node 默认版本</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>nvm <span class="token builtin class-name">alias</span> default v8.16.1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>sudo: nvm: command not found</p></div> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#方法一</span>
+<span class="token assign-left variable">n</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">which</span> node<span class="token variable">)</span></span><span class="token punctuation">;</span><span class="token assign-left variable">n</span><span class="token operator">=</span><span class="token variable">${n<span class="token operator">%</span><span class="token operator">/</span>bin<span class="token operator">/</span>node}</span><span class="token punctuation">;</span> <span class="token function">chmod</span> -R <span class="token number">755</span> <span class="token variable">$n</span>/bin/*<span class="token punctuation">;</span> <span class="token function">sudo</span> <span class="token function">cp</span> -r <span class="token variable">$n</span>/<span class="token punctuation">{</span>bin,lib,share<span class="token punctuation">}</span> /usr/local
+<span class="token comment">#方法二</span>
+<span class="token function">sudo</span> <span class="token function">ln</span> -s <span class="token string">&quot;<span class="token variable">$NVM_DIR</span>/versions/node/<span class="token variable"><span class="token variable">$(</span>nvm version<span class="token variable">)</span></span>/bin/node&quot;</span> <span class="token string">&quot;/usr/local/bin/node&quot;</span>
+<span class="token function">sudo</span> <span class="token function">ln</span> -s <span class="token string">&quot;<span class="token variable">$NVM_DIR</span>/versions/node/<span class="token variable"><span class="token variable">$(</span>nvm version<span class="token variable">)</span></span>/bin/npm&quot;</span> <span class="token string">&quot;/usr/local/bin/npm&quot;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="配置-npm-镜像"><a href="#配置-npm-镜像" class="header-anchor">#</a> 配置 npm 镜像</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry https://registry.npm.taobao.org
+<span class="token comment"># 查看</span>
+<span class="token function">npm</span> config get registry
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="npm-镜像管理工具"><a href="#npm-镜像管理工具" class="header-anchor">#</a> NPM 镜像管理工具</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#安装</span>
+<span class="token function">npm</span> <span class="token function">install</span> -g nrm
+<span class="token comment">#查看可选源</span>
+nrm <span class="token function">ls</span>
+<span class="token comment">#切换到taobao源</span>
+nrm use taobao
+<span class="token comment">#查看源响应时间</span>
+nrm <span class="token builtin class-name">test</span> <span class="token function">npm</span>
+<span class="token comment">#增加定制源</span>
+nrm <span class="token function">add</span> 源名称 源网址
+<span class="token comment">#删除源</span>
+nrm del 源名称
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="yarn"><a href="#yarn" class="header-anchor">#</a> yarn</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#方式一</span>
+<span class="token comment">#安装 https://yarnpkg.com/getting-started/install</span>
+<span class="token function">npm</span> <span class="token function">install</span> -g <span class="token function">yarn</span>
+
+<span class="token comment">#方式二</span>
+<span class="token comment">#安装 https://classic.yarnpkg.com/zh-Hans/docs/install#debian-stable</span>
+<span class="token function">curl</span> -sS https://dl.yarnpkg.com/debian/pubkey.gpg <span class="token operator">|</span> <span class="token function">sudo</span> apt-key <span class="token function">add</span> -
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;deb https://dl.yarnpkg.com/debian/ stable main&quot;</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> /etc/apt/sources.list.d/yarn.list
+<span class="token comment">#如果你使用nvm，可通过以下操作来避免node的安装</span>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> --no-install-recommends <span class="token function">yarn</span>
+<span class="token comment">#sudo apt-get update &amp;&amp; sudo apt-get install yarn</span>
+<span class="token comment">#检查Yarn是否安装</span>
+<span class="token function">yarn</span> --version
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="配置-yarn-镜像"><a href="#配置-yarn-镜像" class="header-anchor">#</a> 配置 yarn 镜像</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">yarn</span> config <span class="token builtin class-name">set</span> registry https://registry.npm.taobao.org
+<span class="token comment">#查看镜像地址</span>
+<span class="token function">yarn</span> config get registry
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="yarn-镜像管理工具"><a href="#yarn-镜像管理工具" class="header-anchor">#</a> YARN 镜像管理工具</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#方式一</span>
+<span class="token comment">#安装</span>
+<span class="token function">npm</span> <span class="token function">install</span> -g yrm
+<span class="token comment">#查看可选源</span>
+yrm <span class="token function">ls</span>
+<span class="token comment">#切换到taobao源</span>
+yrm use taobao
+
+<span class="token comment">#方式二</span>
+<span class="token comment">#安装</span>
+<span class="token function">yarn</span> global <span class="token function">add</span> yrm
+<span class="token comment">#查看所有镜像</span>
+yrm <span class="token function">ls</span>
+<span class="token comment">#使用淘宝镜像</span>
+yrm use taobao
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>zsh: command not found: yrm</p></div> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#查看yarn的bin目录</span>
+<span class="token function">yarn</span> global bin
+<span class="token comment">#加入到环境变量</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable"><span class="token environment constant">PATH</span></span><span class="token operator">=</span><span class="token environment constant">$PATH</span>:/home/lalifeier/.yarn/bin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="调试"><a href="#调试" class="header-anchor">#</a> 调试</h2> <h3 id="vscode"><a href="#vscode" class="header-anchor">#</a> vscode</h3> <h4 id="必需字段如下"><a href="#必需字段如下" class="header-anchor">#</a> 必需字段如下：</h4> <ul><li>type：调试器类型。这里是 node（内置的调试器），如果安装了 Go 和 PHP 的扩展后，则对应的 type 分别为 go 和 php。</li> <li>request：请求的类型，支持 launch 和 attach。launch 就是以 debug 模式启动调试，attach 就是附加到已经启动的进程开启 debug 模式并调试。</li> <li>name：下拉菜单显示的名字。</li></ul> <h4 id="可选字段-括号里表示适用的类型-如下"><a href="#可选字段-括号里表示适用的类型-如下" class="header-anchor">#</a> 可选字段（括号里表示适用的类型）如下：</h4> <ul><li>program：可执行文件或者调试器要运行的文件 (launch)。</li> <li>args：要传递给调试程序的参数 (launch)。</li> <li>env：环境变量 (launch)。</li> <li>cwd：当前执行目录 (launch)。</li> <li>address：IP 地址 (launch &amp; attach)。</li> <li>port：端口号 (launch &amp; attach)。</li> <li>skipFiles：想要忽略的文件，数组类型 (launch &amp; attach)。</li> <li>processId：进程 PID (attach)。</li> <li>...</li></ul> <h4 id="变量替换"><a href="#变量替换" class="header-anchor">#</a> 变量替换：</h4> <ul><li>${workspaceFolder}：当前打开工程的路径。</li> <li>${file}：当前打开文件的路径。</li> <li>${fileBasename}：当前打开文件的名字，包含后缀名。</li> <li>${fileDirname}：当前打开文件所在的文件夹的路径。</li> <li>${fileExtname}：当前打开文件的后缀名。</li> <li>${cwd}：当前执行目录。</li> <li>...</li></ul> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token comment">//  lanuch.json</span>
+<span class="token comment">// 本地调试</span>
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.2.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;configurations&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;request&quot;</span><span class="token operator">:</span> <span class="token string">&quot;launch&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Launch Program&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;restart&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;program&quot;</span><span class="token operator">:</span> <span class="token string">&quot;${workspaceRoot}/development.js&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//远程调试</span>
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.2.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;configurations&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;request&quot;</span><span class="token operator">:</span> <span class="token string">&quot;attach&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Attach to node&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;restart&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;processId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;${command:PickProcess}&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.2.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;configurations&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;request&quot;</span><span class="token operator">:</span> <span class="token string">&quot;attach&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Attach to node&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;restart&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;address&quot;</span><span class="token operator">:</span> <span class="token string">&quot;localhost&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;port&quot;</span><span class="token operator">:</span> <span class="token number">5858</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><h2 id="全局对象"><a href="#全局对象" class="header-anchor">#</a> <a href="https://nodejs.org/dist/latest-v14.x/docs/api/globals.html" target="_blank" rel="noopener noreferrer">全局对象<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h2> <h2 id="模块"><a href="#模块" class="header-anchor">#</a> 模块</h2> <h3 id="crypto"><a href="#crypto" class="header-anchor">#</a> <a href="https://nodejs.org/dist/latest-v14.x/docs/api/crypto.html" target="_blank" rel="noopener noreferrer">crypto<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <h3 id="dns"><a href="#dns" class="header-anchor">#</a> <a href="https://nodejs.org/dist/latest-v14.x/docs/api/dns.html" target="_blank" rel="noopener noreferrer">dns<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <h3 id="fs"><a href="#fs" class="header-anchor">#</a> <a href="https://nodejs.org/dist/latest-v14.x/docs/api/fs.html" target="_blank" rel="noopener noreferrer">fs<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <h3 id="http"><a href="#http" class="header-anchor">#</a> <a href="https://nodejs.org/dist/latest-v14.x/docs/api/http.html" target="_blank" rel="noopener noreferrer">http<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <ul><li><code>http.Server</code></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">request<span class="token punctuation">,</span> response</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> data <span class="token operator">=</span> <span class="token string">''</span>
+
+  request<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'data'</span><span class="token punctuation">,</span> <span class="token parameter">chunk</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    data <span class="token operator">+=</span> chunk
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  request<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> method <span class="token operator">=</span> request<span class="token punctuation">.</span>method
+    <span class="token keyword">let</span> headers <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>request<span class="token punctuation">.</span>headers<span class="token punctuation">)</span>
+    <span class="token keyword">let</span> httpVersion <span class="token operator">=</span> request<span class="token punctuation">.</span>httpVersion
+    <span class="token keyword">let</span> requireUrl <span class="token operator">=</span> request<span class="token punctuation">.</span>url
+    response<span class="token punctuation">.</span><span class="token function">writeHead</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token string">'Content-Type'</span><span class="token operator">:</span> <span class="token string">'text/html'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">let</span> responseData <span class="token operator">=</span>
+      method <span class="token operator">+</span> <span class="token string">', '</span> <span class="token operator">+</span> headers <span class="token operator">+</span> <span class="token string">', '</span> <span class="token operator">+</span> httpVersion <span class="token operator">+</span> <span class="token string">', '</span> <span class="token operator">+</span> requireUrl
+    response<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span>responseData<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+server<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">3000</span><span class="token punctuation">,</span> <span class="token string">'localhost'</span><span class="token punctuation">)</span>
+
+server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'listening'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Server is listening'</span><span class="token punctuation">)</span>
+  <span class="token comment">// server.close()</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'connection'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Client is connected'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+server<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'close'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Server is closed'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Node Server started on port 3000'</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> httpServer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">http<span class="token punctuation">.</span>Server</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+httpServer<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'request'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">request<span class="token punctuation">,</span> response</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  response<span class="token punctuation">.</span><span class="token function">writeHead</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token string">'Content-Type'</span><span class="token operator">:</span> <span class="token string">'text/plain'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  response<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token string">'hi'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+httpServer<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">3000</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Node Server started on port 3000'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><ul><li><code>http.ClientRequest</code></li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">let</span> responseData <span class="token operator">=</span> <span class="token string">''</span>
+
+http
+  <span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span>
+    <span class="token punctuation">{</span>
+      host<span class="token operator">:</span> <span class="token string">'localhost'</span><span class="token punctuation">,</span>
+      port<span class="token operator">:</span> <span class="token string">'3000'</span><span class="token punctuation">,</span>
+      method<span class="token operator">:</span> <span class="token string">'get'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token parameter">response</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'data'</span><span class="token punctuation">,</span> <span class="token parameter">chunk</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        responseData <span class="token operator">+=</span> chunk
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>responseData<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">let</span> responseData <span class="token operator">=</span> <span class="token string">''</span>
+
+<span class="token keyword">const</span> option <span class="token operator">=</span> <span class="token punctuation">{</span>
+  host<span class="token operator">:</span> <span class="token string">'localhost'</span><span class="token punctuation">,</span>
+  port<span class="token operator">:</span> <span class="token string">'3000'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> request <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span>option<span class="token punctuation">)</span>
+
+request
+  <span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'response'</span><span class="token punctuation">,</span> <span class="token parameter">response</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'data'</span><span class="token punctuation">,</span> <span class="token parameter">chunk</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      responseData <span class="token operator">+=</span> chunk
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    response<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>responseData<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h3 id="os"><a href="#os" class="header-anchor">#</a> <a href="https://nodejs.org/dist/latest-v14.x/docs/api/os.html" target="_blank" rel="noopener noreferrer">os<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <h3 id="path"><a href="#path" class="header-anchor">#</a> <a href="https://nodejs.org/dist/latest-v14.x/docs/api/path.html" target="_blank" rel="noopener noreferrer">path<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <ul><li><code>path.join([...paths])</code></li> <li><code>path.resolve([...paths])</code></li></ul> <ul><li><code>fs.readFile(path[, options], callback)</code></li> <li><code>fs.readFileSync(path[, options])</code></li></ul> <h3 id="readline"><a href="#readline" class="header-anchor">#</a> <a href="https://nodejs.org/dist/latest-v14.x/docs/api/readline.html" target="_blank" rel="noopener noreferrer">readline<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <h3 id="url"><a href="#url" class="header-anchor">#</a> <a href="https://nodejs.org/dist/latest-v14.x/docs/api/url.html" target="_blank" rel="noopener noreferrer">url<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> url <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'url'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> urlString <span class="token operator">=</span> <span class="token string">'http://www.test.com?orderId=12345'</span>
+<span class="token keyword">const</span> urlObject <span class="token operator">=</span> url<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>urlString<span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>urlObject<span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> urlObject <span class="token operator">=</span> <span class="token punctuation">{</span>
+  protocol<span class="token operator">:</span> <span class="token string">'http:'</span><span class="token punctuation">,</span>
+  host<span class="token operator">:</span> <span class="token string">'www.test.com'</span><span class="token punctuation">,</span>
+  port<span class="token operator">:</span> <span class="token number">80</span><span class="token punctuation">,</span>
+  search<span class="token operator">:</span> <span class="token string">'?orderId=12345'</span><span class="token punctuation">,</span>
+  query<span class="token operator">:</span> <span class="token string">'orderId=12345'</span><span class="token punctuation">,</span>
+  path<span class="token operator">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> realAddress <span class="token operator">=</span> url<span class="token punctuation">.</span><span class="token function">format</span><span class="token punctuation">(</span>urlObject<span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>realAddress<span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> urlAddress <span class="token operator">=</span> url<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">'http://www.test.com'</span><span class="token punctuation">,</span> <span class="token string">'order'</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>urlAddress<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><h3 id="vm"><a href="#vm" class="header-anchor">#</a> <a href="https://nodejs.org/dist/latest-v14.x/docs/api/vm.html" target="_blank" rel="noopener noreferrer">vm<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <ul><li><code>new vm.Script(code[, options])</code></li> <li><code>script.runInNewContext([contextObject[, options]])</code></li></ul> <h2 id="mongoose"><a href="#mongoose" class="header-anchor">#</a> Mongoose</h2> <p><a href="https://mongoosejs.com/docs/index.html" target="_blank" rel="noopener noreferrer">Mongoose 官方文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="koa"><a href="#koa" class="header-anchor">#</a> Koa</h2> <h3 id="常用中间件"><a href="#常用中间件" class="header-anchor">#</a> 常用中间件</h3> <ul><li><a href="https://www.npmjs.com/package/koa" target="_blank" rel="noopener noreferrer">koa<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.npmjs.com/package/koa-router" target="_blank" rel="noopener noreferrer">koa-router<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.npmjs.com/package/koa-body" target="_blank" rel="noopener noreferrer">koa-body<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.npmjs.com/package/@koa/cors" target="_blank" rel="noopener noreferrer">@koa/cors<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.npmjs.com/package/koa-json" target="_blank" rel="noopener noreferrer">koa-json<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.npmjs.com/package/koa-helmet" target="_blank" rel="noopener noreferrer">koa-helmet<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 设置 Http 头保障应用程序安全</li> <li><a href="https://www.npmjs.com/package/koa-combine-routers" target="_blank" rel="noopener noreferrer">koa-combine-routers<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 路由压缩</li> <li><a href="https://www.npmjs.com/package/koa-static" target="_blank" rel="noopener noreferrer">koa-static<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 静态资源</li></ul> <h3 id="热加载"><a href="#热加载" class="header-anchor">#</a> 热加载</h3> <ul><li><a href="https://www.npmjs.com/package/nodemon" target="_blank" rel="noopener noreferrer">nodemon<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="pm2"><a href="#pm2" class="header-anchor">#</a> pm2</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 安装</span>
+<span class="token function">npm</span> <span class="token function">install</span> -g pm2
+<span class="token comment"># Install latest PM2 version</span>
+$ <span class="token function">npm</span> <span class="token function">install</span> pm2@latest -g
+<span class="token comment"># Save process list, exit old PM2 &amp; restore all processes</span>
+$ pm2 update
+
+<span class="token comment"># 运行</span>
+pm2 start app.js
+pm2 start <span class="token function">npm</span> -- run XXX
+pm2 start <span class="token function">npm</span> --watch --name XXX -- run start
+
+<span class="token comment"># 显示进程状态</span>
+pm2 list
+<span class="token comment"># 停止进程</span>
+pm2 stop     <span class="token operator">&lt;</span>app_name<span class="token operator">|</span>namespace<span class="token operator">|</span><span class="token function">id</span><span class="token operator">|</span><span class="token string">'all'</span><span class="token operator">|</span>json_conf<span class="token operator">&gt;</span>
+<span class="token comment"># 重启进程</span>
+pm2 restart  <span class="token operator">&lt;</span>app_name<span class="token operator">|</span>namespace<span class="token operator">|</span><span class="token function">id</span><span class="token operator">|</span><span class="token string">'all'</span><span class="token operator">|</span>json_conf<span class="token operator">&gt;</span>
+<span class="token comment"># 杀死进程</span>
+pm2 delete   <span class="token operator">&lt;</span>app_name<span class="token operator">|</span>namespace<span class="token operator">|</span><span class="token function">id</span><span class="token operator">|</span><span class="token string">'all'</span><span class="token operator">|</span>json_conf<span class="token operator">&gt;</span>
+pm2 describe <span class="token operator">&lt;</span>id<span class="token operator">|</span>app_name<span class="token operator">&gt;</span>
+<span class="token comment"># 监视所有进程</span>
+pm2 monit
+
+pm2 start api.js -i <span class="token operator">&lt;</span>processes<span class="token operator">&gt;</span>
+pm2 reload all
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h3 id="配置文件"><a href="#配置文件" class="header-anchor">#</a> 配置文件</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># https://pm2.keymetrics.io/docs/usage/application-declaration/</span>
+pm2 init
+
+<span class="token comment"># pm2 start pm2.config.js</span>
+module.exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  apps: <span class="token punctuation">[</span><span class="token punctuation">{</span>
+    name: <span class="token string">&quot;app&quot;</span>,
+    script: <span class="token string">&quot;app.js&quot;</span>,
+    cwd: <span class="token string">&quot;./&quot;</span>,
+    args: <span class="token string">&quot;&quot;</span>,
+    watch: true,
+    watch_delay: <span class="token number">1000</span>,
+    ignore_watch: <span class="token punctuation">[</span>
+      <span class="token string">&quot;node_modules&quot;</span>,
+      <span class="token string">&quot;logs&quot;</span>,
+      <span class="token string">&quot;public&quot;</span>
+    <span class="token punctuation">]</span>,
+    watch_options: <span class="token punctuation">{</span>
+      <span class="token string">&quot;followSymlinks&quot;</span><span class="token builtin class-name">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>,
+    exec_mode: <span class="token string">&quot;cluster_mode&quot;</span>,
+    instances: <span class="token number">4</span>,
+    error_file: <span class="token string">&quot;./logs/app-err.log&quot;</span>,
+    out_file: <span class="token string">&quot;./logs/app-out.log&quot;</span>,
+    merge_logs: true,
+    log_date_format: <span class="token string">&quot;YYYY-MM-DD HH:mm:ss&quot;</span>,
+    autorestart: true,
+    env: <span class="token punctuation">{</span>
+      NODE_ENV: <span class="token string">&quot;development&quot;</span>,
+      REMOTE_ADDR: <span class="token string">&quot;&quot;</span>
+    <span class="token punctuation">}</span>,
+    env_production: <span class="token punctuation">{</span>
+      NODE_ENV: <span class="token string">&quot;production&quot;</span>,
+      REMOTE_ADDR: <span class="token string">&quot;&quot;</span>
+    <span class="token punctuation">}</span>,
+    env_test: <span class="token punctuation">{</span>
+      NODE_ENV: <span class="token string">&quot;test&quot;</span>,
+      REMOTE_ADDR: <span class="token string">&quot;&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br></div></div><div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 查看物理CPU个数</span>
+<span class="token function">cat</span> /proc/cpuinfo <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">'physical id'</span> <span class="token operator">|</span> <span class="token function">sort</span><span class="token operator">|</span> <span class="token function">uniq</span> <span class="token operator">|</span> <span class="token function">wc</span> -l
+<span class="token comment"># 查看每个物理CPU中core的核数</span>
+<span class="token function">cat</span> /proc/cpuinfo <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">'cpu cores'</span> <span class="token operator">|</span> <span class="token function">uniq</span>
+<span class="token comment"># 查看逻辑CPU的个数</span>
+<span class="token function">cat</span> /proc/cpuinfo <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">'processor'</span> <span class="token operator">|</span> <span class="token function">wc</span> -l
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="负载均衡"><a href="#负载均衡" class="header-anchor">#</a> 负载均衡</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>pm2 start server.js -i <span class="token punctuation">(</span>number<span class="token operator">|</span>max<span class="token punctuation">)</span>
+
+<span class="token comment"># 开启三个进程运行项目</span>
+pm2 start app.js -i <span class="token number">3</span>
+<span class="token comment"># 根据机器CPU核数，开启对应数目的进程运行项目</span>
+pm2 start app.js -i max
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="日志管理"><a href="#日志管理" class="header-anchor">#</a> 日志管理</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 显示日志</span>
+pm2 logs
+pm2 logs APP-NAME       <span class="token comment"># Display APP-NAME logs</span>
+pm2 logs --json         <span class="token comment"># JSON output</span>
+pm2 logs --format       <span class="token comment"># Formated output</span>
+
+pm2 flush               <span class="token comment"># Flush all logs</span>
+pm2 reloadLogs          <span class="token comment"># Reload all logs</span>
+
+<span class="token comment"># 日志分割</span>
+<span class="token comment"># https://github.com/keymetrics/pm2-logrotate#configure</span>
+pm2 <span class="token function">install</span> pm2-logrotate
+<span class="token comment"># 查看默认配置</span>
+pm2 conf
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h3 id="开机自动启动"><a href="#开机自动启动" class="header-anchor">#</a> 开机自动启动</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># Generate Startup Script</span>
+pm2 startup
+
+<span class="token comment"># Freeze your process list across server restart</span>
+pm2 save
+
+<span class="token comment"># Remove Startup Script</span>
+pm2 unstartup
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="pm2-web"><a href="#pm2-web" class="header-anchor">#</a> pm2-web</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># yum install gcc-c++</span>
+<span class="token comment"># npm install -g node-gyp</span>
+<span class="token function">npm</span> <span class="token function">install</span> -g pm2-web
+pm2-web
+
+pm2-web --config pm2-web-config.json
+// pm2-web-config.json
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;www&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;host&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;localhost&quot;</span>,
+      <span class="token string">&quot;address&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;0.0.0.0&quot;</span>,
+      <span class="token string">&quot;port&quot;</span><span class="token builtin class-name">:</span> <span class="token number">6688</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h3 id="nestjs"><a href="#nestjs" class="header-anchor">#</a> Nestjs</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// pm2 start npm --name &lt;name&gt; -- run start:prod</span>
+pm2 start yarn <span class="token operator">--</span>name nest <span class="token operator">--</span> run start
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/lalifeier/awesome-notes/edit/master/docs/backend/basis/Node/README.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">1/16/2021, 8:05:46 AM</span></div></footer> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.6837fd68.js" defer></script><script src="/assets/js/2.ba37855e.js" defer></script><script src="/assets/js/11.47c17e33.js" defer></script><script src="/assets/js/5.65b8a4d7.js" defer></script>
+  </body>
+</html>
