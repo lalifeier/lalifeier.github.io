@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>介绍 | awesome-notes</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/zrender@4.3.0/dist/zrender.js"></script>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.116.1/build/three.js"></script>
+    <link rel="icon" href="/logo.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="笔记">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.796597b9.css" as="style"><link rel="preload" href="/assets/js/app.a33dd41f.js" as="script"><link rel="preload" href="/assets/js/2.ba37855e.js" as="script"><link rel="preload" href="/assets/js/18.1e8fb4dc.js" as="script"><link rel="preload" href="/assets/js/5.65b8a4d7.js" as="script"><link rel="prefetch" href="/assets/js/10.bf21da98.js"><link rel="prefetch" href="/assets/js/11.47c17e33.js"><link rel="prefetch" href="/assets/js/12.52366a61.js"><link rel="prefetch" href="/assets/js/13.f3d2ea36.js"><link rel="prefetch" href="/assets/js/14.26ad3fbd.js"><link rel="prefetch" href="/assets/js/15.330cca97.js"><link rel="prefetch" href="/assets/js/16.0db907f7.js"><link rel="prefetch" href="/assets/js/17.f4312399.js"><link rel="prefetch" href="/assets/js/19.0567fee3.js"><link rel="prefetch" href="/assets/js/20.cf94cc4d.js"><link rel="prefetch" href="/assets/js/21.5c974e0c.js"><link rel="prefetch" href="/assets/js/22.278aa096.js"><link rel="prefetch" href="/assets/js/23.4d43f959.js"><link rel="prefetch" href="/assets/js/24.011de924.js"><link rel="prefetch" href="/assets/js/25.11cd2df3.js"><link rel="prefetch" href="/assets/js/26.6a2760d5.js"><link rel="prefetch" href="/assets/js/27.04bd79eb.js"><link rel="prefetch" href="/assets/js/28.ad8162cf.js"><link rel="prefetch" href="/assets/js/29.3297f0a3.js"><link rel="prefetch" href="/assets/js/3.8abd6c1c.js"><link rel="prefetch" href="/assets/js/30.e0b71ea8.js"><link rel="prefetch" href="/assets/js/31.3f54ff18.js"><link rel="prefetch" href="/assets/js/32.952dcf3b.js"><link rel="prefetch" href="/assets/js/33.0bda2b2a.js"><link rel="prefetch" href="/assets/js/34.b243bae4.js"><link rel="prefetch" href="/assets/js/35.90ef5354.js"><link rel="prefetch" href="/assets/js/36.c4af5d28.js"><link rel="prefetch" href="/assets/js/37.16931636.js"><link rel="prefetch" href="/assets/js/38.02bc5086.js"><link rel="prefetch" href="/assets/js/39.94e1fa29.js"><link rel="prefetch" href="/assets/js/4.869e2716.js"><link rel="prefetch" href="/assets/js/40.393a2a14.js"><link rel="prefetch" href="/assets/js/41.aec51b9a.js"><link rel="prefetch" href="/assets/js/42.5c15d0e0.js"><link rel="prefetch" href="/assets/js/43.835cc25d.js"><link rel="prefetch" href="/assets/js/44.fcafe4fd.js"><link rel="prefetch" href="/assets/js/45.dba35b69.js"><link rel="prefetch" href="/assets/js/46.1110c8f6.js"><link rel="prefetch" href="/assets/js/47.2aec2adc.js"><link rel="prefetch" href="/assets/js/48.036b30fd.js"><link rel="prefetch" href="/assets/js/6.b6b55724.js"><link rel="prefetch" href="/assets/js/7.5ced0c7d.js"><link rel="prefetch" href="/assets/js/8.448f622f.js"><link rel="prefetch" href="/assets/js/9.3a3dcbf5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.796597b9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">awesome-notes</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础" class="mobile-dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/basis/algorithm/" class="nav-link">
+  数据结构与算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/basis/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/fontend/basis/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/fontend/basis/TypeScript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/note/" class="nav-link">
+  笔记
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/frame/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/fontend/frame/React/" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/data-visualization/" class="nav-link">
+  数据可视化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/basis/Go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/PHP/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Python/" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/database/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/backend/database/Redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/backend/database/MongoDB/" class="nav-link">
+  MongoDB
+</a></li></ul></li><li class="dropdown-item"><h4>
+          中间件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/middleware/RabbitMQ/" class="nav-link">
+  RabbitMQ
+</a></li><li class="dropdown-subitem"><a href="/backend/middleware/HAProxy/" class="nav-link">
+  HAProxy 
+</a></li><li class="dropdown-subitem"><a href="/backend/middleware/Nginx/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Nginx
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tool/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Jenkins/" class="nav-link">
+  Jenkins
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Regular_Expression/" class="nav-link">
+  正则表达式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/system/CentOS/" class="nav-link">
+  CentOS
+</a></li><li class="dropdown-item"><!----> <a href="/system/Ubuntu/" class="nav-link">
+  Ubuntu
+</a></li></ul></div></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  库
+</a></div><div class="nav-item"><a href="/note/" class="nav-link">
+  零星笔记
+</a></div> <a href="https://github.com/lalifeier/awesome-notes" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础" class="mobile-dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/basis/algorithm/" class="nav-link">
+  数据结构与算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/basis/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/fontend/basis/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/fontend/basis/TypeScript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/note/" class="nav-link">
+  笔记
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/frame/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/fontend/frame/React/" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/data-visualization/" class="nav-link">
+  数据可视化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/basis/Go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/PHP/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Python/" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/database/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/backend/database/Redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/backend/database/MongoDB/" class="nav-link">
+  MongoDB
+</a></li></ul></li><li class="dropdown-item"><h4>
+          中间件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/middleware/RabbitMQ/" class="nav-link">
+  RabbitMQ
+</a></li><li class="dropdown-subitem"><a href="/backend/middleware/HAProxy/" class="nav-link">
+  HAProxy 
+</a></li><li class="dropdown-subitem"><a href="/backend/middleware/Nginx/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Nginx
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tool/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Jenkins/" class="nav-link">
+  Jenkins
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Regular_Expression/" class="nav-link">
+  正则表达式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/system/CentOS/" class="nav-link">
+  CentOS
+</a></li><li class="dropdown-item"><!----> <a href="/system/Ubuntu/" class="nav-link">
+  Ubuntu
+</a></li></ul></div></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  库
+</a></div><div class="nav-item"><a href="/note/" class="nav-link">
+  零星笔记
+</a></div> <a href="https://github.com/lalifeier/awesome-notes" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>介绍</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/backend/middleware/Nginx/#安装" class="sidebar-link">安装</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/middleware/Nginx/#源码安装" class="sidebar-link">源码安装</a></li><li class="sidebar-sub-header"><a href="/backend/middleware/Nginx/#centos7" class="sidebar-link">Centos7</a></li><li class="sidebar-sub-header"><a href="/backend/middleware/Nginx/#docker" class="sidebar-link">Docker</a></li></ul></li><li><a href="/backend/middleware/Nginx/#常用命令" class="sidebar-link">常用命令</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/backend/middleware/Nginx/#热部署" class="sidebar-link">热部署</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/backend/middleware/Nginx/#日志切割" class="sidebar-link">日志切割</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/backend/middleware/Nginx/#静态资源-web-服务器" class="sidebar-link">静态资源 Web 服务器</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/backend/middleware/Nginx/#反向代理-缓存" class="sidebar-link">反向代理 缓存</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/middleware/Nginx/#goaccess-可视化实时监控-access-日志" class="sidebar-link">GoAccess 可视化实时监控 access 日志</a></li></ul></li><li><a href="/backend/middleware/Nginx/#最佳实践" class="sidebar-link">最佳实践</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/backend/middleware/Nginx/#let-s-encrypt-ssl-tls" class="sidebar-link">Let’s Encrypt SSL/TLS</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="介绍"><a href="#介绍" class="header-anchor">#</a> 介绍</h1> <h4 id="nginx"><a href="#nginx" class="header-anchor">#</a> Nginx</h4> <h2 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h2> <h3 id="源码安装"><a href="#源码安装" class="header-anchor">#</a> 源码安装</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>yum -y <span class="token function">install</span> gcc zlib zlib-devel pcre-devel openssl openssl-devel
+
+<span class="token function">wget</span> https://nginx.org/download/nginx-1.20.1.tar.gz
+<span class="token function">tar</span> -xvf nginx-1.20.1.tar.gz
+<span class="token builtin class-name">cd</span>  nginx-1.20.1
+./configure --prefix<span class="token operator">=</span>/usr/local/nginx
+<span class="token comment"># sudo apt-get install -y libgd-dev</span>
+<span class="token comment"># ./configure --prefix=/etc/nginx --with-http_image_filter_module</span>
+<span class="token function">make</span>
+<span class="token function">make</span> <span class="token function">install</span>
+
+<span class="token comment"># 创建软连接</span>
+<span class="token function">ln</span> -s /usr/local/nginx/sbin/nginx /usr/bin/nginx
+
+<span class="token comment"># 创建nginx.service服务文件</span>
+<span class="token comment"># vim /lib/systemd/system/nginx.service</span>
+<span class="token punctuation">[</span>Unit<span class="token punctuation">]</span>
+<span class="token assign-left variable">Description</span><span class="token operator">=</span>nginx
+<span class="token assign-left variable">After</span><span class="token operator">=</span>network.target
+
+<span class="token punctuation">[</span>Service<span class="token punctuation">]</span>
+<span class="token assign-left variable">Type</span><span class="token operator">=</span>forking
+<span class="token assign-left variable">ExecStart</span><span class="token operator">=</span>/usr/local/nginx/sbin/nginx
+<span class="token assign-left variable">ExecReload</span><span class="token operator">=</span>/usr/local/nginx/sbin/nginx -s reload
+<span class="token assign-left variable">ExecStop</span><span class="token operator">=</span>/usr/local/nginx/sbin/nginx -s quit
+<span class="token assign-left variable">PrivateTmp</span><span class="token operator">=</span>true
+
+<span class="token punctuation">[</span>Install<span class="token punctuation">]</span>
+<span class="token assign-left variable">WantedBy</span><span class="token operator">=</span>multi-user.target
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><h3 id="centos7"><a href="#centos7" class="header-anchor">#</a> Centos7</h3> <ul><li>添加 Centos7 Nginx yum 资源库</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">rpm</span> -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>安装</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>yum <span class="token function">install</span> nginx
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>启动</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>systemctl start nginx
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>停止</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>systemctl stop nginx
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>重载</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>systemctl reload nginx
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="docker"><a href="#docker" class="header-anchor">#</a> Docker</h3> <h4 id="拉取镜像"><a href="#拉取镜像" class="header-anchor">#</a> 拉取镜像</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>docker pull nginx:latest
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="运行-nginx"><a href="#运行-nginx" class="header-anchor">#</a> 运行 Nginx</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">mkdir</span> -p /home/docker/nginx/<span class="token punctuation">{</span>conf,logs,html<span class="token punctuation">}</span>
+<span class="token builtin class-name">cd</span> /home/docker/nginx
+
+docker run --name tmp-nginx-container -d nginx
+docker <span class="token function">cp</span> tmp-nginx-container:/etc/nginx/nginx.conf <span class="token environment constant">$PWD</span>/conf/nginx.conf
+docker <span class="token function">cp</span> tmp-nginx-container:/etc/nginx/conf.d <span class="token environment constant">$PWD</span>/conf/conf.d
+docker <span class="token function">rm</span> -f tmp-nginx-container
+
+docker run -d --privileged<span class="token operator">=</span>true --restart<span class="token operator">=</span>always -p <span class="token number">80</span>:80 -p <span class="token number">443</span>:443 -v <span class="token environment constant">$PWD</span>/conf/nginx.conf:/etc/nginx/nginx.conf -v <span class="token environment constant">$PWD</span>/conf/conf.d:/etc/nginx/conf.d -v <span class="token environment constant">$PWD</span>/logs:/var/log/nginx -v <span class="token environment constant">$PWD</span>/html:/usr/share/nginx/html --name nginx nginx:latest
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="常用命令"><a href="#常用命令" class="header-anchor">#</a> 常用命令</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 立刻停止服务</span>
+nginx -s stop
+<span class="token comment"># 优雅的停止服务</span>
+nginx -s quit
+<span class="token comment"># 重载配置文件</span>
+nginx -s reload
+<span class="token comment"># 重新开始记录日志信息</span>
+nginx -s reopen
+<span class="token comment"># 测试配置文件是否有语法错误</span>
+nginx -t
+nginx -T
+<span class="token comment"># nginx版本信息</span>
+nginx -v
+<span class="token comment"># nginx编译信息</span>
+nginx -V
+<span class="token comment"># 使用指定的配置文件</span>
+nginx -c
+<span class="token comment"># 指定配置指令</span>
+nginx -g
+<span class="token comment"># 指定运行目录</span>
+nginx -p
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><div class="language-shell line-numbers-mode"><pre class="language-shell"><code>systemctl start nginx    <span class="token comment"># 启动 Nginx</span>
+systemctl stop nginx     <span class="token comment"># 停止 Nginx</span>
+systemctl restart nginx  <span class="token comment"># 重启 Nginx</span>
+systemctl reload nginx   <span class="token comment"># 重新加载 Nginx，用于修改配置后</span>
+systemctl <span class="token builtin class-name">enable</span> nginx   <span class="token comment"># 设置开机启动 Nginx</span>
+systemctl disable nginx  <span class="token comment"># 关闭开机启动 Nginx</span>
+systemctl status nginx   <span class="token comment"># 查看 Nginx 运行状态</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="热部署"><a href="#热部署" class="header-anchor">#</a> 热部署</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 备份旧版本的 nginx 二进制文件</span>
+<span class="token function">mv</span> /usr/local/nginx/sbin/nginx  /usr/local/nginx/sbin/nginx.old
+<span class="token comment"># 替换旧的 nginx 的执行程序</span>
+<span class="token function">cp</span> -r /usr/local/nginx-1.20.1/objs/nginx /usr/local/nginx/sbin/ -f
+<span class="token function">ps</span> -ef <span class="token operator">|</span> <span class="token function">grep</span> nginx
+<span class="token comment"># 发送 USR2 信号给旧版本主进程号,使 nginx 的旧版本停止接收请求，用 nginx 新版本接替</span>
+<span class="token function">kill</span> -USR2 <span class="token punctuation">[</span>PID<span class="token punctuation">]</span>
+<span class="token comment"># 发送 WINCH 信号到旧的主进程，它会通知旧的 worker 进程优雅的关闭，然后退出</span>
+<span class="token function">kill</span> -WINCH <span class="token punctuation">[</span>PID<span class="token punctuation">]</span>
+<span class="token comment"># 发送 QUIT 信号到旧的主进程，它会退出保留的 master 进程</span>
+<span class="token function">kill</span> -QUIT <span class="token punctuation">[</span>PID<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="日志切割"><a href="#日志切割" class="header-anchor">#</a> 日志切割</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 备份原日志</span>
+<span class="token function">mv</span> error.log old_error.log
+<span class="token comment"># 日志切割</span>
+/usr/local/nginx/sbin/nginx -s reopen
+
+<span class="token comment"># 脚本</span>
+<span class="token comment">#!/bin/bash</span>
+<span class="token assign-left variable">LOGS_PATH</span><span class="token operator">=</span>/usr/local/nginx/logs/history
+<span class="token assign-left variable">CUR_LOGS_PATH</span><span class="token operator">=</span>/usr/local/nginx/logs
+<span class="token assign-left variable">YESTERDAY</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">date</span> -d <span class="token string">&quot;yesterday&quot;</span> +%Y-%m-%d<span class="token variable">)</span></span>
+<span class="token function">mv</span> <span class="token variable">${CUR_LOGS_PATH}</span>/access.log <span class="token variable">${LOGS_PATH}</span>/old_access_<span class="token variable">${YESTERDAY}</span>.log
+<span class="token function">mv</span> <span class="token variable">${CUR_LOGS_PATH}</span>/error.log <span class="token variable">${LOGS_PATH}</span>/old_error_<span class="token variable">${YESTERDAY}</span>.log
+<span class="token comment">## 向 NGINX 主进程发送 USR1 信号。USR1 信号是重新打开日志文件</span>
+<span class="token function">kill</span> -USR1 <span class="token variable"><span class="token variable">$(</span><span class="token function">cat</span> /usr/local/nginx/logs/nginx.pid<span class="token variable">)</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h2 id="静态资源-web-服务器"><a href="#静态资源-web-服务器" class="header-anchor">#</a> 静态资源 Web 服务器</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>
+
+server <span class="token punctuation">{</span>
+    listen <span class="token number">80</span><span class="token punctuation">;</span>
+    server_name localhost<span class="token punctuation">;</span>
+
+    log_format  main  <span class="token string">'<span class="token variable">$remote_addr</span> - <span class="token variable">$remote_user</span> [<span class="token variable">$time_local</span>] &quot;<span class="token variable">$request</span>&quot; '</span>
+                      <span class="token string">'<span class="token variable">$status</span> <span class="token variable">$body_bytes_sent</span> &quot;<span class="token variable">$http_referer</span>&quot; '</span>
+                      <span class="token string">'&quot;<span class="token variable">$http_user_agent</span>&quot; &quot;<span class="token variable">$http_x_forwarded_for</span>&quot;'</span><span class="token punctuation">;</span>
+
+    access_log   logs/access.log  main<span class="token punctuation">;</span>
+
+    <span class="token function">gzip</span> on<span class="token punctuation">;</span>
+    gzip_min_length 1k<span class="token punctuation">;</span>
+    gzip_comp_level <span class="token number">9</span><span class="token punctuation">;</span>
+    gzip_types text/plain text/css text/javascript application/json application/javascript application/x-javascript application/xml<span class="token punctuation">;</span>
+    gzip_vary on<span class="token punctuation">;</span>
+    gzip_disable <span class="token string">&quot;MSIE [1-6]\.&quot;</span><span class="token punctuation">;</span>
+
+    location / <span class="token punctuation">{</span>
+      <span class="token comment"># https://nginx.org/en/docs/http/ngx_http_core_module.html#alias</span>
+      <span class="token builtin class-name">alias</span> /usr/share/nginx/html
+
+      <span class="token comment"># http://nginx.org/en/docs/http/ngx_http_autoindex_module.html</span>
+      <span class="token comment"># autoindex on;</span>
+
+      <span class="token comment"># https://nginx.org/en/docs/http/ngx_http_core_module.html#limit_rate</span>
+      <span class="token builtin class-name">set</span> <span class="token variable">$limit_rate</span> 4k<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><h2 id="反向代理-缓存"><a href="#反向代理-缓存" class="header-anchor">#</a> 反向代理 缓存</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>proxy_cache_path /tmp/nginx/proxy_cache <span class="token assign-left variable">levels</span><span class="token operator">=</span><span class="token number">1</span>:2 <span class="token assign-left variable">keys_zone</span><span class="token operator">=</span>cache_zone:10m <span class="token assign-left variable">max_size</span><span class="token operator">=</span>50g <span class="token assign-left variable">inactive</span><span class="token operator">=</span>7d <span class="token assign-left variable">use_temp_path</span><span class="token operator">=</span>off<span class="token punctuation">;</span>
+
+
+upstream <span class="token builtin class-name">local</span> <span class="token punctuation">{</span>
+  server <span class="token number">127.0</span>.0.1:8080
+<span class="token punctuation">}</span>
+
+server <span class="token punctuation">{</span>
+    listen <span class="token number">80</span><span class="token punctuation">;</span>
+    server_name localhost<span class="token punctuation">;</span>
+
+    location / <span class="token punctuation">{</span>
+      proxy_set_header   Host <span class="token variable">$host</span><span class="token punctuation">;</span>
+      proxy_set_header X-Real-IP <span class="token variable">$remote_addr</span><span class="token punctuation">;</span>
+      proxy_set_header X-Forwarded-For <span class="token variable">$proxy_add_x_forwarded_for</span><span class="token punctuation">;</span>
+
+      proxy_pass http://local<span class="token punctuation">;</span>
+
+      proxy_buffering on<span class="token punctuation">;</span>
+      proxy_cache cache_zone<span class="token punctuation">;</span>
+      proxy_cache_bypass <span class="token variable">$http_pragma</span> <span class="token variable">$http_authorization</span><span class="token punctuation">;</span>
+      proxy_cache_key <span class="token variable">$uri</span><span class="token variable">$is_args</span><span class="token variable">$args</span><span class="token punctuation">;</span>
+      proxy_cache_valid <span class="token number">200</span> <span class="token number">304</span> <span class="token number">301</span> <span class="token number">302</span> 7d<span class="token punctuation">;</span>
+      proxy_cache_valid <span class="token number">404</span> 1m<span class="token punctuation">;</span>
+      proxy_cache_valid any 5m<span class="token punctuation">;</span>
+      proxy_cache_lock on<span class="token punctuation">;</span>
+      proxy_cache_use_stale error <span class="token function">timeout</span> invalid_header updating http_500 http_502 http_503 http_504<span class="token punctuation">;</span>
+      proxy_cache_revalidate on<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><h3 id="goaccess-可视化实时监控-access-日志"><a href="#goaccess-可视化实时监控-access-日志" class="header-anchor">#</a> GoAccess 可视化实时监控 access 日志</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 安装</span>
+<span class="token function">apt-get</span> <span class="token function">install</span> goaccess
+
+<span class="token comment"># https://goaccess.io/get-started</span>
+
+<span class="token comment"># Terminal Output</span>
+goaccess access.log -c
+
+<span class="token comment"># Static HTML Output</span>
+goaccess access.log -o report.html --log-format<span class="token operator">=</span>COMBINED
+
+<span class="token comment"># Real-Time HTML Output</span>
+goaccess access.log -o /var/www/html/report.html --log-format<span class="token operator">=</span>COMBINED --real-time-html
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="最佳实践"><a href="#最佳实践" class="header-anchor">#</a> 最佳实践</h2> <div class="language-conf line-numbers-mode"><pre class="language-text"><code>worker_processes 16;
+
+events {
+  use epoll;
+  worker_connections 10240;
+}
+
+http {
+  include mime.types;
+  default_type application/octet-stream;
+  sendfile on;
+  keepalive_timeout 65;
+
+  # 不发送Nginx版本号
+  server_tokens off;
+
+  # 不允许浏览器在frame或iframe中显示页面
+  add_header X-Frame-Options SAMEORIGIN;
+
+  # 禁用某些浏览器的 content-type 探测
+  add_header X-Content-Type-Options nosniff;
+
+  # 启用大部分现代浏览器内置的 the Cross-site scripting (XSS) 过滤
+  add_header X-XSS-Protection &quot;1; mode=block&quot;;
+
+  # 启用 Content Security Policy (CSP)
+  # add_header Content-Security-Policy &quot;default-src 'self' http: https: data: blob: 'unsafe-inline'&quot; always;
+
+  log_format main '$remote_addr - $remote_user [$time_local] &quot;$request&quot; '
+  '$status $body_bytes_sent &quot;$http_referer&quot; '
+  '&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;';
+
+  access_log logs/access.log main;
+
+  # 开启gzip
+  gzip on;
+  gzip_min_length 1k;
+  gzip_comp_level 9;
+  gzip_types text/plain text/css text/javascript application/json application/javascript application/x-javascript application/xml;
+  gzip_vary on;
+  gzip_disable &quot;MSIE [1-6]\.&quot;;
+
+
+  # upstream backend {
+  #   server 127.0.0.1:8081 weight=1;
+  #   server 127.0.0.1:8082 weight=2;
+  #   server 127.0.0.1:8083 weight=3;
+  # }
+  proxy_cache_path /tmp/nginx/proxy_cache levels=1:2 keys_zone=cache_zone:10m max_size=50g inactive=7d use_temp_path=off;
+
+  server {
+    listen 80;
+    server_name localhost;
+
+    root /var/www/app;
+
+    # HTTP 请求转发到 HTTPS
+    # if ($scheme != 'https') {
+    #     return 301 https://$host$request_uri;
+    # }
+    location / {
+      if ($request_method = 'OPTIONS') {
+        add_header 'Access-Control-Allow-Origin' '*';
+        add_header 'Access-Control-Allow-Credentials' 'true';
+        add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
+
+        add_header 'Access-Control-Allow-Headers' 'DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type';
+
+        add_header 'Access-Control-Max-Age' 1728000;
+        add_header 'Content-Type' 'text/plain charset=UTF-8';
+        add_header 'Content-Length' 0;
+        return 204;
+      }
+      if ($request_method = 'POST') {
+        add_header 'Access-Control-Allow-Origin' '*';
+        add_header 'Access-Control-Allow-Credentials' 'true';
+        add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
+        add_header 'Access-Control-Allow-Headers' 'DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type';
+      }
+      if ($request_method = 'GET') {
+        add_header 'Access-Control-Allow-Origin' '*';
+        add_header 'Access-Control-Allow-Credentials' 'true';
+        add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
+        add_header 'Access-Control-Allow-Headers' 'DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type';
+      }
+
+
+      proxy_set_header Host $host;
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+      # IP访问限制
+      # allow 127.0.0.1;
+      # deny all;
+
+      # proxy_pass http://backend;
+    }
+
+    # 图片防盗链
+    # location ~* \.(jpg|jpeg|gif|png|svg|webp)$ {
+    #   valid_referers none blocked 127.0.0.1;
+    #   if ($invalid_referer) {
+    #     return 403;
+    #   }
+    # }
+
+    location ~* /(.*\.(jpg|jpeg|gif|png|svg|webp))$ {
+      add_header X-Pownered &quot;nginx_image_filter&quot;;
+      add_header X-Cache-Status $upstream_cache_status;
+
+      set $image_path $1;
+      set $width -;
+      set $height -;
+      if ( $arg_width != &quot;&quot; ) {
+        set $width $arg_width;
+      }
+      if ( $arg_height != &quot;&quot; ) {
+        set $height $arg_height;
+      }
+
+      set $image_uri image-resize/$image_path?width=$width&amp;height=$height;
+      proxy_pass http://127.0.0.1:8888/$image_uri;
+
+      proxy_buffering on;
+      proxy_cache cache_zone;
+      proxy_cache_bypass $http_pragma $http_authorization;
+      proxy_cache_key $uri$is_args$args;
+      proxy_cache_valid 200 304 301 302 7d;
+      proxy_cache_valid 404 1m;
+      proxy_cache_valid any 5m;
+      proxy_cache_lock on;
+      proxy_cache_use_stale error timeout invalid_header updating http_500 http_502 http_503 http_504;
+      proxy_cache_revalidate on;
+    }
+
+    # 主动清理缓存
+    # location /purge(/.*) {
+    #   allow 127.0.0.0/8;
+    #   deny all;
+    #   proxy_cache_purge cache_zone $host$1;
+    # }
+  }
+
+  server {
+    listen 8888;
+    server_name localhost;
+    access_log off;
+
+    root /var/www/app;
+
+    location /image-resize {
+      rewrite /(image-resize)/(.*) /$2 break;
+
+      image_filter resize $arg_width $arg_height;
+      image_filter_jpeg_quality 75;
+      image_filter_buffer 20M;
+      image_filter_interlace on;
+
+      allow 127.0.0.0/8;
+      deny all;
+    }
+
+    location /image-crop {
+      rewrite /(image-crop)/(.*) /$2 break;
+
+      image_filter crop $arg_width $arg_height;
+      image_filter_jpeg_quality 75;
+      image_filter_buffer 20M;
+      image_filter_interlace on;
+
+      allow 127.0.0.0/8;
+      deny all;
+    }
+  }
+
+
+  # include /usr/local/nginx/conf/conf.d/*.conf;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br></div></div><h2 id="let-s-encrypt-ssl-tls"><a href="#let-s-encrypt-ssl-tls" class="header-anchor">#</a> Let’s Encrypt SSL/TLS</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># Download the Let’s Encrypt Client</span>
+<span class="token function">apt-get</span> update
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> certbot
+<span class="token function">apt-get</span> <span class="token function">install</span> python-certbot-nginx
+
+<span class="token comment"># Set Up NGINX</span>
+<span class="token comment"># /etc/nginx/conf.d/domain‑name.conf</span>
+server <span class="token punctuation">{</span>
+    listen <span class="token number">80</span> default_server<span class="token punctuation">;</span>
+    listen <span class="token punctuation">[</span>::<span class="token punctuation">]</span>:80 default_server<span class="token punctuation">;</span>
+    root /var/www/html<span class="token punctuation">;</span>
+    server_name example.com www.example.com<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+nginx -t <span class="token operator">&amp;&amp;</span> nginx -s reload
+
+<span class="token comment"># Obtain the SSL/TLS Certificate</span>
+<span class="token function">sudo</span> certbot --nginx -d example.com -d www.example.com
+
+<span class="token comment">#  domain‑name.conf</span>
+server <span class="token punctuation">{</span>
+    listen <span class="token number">80</span> default_server<span class="token punctuation">;</span>
+    listen <span class="token punctuation">[</span>::<span class="token punctuation">]</span>:80 default_server<span class="token punctuation">;</span>
+    root /var/www/html<span class="token punctuation">;</span>
+    server_name  example.com www.example.com<span class="token punctuation">;</span>
+
+    listen <span class="token number">443</span> ssl<span class="token punctuation">;</span> <span class="token comment"># managed by Certbot</span>
+
+    <span class="token comment"># RSA certificate</span>
+    ssl_certificate /etc/letsencrypt/live/example.com/fullchain.pem<span class="token punctuation">;</span> <span class="token comment"># managed by Certbot</span>
+    ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem<span class="token punctuation">;</span> <span class="token comment"># managed by Certbot</span>
+
+    include /etc/letsencrypt/options-ssl-nginx.conf<span class="token punctuation">;</span> <span class="token comment"># managed by Certbot</span>
+
+    <span class="token comment"># Redirect non-https traffic to https</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$scheme</span> <span class="token operator">!=</span> <span class="token string">&quot;https&quot;</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token builtin class-name">return</span> <span class="token number">301</span> https://<span class="token variable">$host</span><span class="token variable">$request_uri</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token comment"># managed by Certbot</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment"># Automatically Renew Let’s Encrypt Certificates</span>
+<span class="token function">crontab</span> -e
+<span class="token number">0</span> <span class="token number">12</span> * * * /usr/bin/certbot renew --quiet
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/lalifeier/awesome-notes/edit/master/docs/backend/middleware/Nginx/README.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">8/7/2021, 1:44:46 PM</span></div></footer> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.a33dd41f.js" defer></script><script src="/assets/js/2.ba37855e.js" defer></script><script src="/assets/js/18.1e8fb4dc.js" defer></script><script src="/assets/js/5.65b8a4d7.js" defer></script>
+  </body>
+</html>
