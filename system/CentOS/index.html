@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>介绍 | awesome-notes</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/zrender@4.3.0/dist/zrender.js"></script>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.116.1/build/three.js"></script>
+    <link rel="icon" href="/logo.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="笔记">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.796597b9.css" as="style"><link rel="preload" href="/assets/js/app.baafc3f5.js" as="script"><link rel="preload" href="/assets/js/2.ba37855e.js" as="script"><link rel="preload" href="/assets/js/43.f31e9090.js" as="script"><link rel="preload" href="/assets/js/5.65b8a4d7.js" as="script"><link rel="prefetch" href="/assets/js/10.bf21da98.js"><link rel="prefetch" href="/assets/js/11.47c17e33.js"><link rel="prefetch" href="/assets/js/12.52366a61.js"><link rel="prefetch" href="/assets/js/13.f3d2ea36.js"><link rel="prefetch" href="/assets/js/14.5f08f377.js"><link rel="prefetch" href="/assets/js/15.02117dd4.js"><link rel="prefetch" href="/assets/js/16.d3414bbc.js"><link rel="prefetch" href="/assets/js/17.52020ebf.js"><link rel="prefetch" href="/assets/js/18.b4a331ac.js"><link rel="prefetch" href="/assets/js/19.23266a33.js"><link rel="prefetch" href="/assets/js/20.f0ccc7c4.js"><link rel="prefetch" href="/assets/js/21.456a6de7.js"><link rel="prefetch" href="/assets/js/22.62ae56b5.js"><link rel="prefetch" href="/assets/js/23.67d1799c.js"><link rel="prefetch" href="/assets/js/24.49192a09.js"><link rel="prefetch" href="/assets/js/25.50207c7e.js"><link rel="prefetch" href="/assets/js/26.d1c4b7bb.js"><link rel="prefetch" href="/assets/js/27.69898ab5.js"><link rel="prefetch" href="/assets/js/28.4721f09a.js"><link rel="prefetch" href="/assets/js/29.16603d78.js"><link rel="prefetch" href="/assets/js/3.fd488525.js"><link rel="prefetch" href="/assets/js/30.582dd376.js"><link rel="prefetch" href="/assets/js/31.b8c29687.js"><link rel="prefetch" href="/assets/js/32.9de6c571.js"><link rel="prefetch" href="/assets/js/33.c9aba941.js"><link rel="prefetch" href="/assets/js/34.f89114c5.js"><link rel="prefetch" href="/assets/js/35.58ebbda0.js"><link rel="prefetch" href="/assets/js/36.c76d26c2.js"><link rel="prefetch" href="/assets/js/37.cf474d91.js"><link rel="prefetch" href="/assets/js/38.6328c41e.js"><link rel="prefetch" href="/assets/js/39.90bc51b3.js"><link rel="prefetch" href="/assets/js/4.869e2716.js"><link rel="prefetch" href="/assets/js/40.f4396e8d.js"><link rel="prefetch" href="/assets/js/41.e0411c2e.js"><link rel="prefetch" href="/assets/js/42.c0191389.js"><link rel="prefetch" href="/assets/js/44.d40b537a.js"><link rel="prefetch" href="/assets/js/45.f55b261f.js"><link rel="prefetch" href="/assets/js/46.2e9c64aa.js"><link rel="prefetch" href="/assets/js/47.ebbdcc44.js"><link rel="prefetch" href="/assets/js/48.3f01aafa.js"><link rel="prefetch" href="/assets/js/49.7a475f68.js"><link rel="prefetch" href="/assets/js/50.f003a4c3.js"><link rel="prefetch" href="/assets/js/6.b6b55724.js"><link rel="prefetch" href="/assets/js/7.5ced0c7d.js"><link rel="prefetch" href="/assets/js/8.448f622f.js"><link rel="prefetch" href="/assets/js/9.3a3dcbf5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.796597b9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">awesome-notes</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础" class="mobile-dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/basis/algorithm/" class="nav-link">
+  数据结构与算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/basis/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/fontend/basis/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/fontend/basis/TypeScript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/note/" class="nav-link">
+  笔记
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/frame/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/fontend/frame/React/" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/data-visualization/" class="nav-link">
+  数据可视化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/basis/Go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/PHP/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Python/" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/database/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/backend/database/Redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/backend/database/MongoDB/" class="nav-link">
+  MongoDB
+</a></li></ul></li><li class="dropdown-item"><h4>
+          中间件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/middleware/RabbitMQ/" class="nav-link">
+  RabbitMQ
+</a></li><li class="dropdown-subitem"><a href="/backend/middleware/HAProxy/" class="nav-link">
+  HAProxy 
+</a></li><li class="dropdown-subitem"><a href="/backend/middleware/Nginx/" class="nav-link">
+  Nginx
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tool/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Jenkins/" class="nav-link">
+  Jenkins
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Regular_Expression/" class="nav-link">
+  正则表达式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/system/CentOS/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  CentOS
+</a></li><li class="dropdown-item"><!----> <a href="/system/Ubuntu/" class="nav-link">
+  Ubuntu
+</a></li></ul></div></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  库
+</a></div><div class="nav-item"><a href="/note/" class="nav-link">
+  零星笔记
+</a></div> <a href="https://github.com/lalifeier/awesome-notes" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础" class="mobile-dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/basis/algorithm/" class="nav-link">
+  数据结构与算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/basis/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/fontend/basis/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/fontend/basis/TypeScript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/note/" class="nav-link">
+  笔记
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/frame/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/fontend/frame/React/" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/data-visualization/" class="nav-link">
+  数据可视化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/basis/Go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/PHP/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Python/" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/database/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/backend/database/Redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/backend/database/MongoDB/" class="nav-link">
+  MongoDB
+</a></li></ul></li><li class="dropdown-item"><h4>
+          中间件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/middleware/RabbitMQ/" class="nav-link">
+  RabbitMQ
+</a></li><li class="dropdown-subitem"><a href="/backend/middleware/HAProxy/" class="nav-link">
+  HAProxy 
+</a></li><li class="dropdown-subitem"><a href="/backend/middleware/Nginx/" class="nav-link">
+  Nginx
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tool/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Jenkins/" class="nav-link">
+  Jenkins
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Regular_Expression/" class="nav-link">
+  正则表达式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/system/CentOS/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  CentOS
+</a></li><li class="dropdown-item"><!----> <a href="/system/Ubuntu/" class="nav-link">
+  Ubuntu
+</a></li></ul></div></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  库
+</a></div><div class="nav-item"><a href="/note/" class="nav-link">
+  零星笔记
+</a></div> <a href="https://github.com/lalifeier/awesome-notes" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>介绍</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/system/CentOS/#介绍" class="sidebar-link">介绍</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/system/CentOS/#替换默认源" class="sidebar-link">替换默认源</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/system/CentOS/#安装软件" class="sidebar-link">安装软件</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/system/CentOS/#防火墙" class="sidebar-link">防火墙</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/system/CentOS/#踩坑" class="sidebar-link">踩坑</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="介绍"><a href="#介绍" class="header-anchor">#</a> 介绍</h2> <h4 id="centos"><a href="#centos" class="header-anchor">#</a> Centos</h4> <h2 id="替换默认源"><a href="#替换默认源" class="header-anchor">#</a> 替换默认源</h2> <ul><li>备份</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">mv</span> /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>下载新的 CentOS-Base.repo 到 /etc/yum.repos.d/</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">wget</span> -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>生成缓存</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>yum makecache
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="参考"><a href="#参考" class="header-anchor">#</a> 参考:</h4> <ul><li><a href="https://developer.aliyun.com/mirror/centos" target="_blank" rel="noopener noreferrer">https://developer.aliyun.com/mirror/centos<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul> <h2 id="安装软件"><a href="#安装软件" class="header-anchor">#</a> 安装软件</h2> <ul><li>常用依赖</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>yum <span class="token function">install</span> gcc glibc-headers gcc-c++ openssl openssl-devel
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>常用软件</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>yum <span class="token function">install</span> <span class="token function">wget</span> net-tools <span class="token function">vim</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>selinux 关闭</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#临时修改selinux</span>
+setenforce <span class="token number">0</span>
+<span class="token comment">#关闭selinux 修改为SELINUX=disable</span>
+<span class="token function">vim</span> /etc/selinux/config
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="防火墙"><a href="#防火墙" class="header-anchor">#</a> 防火墙</h2> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#安装</span>
+yum <span class="token function">install</span> firewalld
+<span class="token comment">#启动</span>
+systemctl start firewalld
+<span class="token comment">#停止</span>
+systemctl stop firewalld
+<span class="token comment">#检查状态</span>
+systemctl status firewalld
+<span class="token comment">#自启动</span>
+systemctl <span class="token builtin class-name">enable</span> firewalld
+<span class="token comment">#禁止自启动</span>
+systemctl disable firewalld
+
+<span class="token comment">#开启服务</span>
+firewall-cmd --permanent --zone<span class="token operator">=</span>public --add-service<span class="token operator">=</span>https
+<span class="token comment">#开启端口</span>
+firewall-cmd --permanent --zone<span class="token operator">=</span>public --add-port<span class="token operator">=</span><span class="token number">8080</span>-8081/tcp
+<span class="token comment">#删除服务</span>
+firewall-cmd --permanent --remove-service<span class="token operator">=</span>https
+<span class="token comment">#删除端口</span>
+firewall-cmd --permanent --remove-port<span class="token operator">=</span><span class="token number">8080</span>-8081/tcp
+
+<span class="token comment">#查询服务的启动状态</span>
+firewall-cmd --query-service <span class="token function">ssh</span>
+<span class="token comment">#加入端口</span>
+firewall-cmd --add-port<span class="token operator">=</span><span class="token number">8080</span>/tcp
+<span class="token comment">#更新防火墙规则</span>
+firewall-cmd --reload
+
+<span class="token comment">#查看开启的端口</span>
+firewall-cmd --list-ports
+<span class="token comment">#查看开启的服务</span>
+firewall-cmd --list-services
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><h2 id="踩坑"><a href="#踩坑" class="header-anchor">#</a> 踩坑</h2> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>shell 脚本执行错误 $'\r':command not found</p> <p>存现这种错误是因为 编写的 shell 脚本是在 win 下编写的，每行结尾是\r\n 的 Unix 结果行是\n，所以在 Linux 下运行脚本 会任务\r 是一个字符，所以运行错误，需要把文件转换下</p></div> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>yum <span class="token function">install</span> dos2unix
+dos2unix 脚本名
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/lalifeier/awesome-notes/edit/master/docs/system/CentOS/README.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">10/28/2020, 4:01:00 PM</span></div></footer> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.baafc3f5.js" defer></script><script src="/assets/js/2.ba37855e.js" defer></script><script src="/assets/js/43.f31e9090.js" defer></script><script src="/assets/js/5.65b8a4d7.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>介绍 | awesome-notes</title>
+    <meta name="generator" content="VuePress 1.8.0">
+    <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/zrender@4.3.0/dist/zrender.js"></script>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.116.1/build/three.js"></script>
+    <link rel="icon" href="/logo.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="笔记">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.796597b9.css" as="style"><link rel="preload" href="/assets/js/app.baafc3f5.js" as="script"><link rel="preload" href="/assets/js/2.ba37855e.js" as="script"><link rel="preload" href="/assets/js/20.f0ccc7c4.js" as="script"><link rel="preload" href="/assets/js/5.65b8a4d7.js" as="script"><link rel="prefetch" href="/assets/js/10.bf21da98.js"><link rel="prefetch" href="/assets/js/11.47c17e33.js"><link rel="prefetch" href="/assets/js/12.52366a61.js"><link rel="prefetch" href="/assets/js/13.f3d2ea36.js"><link rel="prefetch" href="/assets/js/14.5f08f377.js"><link rel="prefetch" href="/assets/js/15.02117dd4.js"><link rel="prefetch" href="/assets/js/16.d3414bbc.js"><link rel="prefetch" href="/assets/js/17.52020ebf.js"><link rel="prefetch" href="/assets/js/18.b4a331ac.js"><link rel="prefetch" href="/assets/js/19.23266a33.js"><link rel="prefetch" href="/assets/js/21.456a6de7.js"><link rel="prefetch" href="/assets/js/22.62ae56b5.js"><link rel="prefetch" href="/assets/js/23.67d1799c.js"><link rel="prefetch" href="/assets/js/24.49192a09.js"><link rel="prefetch" href="/assets/js/25.50207c7e.js"><link rel="prefetch" href="/assets/js/26.d1c4b7bb.js"><link rel="prefetch" href="/assets/js/27.69898ab5.js"><link rel="prefetch" href="/assets/js/28.4721f09a.js"><link rel="prefetch" href="/assets/js/29.16603d78.js"><link rel="prefetch" href="/assets/js/3.fd488525.js"><link rel="prefetch" href="/assets/js/30.582dd376.js"><link rel="prefetch" href="/assets/js/31.b8c29687.js"><link rel="prefetch" href="/assets/js/32.9de6c571.js"><link rel="prefetch" href="/assets/js/33.c9aba941.js"><link rel="prefetch" href="/assets/js/34.f89114c5.js"><link rel="prefetch" href="/assets/js/35.58ebbda0.js"><link rel="prefetch" href="/assets/js/36.c76d26c2.js"><link rel="prefetch" href="/assets/js/37.cf474d91.js"><link rel="prefetch" href="/assets/js/38.6328c41e.js"><link rel="prefetch" href="/assets/js/39.90bc51b3.js"><link rel="prefetch" href="/assets/js/4.869e2716.js"><link rel="prefetch" href="/assets/js/40.f4396e8d.js"><link rel="prefetch" href="/assets/js/41.e0411c2e.js"><link rel="prefetch" href="/assets/js/42.c0191389.js"><link rel="prefetch" href="/assets/js/43.f31e9090.js"><link rel="prefetch" href="/assets/js/44.d40b537a.js"><link rel="prefetch" href="/assets/js/45.f55b261f.js"><link rel="prefetch" href="/assets/js/46.2e9c64aa.js"><link rel="prefetch" href="/assets/js/47.ebbdcc44.js"><link rel="prefetch" href="/assets/js/48.3f01aafa.js"><link rel="prefetch" href="/assets/js/49.7a475f68.js"><link rel="prefetch" href="/assets/js/50.f003a4c3.js"><link rel="prefetch" href="/assets/js/6.b6b55724.js"><link rel="prefetch" href="/assets/js/7.5ced0c7d.js"><link rel="prefetch" href="/assets/js/8.448f622f.js"><link rel="prefetch" href="/assets/js/9.3a3dcbf5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.796597b9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">awesome-notes</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础" class="mobile-dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/basis/algorithm/" class="nav-link">
+  数据结构与算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/basis/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/fontend/basis/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/fontend/basis/TypeScript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/note/" class="nav-link">
+  笔记
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/frame/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/fontend/frame/React/" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/data-visualization/" class="nav-link">
+  数据可视化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/basis/Go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/PHP/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Python/" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/database/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/backend/database/Redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/backend/database/MongoDB/" class="nav-link">
+  MongoDB
+</a></li></ul></li><li class="dropdown-item"><h4>
+          中间件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/middleware/RabbitMQ/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  RabbitMQ
+</a></li><li class="dropdown-subitem"><a href="/backend/middleware/HAProxy/" class="nav-link">
+  HAProxy 
+</a></li><li class="dropdown-subitem"><a href="/backend/middleware/Nginx/" class="nav-link">
+  Nginx
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tool/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Jenkins/" class="nav-link">
+  Jenkins
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Regular_Expression/" class="nav-link">
+  正则表达式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/system/CentOS/" class="nav-link">
+  CentOS
+</a></li><li class="dropdown-item"><!----> <a href="/system/Ubuntu/" class="nav-link">
+  Ubuntu
+</a></li></ul></div></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  库
+</a></div><div class="nav-item"><a href="/note/" class="nav-link">
+  零星笔记
+</a></div> <a href="https://github.com/lalifeier/awesome-notes" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础" class="dropdown-title"><span class="title">基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础" class="mobile-dropdown-title"><span class="title">基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/basis/algorithm/" class="nav-link">
+  数据结构与算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/basis/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/fontend/basis/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/fontend/basis/TypeScript/" class="nav-link">
+  TypeScript
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/note/" class="nav-link">
+  笔记
+</a></li></ul></li><li class="dropdown-item"><h4>
+          框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/frame/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/fontend/frame/React/" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/fontend/data-visualization/" class="nav-link">
+  数据可视化
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/basis/Go/" class="nav-link">
+  Go
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/PHP/" class="nav-link">
+  PHP
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-subitem"><a href="/backend/basis/Python/" class="nav-link">
+  Python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据库
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/database/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-subitem"><a href="/backend/database/Redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-subitem"><a href="/backend/database/MongoDB/" class="nav-link">
+  MongoDB
+</a></li></ul></li><li class="dropdown-item"><h4>
+          中间件
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/middleware/RabbitMQ/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  RabbitMQ
+</a></li><li class="dropdown-subitem"><a href="/backend/middleware/HAProxy/" class="nav-link">
+  HAProxy 
+</a></li><li class="dropdown-subitem"><a href="/backend/middleware/Nginx/" class="nav-link">
+  Nginx
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工具" class="dropdown-title"><span class="title">工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="工具" class="mobile-dropdown-title"><span class="title">工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tool/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Jenkins/" class="nav-link">
+  Jenkins
+</a></li><li class="dropdown-item"><!----> <a href="/tool/Regular_Expression/" class="nav-link">
+  正则表达式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/system/CentOS/" class="nav-link">
+  CentOS
+</a></li><li class="dropdown-item"><!----> <a href="/system/Ubuntu/" class="nav-link">
+  Ubuntu
+</a></li></ul></div></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  库
+</a></div><div class="nav-item"><a href="/note/" class="nav-link">
+  零星笔记
+</a></div> <a href="https://github.com/lalifeier/awesome-notes" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>介绍</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/backend/middleware/RabbitMQ/#介绍" class="sidebar-link">介绍</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/backend/middleware/RabbitMQ/#环境安装" class="sidebar-link">环境安装</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#window" class="sidebar-link">Window</a></li><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#centos" class="sidebar-link">Centos</a></li><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#rabbitmq-配置" class="sidebar-link">RabbitMQ 配置</a></li><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#docker-安装-rabbitmq" class="sidebar-link">Docker 安装 RabbitMq</a></li></ul></li><li><a href="/backend/middleware/RabbitMQ/#amqp-核心概念" class="sidebar-link">AMQP 核心概念</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/backend/middleware/RabbitMQ/#使用" class="sidebar-link">使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#基本操作" class="sidebar-link">基本操作</a></li><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#高级操作" class="sidebar-link">高级操作</a></li></ul></li><li><a href="/backend/middleware/RabbitMQ/#高级特性" class="sidebar-link">高级特性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#消息如何保障-100-的投递成功" class="sidebar-link">消息如何保障 100% 的投递成功</a></li><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#幂等性" class="sidebar-link">幂等性</a></li><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#confirm-确认消息" class="sidebar-link">Confirm 确认消息</a></li><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#return-消息机制" class="sidebar-link">Return 消息机制</a></li><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#自定义消费者" class="sidebar-link">自定义消费者</a></li><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#消费端限流" class="sidebar-link">消费端限流</a></li><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#消费端-ack-与重回队列" class="sidebar-link">消费端 ACK 与重回队列</a></li><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#ttl-队列-消息" class="sidebar-link">TTL 队列/消息</a></li><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#死信队列" class="sidebar-link">死信队列</a></li></ul></li><li><a href="/backend/middleware/RabbitMQ/#集群架构模式" class="sidebar-link">集群架构模式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#主备模式" class="sidebar-link">主备模式</a></li><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#远程模式" class="sidebar-link">远程模式</a></li><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#镜像模式" class="sidebar-link">镜像模式</a></li><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#多活模式" class="sidebar-link">多活模式</a></li><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#集群配置文件" class="sidebar-link">集群配置文件</a></li><li class="sidebar-sub-header"><a href="/backend/middleware/RabbitMQ/#延迟队列插件" class="sidebar-link">延迟队列插件</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="介绍"><a href="#介绍" class="header-anchor">#</a> 介绍</h2> <h4 id="rabbitmq-是一个开源的消息代理和队列服务器-用来通过普通协议在完全不同的应用之间共享数据-rabbitmq-是使用-erlang-语言来编写的-并且-rabbitmq-是基于-amqp-协议的。"><a href="#rabbitmq-是一个开源的消息代理和队列服务器-用来通过普通协议在完全不同的应用之间共享数据-rabbitmq-是使用-erlang-语言来编写的-并且-rabbitmq-是基于-amqp-协议的。" class="header-anchor">#</a> RabbitMQ 是一个开源的消息代理和队列服务器，用来通过普通协议在完全不同的应用之间共享数据，RabbitMQ 是使用 Erlang 语言来编写的，并且 RabbitMQ 是基于 AMQP 协议的。</h4> <h2 id="环境安装"><a href="#环境安装" class="header-anchor">#</a> 环境安装</h2> <h3 id="window"><a href="#window" class="header-anchor">#</a> Window</h3> <ul><li>下载 Erlang https://www.erlang-solutions.com/resources/download.html</li> <li>下载 RabbitMQ https://www.rabbitmq.com/download.html</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 安装服务</span>
+rabbitmq-service.bat <span class="token function">install</span>
+<span class="token comment"># 关闭服务</span>
+rabbitmq-service.bat stop
+<span class="token comment"># 卸载服务</span>
+rabbitmq-service.bat remove
+<span class="token comment"># 激活 rabbitmq_management</span>
+rabbitmq-plugins <span class="token builtin class-name">enable</span> rabbitmq_management
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li>访问 web 管理界面</li></ul> <p>地址：http://localhost:15672
+默认用户名：guest （只能 localhost 登陆）
+默认密码：guest</p> <h3 id="centos"><a href="#centos" class="header-anchor">#</a> Centos</h3> <p>参考：<a href="https://www.rabbitmq.com/which-erlang.html" target="_blank" rel="noopener noreferrer">https://www.rabbitmq.com/which-erlang.html<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li>安装 ErLang</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">wget</span> https://github.com/rabbitmq/erlang-rpm/releases/download/v22.2.4/erlang-22.2.4-1.el7.x86_64.rpm
+<span class="token function">rpm</span> -ivh erlang-22.2.4-1.el7.x86_64.rpm
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>安装 socat</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">wget</span> http://repo.iotti.biz/CentOS/7/x86_64/socat-1.7.3.2-5.el7.lux.x86_64.rpm
+<span class="token function">rpm</span> -ivh socat-1.7.3.2-5.el7.lux.x86_64.rpm
+
+yum <span class="token function">install</span> socat
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>安装 RabbitMQ</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">wget</span> https://github.com/rabbitmq/rabbitmq-server/releases/download/v3.8.2/rabbitmq-server-3.8.2-1.el7.noarch.rpm
+<span class="token function">rpm</span> -ivh rabbitmq-server-3.8.2-1.el7.noarch.rpm
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ul><li>启动 RabbitMQ</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>systemctl start rabbitmq-server             <span class="token comment"># 启动RabbitMQ</span>
+systemctl <span class="token builtin class-name">enable</span> rabbitmq-server            <span class="token comment"># 开机自启动RabbitMQ</span>
+systemctl status rabbitmq-server            <span class="token comment"># 查看状态</span>
+
+<span class="token comment"># 其他启动方式</span>
+rabbitmq-server                             <span class="token comment"># 启动 RabbitMQ服务</span>
+rabbitmq-server -detached                   <span class="token comment"># 后台启动 RabbitMQ服务</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ul><li>安装 web 管理页面插件(默认用户名密码 guest)</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>rabbitmq-plugins <span class="token builtin class-name">enable</span> rabbitmq_management
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>User can only log in via localhost</p></div> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">vim</span> /usr/lib/rabbitmq/lib/rabbitmq_server-3.8.2/ebin/rabbit.app
+<span class="token comment">#修改loopback_users，删除&lt;&lt;&quot;guest&quot;&gt;&gt;</span>
+<span class="token punctuation">{</span>loopback_users, <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">}</span>,
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="rabbitmq-配置"><a href="#rabbitmq-配置" class="header-anchor">#</a> RabbitMQ 配置</h3> <ul><li>添加用户并授权</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#添加用户</span>
+rabbitmqctl add_user admin <span class="token number">123456</span>
+
+<span class="token comment">#设置用户角色</span>
+rabbitmqctl set_user_tags admin administrator
+
+<span class="token comment">#tag（administrator，monitoring，policymaker，management）</span>
+
+<span class="token comment">#设置用户权限(接受来自所有Host的所有操作)</span>
+rabbitmqctl  set_permissions -p <span class="token string">&quot;/&quot;</span> admin <span class="token string">'.*'</span> <span class="token string">'.*'</span> <span class="token string">'.*'</span>
+
+<span class="token comment">#查看用户权限</span>
+rabbitmqctl list_user_permissions admin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><ul><li>删除用户</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>rabbitmqctl delete_user 用户名
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>修改密码</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>rabbitmqctl add_user 用户名 密码
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>查看当前用户列表</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>rabbitmqctl list_users
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>配置用户远程访问</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#修改配置文件</span>
+<span class="token function">vim</span> /etc/rabbitmq/rabbitmq.config
+
+<span class="token comment">#保存以下内容</span>
+<span class="token punctuation">[</span>
+<span class="token punctuation">{</span>rabbit, <span class="token punctuation">[</span><span class="token punctuation">{</span>tcp_listeners, <span class="token punctuation">[</span><span class="token number">5672</span><span class="token punctuation">]</span><span class="token punctuation">}</span>, <span class="token punctuation">{</span>loopback_users, <span class="token punctuation">[</span><span class="token string">&quot;admin&quot;</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+<span class="token punctuation">]</span>.
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ul><li>开放端口</li></ul> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment">#开放端口</span>
+firewall-cmd --add-port<span class="token operator">=</span><span class="token number">5672</span>/tcp --permanent
+firewall-cmd --add-port<span class="token operator">=</span><span class="token number">15672</span>/tcp --permanent
+
+<span class="token comment">#重新加载防火墙配置</span>
+firewall-cmd --reload
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="docker-安装-rabbitmq"><a href="#docker-安装-rabbitmq" class="header-anchor">#</a> Docker 安装 RabbitMq</h3> <h4 id="拉取镜像"><a href="#拉取镜像" class="header-anchor">#</a> 拉取镜像</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>docker pull rabbitmq:management
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="运行-rabbitmq"><a href="#运行-rabbitmq" class="header-anchor">#</a> 运行 RabbitMq</h4> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token function">mkdir</span> -p /home/docker/rabbitmq
+<span class="token builtin class-name">cd</span> /home/docker/rabbitmq
+
+docker run -d --restart<span class="token operator">=</span>always --hostname rabbitmq -p <span class="token number">5672</span>:5672 -p <span class="token number">15672</span>:15672 -v <span class="token environment constant">$PWD</span>:/var/lib/rabbitmq -e <span class="token assign-left variable">RABBITMQ_DEFAULT_USER</span><span class="token operator">=</span>admin -e <span class="token assign-left variable">RABBITMQ_DEFAULT_PASS</span><span class="token operator">=</span>admin --name rabbitmq rabbitmq:management
+
+<span class="token comment">#mkdir -p /home/docker/rabbitmq/{conf,log,data}</span>
+<span class="token comment">#cd /home/docker/rabbitmq</span>
+<span class="token comment">#docker run -d --restart=always --hostname rabbitmq -p 5672:5672 -p 15672:15672 -v $PWD/conf:/etc/rabbitmq/rabbitmq.conf -v $PWD/log:/var/log/rabbitmq -v $PWD/data:/var/lib/rabbitmq -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=admin --name rabbitmq rabbitmq:management</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="amqp-核心概念"><a href="#amqp-核心概念" class="header-anchor">#</a> AMQP 核心概念</h2> <ul><li><p>Server：又称 Broker,接受客户端的连接，实现 AMQP 实体服务</p></li> <li><p>Connection：连接，应用程序与 Broker 的网络连接</p></li> <li><p>Channel：网络信道，几乎所有的操作都在 Channel 中进行，Channel 是进行消息读写的通道。客户端可建立多个 Channel，每个 Channel 代表一个会话任务。</p></li> <li><p>Message：消息，服务器和应用程序之间传送的数据，由 Properties 和 Body 组成。Properties 可以对消息进行修饰，比如消息的优先级、延迟等高级特性；Body 则就是消息体内容。</p></li> <li><p>Virtual host：虚拟地址，用于进行逻辑隔离，最上层的消息路由。一个 Virtual host 里面可以有若干个 Exchange 和 Queue，同一个 Virtual host 里面不能有相同名称的 Exchange 和 Queue</p></li> <li><p>Exchange：交换机，接收消息，根据路由键转发消息到绑定的队列</p></li> <li><p>Binding：Exchange 和 Queue 之间的虚拟连接，binding 中可以包含 routing key</p></li> <li><p>Routing key：一个路由规则，虚拟机可用它来确定如何路由一个特定消息</p></li> <li><p>Queue：也称为 Message Queue，消息队列，保存消息并将它们转发给消费者</p></li></ul> <h2 id="使用"><a href="#使用" class="header-anchor">#</a> 使用</h2> <h3 id="基本操作"><a href="#基本操作" class="header-anchor">#</a> 基本操作</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 关闭应用</span>
+rabbitmqctl stop_app
+<span class="token comment"># 启动应用</span>
+rabbitmqctl start_app
+<span class="token comment"># 节点状态</span>
+rabbitmqctl status
+<span class="token comment"># 添加用户</span>
+rabbitmqctl add_user username password
+<span class="token comment"># 列出所有用户</span>
+rabbitmqctl list_users
+<span class="token comment"># 删除用户</span>
+rabbitmqctl delete_user username
+<span class="token comment"># 清除用户权限</span>
+rabbitmqctl clear_permissions -p vhostpath username
+<span class="token comment"># 列出用户权限</span>
+rabbitmqctl list_user_permissions username
+<span class="token comment"># 修改密码</span>
+rabbitmqctl change_password username newpassword
+<span class="token comment"># 设置用户权限</span>
+rabbitmqctl set_permissions -p vhostpath username <span class="token string">&quot;.*&quot;</span> <span class="token string">&quot;.*&quot;</span> <span class="token string">&quot;.*&quot;</span>
+
+<span class="token comment"># 创建虚拟主机</span>
+rabbitmqctl add_vhost vhostpath
+<span class="token comment"># 列出所有虚拟主机</span>
+rabbitmqctl list_vhosts
+<span class="token comment"># 列出虚拟主机上所有权限</span>
+rabbitmqctl list_permissions -p vhostpath
+<span class="token comment"># 删除虚拟主机</span>
+rabbitmqctl delete_vhost vhostpath
+
+<span class="token comment"># 查看所有队列信息</span>
+rabbitmqctl list_queues
+<span class="token comment"># 清除队列里的消息</span>
+rabbitmqctl -p vhostpath purge_queue blue
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><h3 id="高级操作"><a href="#高级操作" class="header-anchor">#</a> 高级操作</h3> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token comment"># 移除所有数据，要在rabbitmqctl stop_app之后使用</span>
+rabbitmqctl reset
+<span class="token comment"># 组成集群命令</span>
+rabbitmqctl join_cluster <span class="token operator">&lt;</span>clusternode<span class="token operator">&gt;</span> <span class="token punctuation">[</span>--ram<span class="token punctuation">]</span>
+<span class="token comment"># 查看集群状态</span>
+rabbitmqctl cluster_status
+<span class="token comment"># 修改集群节点的存储形式</span>
+rabbitmqctl change_cluster_node_type disc <span class="token operator">|</span> <span class="token function">ram</span>
+<span class="token comment"># 忘记节点 （摘除节点）</span>
+rabbitmqctl forget_cluster_node <span class="token punctuation">[</span>--offline<span class="token punctuation">]</span>
+<span class="token comment"># 修改节点名称</span>
+rabbitmqctl rename_cluster_node oldnode1 newnode1 <span class="token punctuation">[</span>oldnode2<span class="token punctuation">]</span> <span class="token punctuation">[</span>newnode2 <span class="token punctuation">..</span>.<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="高级特性"><a href="#高级特性" class="header-anchor">#</a> 高级特性</h2> <h3 id="消息如何保障-100-的投递成功"><a href="#消息如何保障-100-的投递成功" class="header-anchor">#</a> 消息如何保障 100% 的投递成功</h3> <h4 id="什么是生产端的可靠性投递"><a href="#什么是生产端的可靠性投递" class="header-anchor">#</a> 什么是生产端的可靠性投递</h4> <ul><li>保障消息的成功发出</li> <li>保障 MQ 节点的成功接收</li> <li>发送端收到 MQ 节点(Broker)确认应答</li> <li>完善的消息进行补偿机制</li></ul> <h4 id="生产端-可靠性投递"><a href="#生产端-可靠性投递" class="header-anchor">#</a> 生产端-可靠性投递</h4> <p>BAT/TMD 互联网大厂的解决方案：</p> <ul><li>消息落库，对消息状态进行打标</li> <li>消息的延迟投递，做二次确定，回调检查</li></ul> <h3 id="幂等性"><a href="#幂等性" class="header-anchor">#</a> 幂等性</h3> <h4 id="消费端-幂等性保障"><a href="#消费端-幂等性保障" class="header-anchor">#</a> 消费端-幂等性保障</h4> <p>在海量订单产生的业余高峰期，如何避免消息的重复消费问题？</p> <ul><li>消费端实现幂等性，就意味着，我们的消息永远不会消费多次，即使我们收到了多条一样的消息</li></ul> <p>业界主流的幂等性操作：</p> <ul><li>唯一 ID + 指纹码机制，利用数据库主键去重
+<ul><li>SELECT COUNT(1) FROM T_ORFER WHERE ID = 唯一 ID + 指纹码</li> <li>好处：实现简单</li> <li>坏处：高并发下有数据库写入的性能瓶颈</li> <li>解决方案：根据 ID 进行分库分表进行算法路由</li></ul></li> <li>利用 Redis 的原子性去实现
+<ul><li>我们是否要进行数据落库，如果落库的话，关键解决问题是数据库和缓存如何做到原子性
+<ul><li>如果不进行落库，那么都存储到缓存中，如何设置定时同步的策略</li></ul></li></ul></li></ul> <h3 id="confirm-确认消息"><a href="#confirm-确认消息" class="header-anchor">#</a> Confirm 确认消息</h3> <p>消息的确认，是指生产者投递消息后，如果 Broker 收到消息，则会给我们生产者一个应答</p> <p>生产者进行应答，用来确定这条消息是否正常的发送到 Broker，这种方式也是消息的可靠性投递的核心保障</p> <h4 id="如何实现-confirm-确认消息"><a href="#如何实现-confirm-确认消息" class="header-anchor">#</a> 如何实现 Confirm 确认消息</h4> <ul><li>在 channel 上开启确认模式：channel.confirmSelect()</li> <li>在 channel 上添加监听：addConfirmListener，监听成功和失败的返回结果，根据具体的结果对消息进行重新发送，或记录日志等后续处理</li></ul> <h3 id="return-消息机制"><a href="#return-消息机制" class="header-anchor">#</a> Return 消息机制</h3> <ul><li>Return Listener 用于处理一些不可路由的消息</li> <li>我们的消息生产者，通过指定一个 Exchange 和 Routingkey，把消息送达到某一个队列中去，然后我们的消费者监听队列，进行消费处理操作</li> <li>但是在某些情况下，如果我们在发送消息的时候，当前的 exchange 不存在或者指定的路由 key 路由不到，这个时候如果我们需要监听这种不可达的消息，就要使用 Return Listener</li></ul> <p>在基础 API 中有一个关键的配置项</p> <ul><li>Mandatory：如果为 true，则监听器会接收到路由不可达的消息，然后进行后续处理，如果为 false，那么 broker 端自动删除该消息</li></ul> <h3 id="自定义消费者"><a href="#自定义消费者" class="header-anchor">#</a> 自定义消费者</h3> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MyConsumer</span> <span class="token keyword">extends</span> <span class="token class-name">DefaultConsumer</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token class-name">MyConsumer</span><span class="token punctuation">(</span><span class="token class-name">Channel</span> channel<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span>channel<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">handleDelivery</span><span class="token punctuation">(</span><span class="token class-name">String</span> consumerTag<span class="token punctuation">,</span> <span class="token class-name">Envelope</span> envelope<span class="token punctuation">,</span> AMQP<span class="token punctuation">.</span><span class="token class-name">BasicProperties</span> properties<span class="token punctuation">,</span> <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> body<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">IOException</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="消费端限流"><a href="#消费端限流" class="header-anchor">#</a> 消费端限流</h3> <p>RabbitMQ 提供了一种 qos(服务质量保证)功能，即在非在自动确认消息的前提下，如果一定数目的消息(通过基于 consume 或者 channel 设置 Qos 的值)未被确认前，不进行消费新的消息</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">void</span> <span class="token class-name">BasicQos</span><span class="token punctuation">(</span>uint prefetchSize<span class="token punctuation">,</span> ushort prefetchCount<span class="token punctuation">,</span> bool global<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>prefetchSize：0</li> <li>prefetchCount：会告诉 RabbitMQ 不要同时给一个消费者推送对于个消息，即一旦有 N 个消息还没有 ack，则该 consumer 将 block 掉，直到有消息 ack</li> <li>global：true/false 是否将上面设置应用于 channel，简单点说，就是上面限制是 channel 级别的还是 consumer 级别</li> <li>prefetchSize 和 global 这两项，RabbitMQ 没有实现，暂且不研究 prefetch_count 在 no_ack=false 的情况下生效，即在自动应答的情况下这两个值是不生效的</li></ul> <h3 id="消费端-ack-与重回队列"><a href="#消费端-ack-与重回队列" class="header-anchor">#</a> 消费端 ACK 与重回队列</h3> <h4 id="消费端-的手工-ack-和-nack"><a href="#消费端-的手工-ack-和-nack" class="header-anchor">#</a> 消费端 的手工 ACK 和 NACK</h4> <ul><li>消费端进行消费的时候，如果由于业务异常我们可以进行日志的记录，然后进行补偿</li> <li>如果由于服务器宕机等严重问题，那我们就需要手工进行 ACK 保障消费端消费成功</li></ul> <h4 id="消费端的重回队列"><a href="#消费端的重回队列" class="header-anchor">#</a> 消费端的重回队列</h4> <ul><li>消费端重回队列是为了对没有处理成功的消息，把消息重新会递给 Broker</li> <li>一般我们在实际应用中，都会关闭重回队列，也就是设置为 False</li></ul> <h3 id="ttl-队列-消息"><a href="#ttl-队列-消息" class="header-anchor">#</a> TTL 队列/消息</h3> <ul><li>TTL 是 Time to Live 的缩写，也就是生存时间</li> <li>RabbitMQ 支持消息的过期时间，在消息发送时可以进行指定</li> <li>RabbitMQ 支持队列的过期时间，从消息入队列开始计算，只要超过了队列的超时时间配置，那么消息会自动的清除</li></ul> <h3 id="死信队列"><a href="#死信队列" class="header-anchor">#</a> 死信队列</h3> <h4 id="死信队列-dlx-dead-letter-exchange"><a href="#死信队列-dlx-dead-letter-exchange" class="header-anchor">#</a> 死信队列：DLX，Dead-Letter-Exchange</h4> <p>利用 DLX，当消息在一个队列中变成死信(dead message)之后，他能被重新 publish 到另一个 Exchange，这个 Exchange 就是 DLX</p> <h4 id="消息变成死信几种情况"><a href="#消息变成死信几种情况" class="header-anchor">#</a> 消息变成死信几种情况</h4> <ul><li>消息被拒绝(basic.reject/basic.nack)并且 requeue=false</li> <li>消息 TTL 过期</li> <li>队列达到最大长度</li></ul> <h4 id="死信队列-2"><a href="#死信队列-2" class="header-anchor">#</a> 死信队列</h4> <ul><li>DLX 也是一个正常的 Exchange，和一般的 Exchange 没有区别，他能在任何的队列上被指定，实际上就是设置某个队列的属性</li> <li>当这个队列中有死信时，RabbitMQ 就会自动的将这个消息重新发布到设置的 Exchange 上去，进而被路由到另一个队列</li> <li>可以监听这个队列中消息做相应的处理，这个特性可以弥补 RabbitMQ3.0 以前支持的 immediate 参数的功能</li></ul> <h4 id="死信队列设置"><a href="#死信队列设置" class="header-anchor">#</a> 死信队列设置</h4> <p>首先要设置死信队列的 exchange 和 queue, 然后进行绑定</p> <ol><li><p>Exchange : dlx.exchange</p></li> <li><p>Queue : dlx.queue</p></li> <li><p>RoutingKey : #</p></li></ol> <p>然后正常声明交换机, 队列, 绑定, 只不过需要在队列加上一个扩展参数即可 : <code>arguments.put(&quot;x-dead-letter-exchange&quot;, &quot;dlx.exchange&quot;);</code></p> <p>这样消息在过期，requeue，队列在达到最大长度时，消息就可以直接路由到死信队列</p> <h4 id="死信队列解决的问题"><a href="#死信队列解决的问题" class="header-anchor">#</a> 死信队列解决的问题</h4> <ol><li><p>列信息因消费不及时大量积压，消费方服务先处理不及时会影响到队列的生产者，进而会影响到所有消费此 topic 的队列</p></li> <li><p>队列的消息超时后消失，生产者和消费者完全无感知，只能靠查落地存储的历史记录，很不方便同时业务无法再消费处理</p></li></ol> <h2 id="集群架构模式"><a href="#集群架构模式" class="header-anchor">#</a> 集群架构模式</h2> <h3 id="主备模式"><a href="#主备模式" class="header-anchor">#</a> 主备模式</h3> <ul><li><p>实现 RabbitMQ 的高可用集群，一般在并发和数据量不高的情况下，这种模型非常的好用且简单。主备模式也称之为 Warren 模式</p></li> <li><p>主备模式：一种 warren(兔子窝)的模式，是一个主/备方案(主节点如果挂了，从节点提供服务而已，activemq 利用 zookeeper 做主/备一样)</p></li></ul> <h4 id="haproxy-配置"><a href="#haproxy-配置" class="header-anchor">#</a> HaProxy 配置</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>listen  rabbitmq_cluster
+bind 0.0.0.0:5672
+#配置TCP模式
+mode tcp
+#简单的轮询
+balance roundrobin
+#主节点
+server rabbitmq_1 172.18.0.2:5672 check inter 5000 rise 2 fall 2
+#备用节点
+server rabbitmq_2 172.18.0.3:5672 backup check inter 5000 rise 2 fall 2
+
+#inter每隔5秒对RabbitMQ集群做健康检查，2次正确证明服务器可用，3次失败证明服务器不可用，并且配置主备机制
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="远程模式"><a href="#远程模式" class="header-anchor">#</a> 远程模式</h3> <ul><li><p>远程模式可以实现双活的一种模式，简称 Shovel 模式，所谓 Shovel 就是我们可以把消息进行不同数据中心的复制工作，我们可以跨地域的让两个 RabbitMQ 集群互联</p></li> <li><p>远程模式：远程通信和复制，所谓 Shovel 就是我们可以把消息进行不同数据中心的复制工作，我们可以跨地域的让两个 RabbitMQ 集群互联</p></li></ul> <h4 id="shovel-集群的配置"><a href="#shovel-集群的配置" class="header-anchor">#</a> Shovel 集群的配置</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>#启动RabbitMQ插件
+rabbitmq-plugins enable amqp_client
+rabbitmq-plugins enable rabbitmq_shovel
+#创建rabbitmq.config文件
+touch /etc/rabbitmq/rabbitmq.config
+#最后我们需要源服务器和目的地服务器都使用相同的配置文件(rabbitmq.config)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="镜像模式"><a href="#镜像模式" class="header-anchor">#</a> 镜像模式</h3> <ul><li><p>集群模式非常经典的就是 Mirror 镜像，保证 100%数据不丢失，在实际工作中也是用的最多的。并且实现集群非常简单，一般互联网大厂都会构建这种镜像集群模式</p></li> <li><p>Mirror 镜像队列，目的是为了保证 RabbitMQ 数据的高可靠性解决方案，主要就是实现数据的同步，一般来讲是 2-3 个节点实现数据同步(对于 100%数据可靠性解决方案一般是 3 节点)</p></li></ul> <h3 id="多活模式"><a href="#多活模式" class="header-anchor">#</a> 多活模式</h3> <ul><li><p>这种模式也是实现异地数据复制的主流模式，因为 Shovel 模式配置比较复制，所以一般来说实现异地集群都是使用这种双活或者多活模型来实现的。这种模型依赖 RabbitMQ 的 federation 插件，可以实现持续的可靠的 AMQP 数据通信，多活模式在实际配置与应用非常简单</p></li> <li><p>RabbitMQ 部署架构采用双中心模式（多中心）在两套（或多套）数据中心各部署一套 RabbitMQ 集群，各中心的 RabbitMQ 服务需要为提供正常的消息业务外，中心之间还需要实现部分队列消息共享。</p></li> <li><p>federation 插件是一个不需要构建 Cluster，而在 Brokers 之间传输消息的高性能插件，federation 可以在 brokers 或者 cluster 之间传输消息，连接的双方可以使用不同的 users 或者 virtual host 双方也可以使用不同版本的 erlang 或者 RabbitMQ 版本。federation 插件可以使用 AMQP 协议作为通讯协议，可以接受不连续的传输。</p></li> <li><p>Federation Exchanges，可以看成 Downstream 从 Upstream 主动拉取消息，但并不是拉取所有消息，必须是在 Downstream.上已经明确定义 Bindings 关系的 Exchange,也就是有实际的物理 Queue 来接收消息，才会从 Upstream 拉取消息到 Downstream。使用 AMQP 协议实施代理间通信，Downstream 会将绑定关系组合在一起， 绑定/解除绑定命令将发送到 Upstream 交换机。因此，FederationExchange 只接收具有订阅的消息.</p></li></ul> <h3 id="集群配置文件"><a href="#集群配置文件" class="header-anchor">#</a> 集群配置文件</h3> <h4 id="关键参数配置"><a href="#关键参数配置" class="header-anchor">#</a> 关键参数配置</h4> <p>参考：<a href="http://www.rabbitmq.com/configure.html" target="_blank" rel="noopener noreferrer">http://www.rabbitmq.com/configure.html<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li>tcp_listerners 设置 rabbimq 的监听端口，默认为[5672]</li> <li>disk_free_limit 磁盘低水位线，若磁盘容量低于指定值则停止接收数据，默认值为{mem_relative, 1.0},即与内存相关联 1：1，也可定制为多少 byte</li> <li>vm_memory_high_watermark，设置内存低水位线，若低于该水位线，则开启流控机制，默认值是 0.4，即内存总量的 40%</li> <li>hipe_compile 将部分 rabbimq 代码用 High Performance Erlang compiler 编译，可提升性能，该参数是实验性，若出现 erlang vm segfaults，应关掉</li> <li>force_fine_statistics， 该参数属于 rabbimq_management，若为 true 则进行精细化的统计，但会影响性能</li></ul> <h4 id="集群节点模式"><a href="#集群节点模式" class="header-anchor">#</a> 集群节点模式</h4> <ul><li>Disk 为磁盘存储模式</li> <li>Ram 为内存存储模式</li></ul> <h3 id="延迟队列插件"><a href="#延迟队列插件" class="header-anchor">#</a> 延迟队列插件</h3> <ol><li>下载插件放到指定目录</li></ol> <p><a href="https://www.rabbitmq.com/community-plugins.html" target="_blank" rel="noopener noreferrer">https://www.rabbitmq.com/community-plugins.html<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token builtin class-name">cd</span> /usr/lib/rabbitmq/lib/rabbitmq_server-3.8.2/plugins
+<span class="token function">wget</span> https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases/download/v3.8.0/rabbitmq_delayed_message_exchange-3.8.0.ez
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ol start="2"><li>启动插件</li></ol> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code>rabbitmq-plugins <span class="token builtin class-name">enable</span> rabbitmq_delayed_message_exchange
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="3"><li>访问地址http://IP:15672/#/exchanges</li></ol></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/lalifeier/awesome-notes/edit/master/docs/backend/middleware/RabbitMQ/README.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">10/28/2020, 4:01:00 PM</span></div></footer> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.baafc3f5.js" defer></script><script src="/assets/js/2.ba37855e.js" defer></script><script src="/assets/js/20.f0ccc7c4.js" defer></script><script src="/assets/js/5.65b8a4d7.js" defer></script>
+  </body>
+</html>
