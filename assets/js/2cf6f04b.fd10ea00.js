@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[5323],{1289:e=>{e.exports=JSON.parse('{"title":"\u540e\u7aef","slug":"/category/backend","permalink":"/category/backend","navigation":{"previous":{"title":"\u7b80\u4ecb","permalink":"/"},"next":{"title":"Spring Boot 3.0 \u5347\u7ea7\u6307\u5357","permalink":"/backend/spring-boot-3.0-migration"}}}')}}]);
